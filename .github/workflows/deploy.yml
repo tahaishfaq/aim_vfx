@@ -3,31 +3,35 @@ name: Deploy to cPanel
 on:
   push:
     branches:
-      - main  
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x, 20.x]
 
-      - name: Checkout repository
+    steps:
+      - name: Checkout Code 🚚
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install Dependencies 📦
         run: npm install
 
-      - name: Build
+      - name: Build React App / Vue App (depending on user app) 🏗️
         run: npm run build
 
-      - name: Deploy to cPanel
-        uses: appleboy/ssh-action@master
+      - name: Upload to cPanel 📂
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.SSH_PRIVATE_KEY }}
-          local_dir: ./dist/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /public_html/
+          exclude: |
+            **/.git**
+            **/.git*/**
+            **/node_modules/**
+            **/.**
