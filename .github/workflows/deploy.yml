@@ -30,7 +30,4 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd public_html
-            rm -rf * # Clear existing files
-            cp -r ${{ github.workspace }}/dist/* .
+          local_dir: ./dist/
