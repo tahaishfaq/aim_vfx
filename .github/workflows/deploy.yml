@@ -29,6 +29,6 @@ jobs:
         with:
           host: ftp.aimvfx.com
           username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          key: ${{ secrets.FTP_PASSWORD }}
           port: 21
           
