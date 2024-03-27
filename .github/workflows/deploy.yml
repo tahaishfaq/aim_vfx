@@ -25,9 +25,9 @@ jobs:
         run: npm run build
 
       - name: Deploy to cPanel
-        uses: appleboy/ssh-action@master
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: ftp.aimvfx.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: /public_html/
