@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <p className='text-5xl'>Home</p>
+      <p className='text-5xl'>Home</p>
     </>
   )
 }
