@@ -1,38 +1,35 @@
-name: Deploy to cPanel
+name: Deploy to FTP
 
 on:
   push:
     branches:
-      - main  
+      - master  # Adjust the branch name if needed
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Use Node.js 20.x
-        uses: actions/setup-node@v4
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: 14.21.2  # Use the desired Node.js version
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Install dependencies and build Next.js app
+        run: |
+          yarn install  # Install project dependencies
+          yarn build  # Build Next.js app
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy to cPanel
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      - name: Deploy via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ftp.aimvfx.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /public_html/
-          exclude: |
-            **/.git**
-            **/.git*/**
-            **/node_modules/**
-            **/.**
+          local-dir: ./  # This points to the build output directory of your Next.js app
+          server-dir: /
+          protocol: ftps
+          timeout: 300000  # Set a longer timeout value in milliseconds (here, 2 minutes)
