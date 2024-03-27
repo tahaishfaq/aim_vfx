@@ -28,6 +28,6 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: ftp.aimvfx.com
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.SSH_PRIVATE_KEY }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           
