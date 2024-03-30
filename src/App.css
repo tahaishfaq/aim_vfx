@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+.hero-section {
+    height: 150vh;
+    background: linear-gradient(145deg, 
+        rgb(38, 29, 66) 0%, /* Dark purple */
+        rgb(42, 30, 56) 20%, /* Slightly lighter purple */
+        rgb(54, 37, 64) 40%, /* Lighter purple */
+        rgb(66, 46, 78) 60%, /* Lighter purple */
+        rgb(26, 73, 70) 80%, /* Turquoise */
+        rgb(40, 95, 101) 100% /* Sky blue */
+    );
+    backdrop-filter: blur(10px);
+    position: relative; /* Position relative for ::before and ::after positioning */
+}
+
+.image1{
+    position: absolute;
+    top: 350px;
+    left: 0;
+}
+
+.image2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.image3{
+    position: absolute;
+    top: 0;
+    right: 0
+}
+.image4{
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.image5 {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    width: 1281.53px;
+    height: 996.63px;
+    overflow: hidden;
+    z-index: -10;
+    filter: blur(20px);
+}
+
+.image6 {
+    position: absolute;
+    top: 440px;
+    left: 100px;
+    width: 581.53px;
+    height: 396.63px;
+    overflow: hidden;
+    z-index: -10;
+    filter: blur(20px);
+    transform: rotate(-180deg);
+}
+
+.image7 {
+    position: absolute;
+    top: 0;
+  left: 250px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.creativityText {
+    position: absolute;
+    top: 180px;
+
+}
+
+.excellenceText {
+    position: absolute;
+    top: 540px;
+
+}
+.hero-section-heading{
+    top: 500px;
+    left: 150px;
+    position: absolute;
+    color: white;
+    font-family: "Teko", sans-serif;
+    font-size: 105px;
+    line-height: 99px;
+    z-index: 10000;
+    width: 70%;
+    text-transform: uppercase;
+}
+
+.hero-section-description{
+    top: 500px;
+    right: 80px;
+    position: absolute;
+    color: white;
+  font-size: 18px;
+    z-index: 10000;
+    width: 20%;
+    text-align: justify;
+    
+}
+
+.hero-section-buttons{
+    top: 700px;
+    right: 250px;
+    
+    position: absolute;
+   
+}
