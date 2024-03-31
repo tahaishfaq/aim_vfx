@@ -3,6 +3,7 @@ import logo from "../../assets/LOGO ORIGINAL GREEN.png";
 import logoImg from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 7.png";
 import Button from "../Button/Button";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
@@ -39,33 +40,51 @@ export const Navbar = () => {
               </div>
               {/* Navigation Links */}
               <div className="hidden sm:-my-px sm:ml-8 sm:flex  sm:space-x-8">
-                <span className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out">
+                <Link
+                  to="/pricing"
+                  className="flex items-center justify-center gap-x-1.5 text-sm font-medium cursor-pointer leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
                   Pricing
-                </span>
-                <span className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out">
+                </Link>
+                <Link
+                  to="/solutions"
+                  className="flex items-center justify-center gap-x-1.5 text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
                   Solutions{" "}
                   <span className="pt-0.5">
                     <IoIosArrowDown />
                   </span>
-                </span>
-                <span className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out">
+                </Link>
+                <Link
+                  to="/services"
+                  className="flex items-center justify-center gap-x-1.5 text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
                   Services{" "}
                   <span className="pt-0.5">
                     <IoIosArrowDown />
                   </span>
-                </span>
-                <span className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out">
+                </Link>
+                <Link
+                  to="/company"
+                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
                   Company{" "}
                   <span className="pt-0.5">
                     <IoIosArrowDown />
                   </span>
-                </span>
-                <span className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out">
+                </Link>
+                <Link
+                  to="/portfolio"
+                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
                   Portfolio
-                </span>
-                <span className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out">
+                </Link>
+                <Link
+                  to="/reviews"
+                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
                   Reviews
-                </span>
+                </Link>
 
                 {/* <div className="relative inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-white">
                 <span>Contact</span>
