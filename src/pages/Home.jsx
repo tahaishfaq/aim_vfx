@@ -27,6 +27,7 @@ import icon4 from "../assets/Group 78.png";
 import icon5 from "../assets/icon.png";
 import CustomServiceCard from "../components/CustomServiceCard/CustomServiceCard";
 import HomeGallery from "../components/HomeGallery/HomeGallery";
+import WorkStreamline from "../components/WorkStreamline/WorkStreamline";
 
 const Home = () => {
   const services = [
@@ -122,7 +123,7 @@ const Home = () => {
 
         {/* Spectular Service Section */}
         <div className="">
-          <div className=" flex flex-col items-center justify-center pt-10">
+          <div className=" flex flex-col items-center justify-center ">
             <Heading className="uppercase text-7xl text-white font-tek">
               Our <span className="text-[#2EABAF]">spectacular</span> services
             </Heading>
@@ -211,6 +212,26 @@ const Home = () => {
               <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 book a call
               </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Work Streamline  */}
+        <div className="flex flex-col items-center justify-center gap-y-10">
+          <div className=" w-2/4 flex flex-col items-center text-white text-center gap-y-3">
+            <Heading className="text-[80px] font-tek  leading-tight uppercase">
+              Streamline Your Process: Never Worry About VIDEO Editing Again
+              with These Simple Steps.
+            </Heading>
+            <span className="text-sm w-2/3">
+              AIM VFX offers a faster, more cost-effective alternative, saving
+              you time and money, instead of hiring, retaining, and overhead
+              expenses.
+            </span>
+          </div>
+          <div className="py-10 ">
+            <div className="flex  justify-center">
+              <WorkStreamline />
             </div>
           </div>
         </div>
