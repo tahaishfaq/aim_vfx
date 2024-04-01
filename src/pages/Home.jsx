@@ -20,8 +20,52 @@ import spectularFrame from "../assets/ORH85K1 copy 1.png";
 import spectuarBackgroud from "../assets/11 copy 3.png";
 import robot from "../assets/Vector.png";
 import ServicesCards from "../components/ServiceCards/ServiceCards";
+import icon1 from '../assets/clock-111.png'
+import icon2 from '../assets/Group 114.png'
+import icon3 from '../assets/Group 77.png'
+import icon4 from '../assets/Group 78.png'
+import icon5 from '../assets/icon.png'
+import CustomServiceCard from "../components/CustomServiceCard/CustomServiceCard";
 
 const Home = () => {
+  const services = [
+    {
+      "id": 1,
+      "title": "Time-Saving ",
+      "description": "Outsourcing video editing allows you to focus on your core business activities while professionals take care of the time-consuming editing process.",
+      "icon": icon1,
+      "active": true,
+    },
+    {
+      "id": 2,
+      "title": "Expertise",
+      "description": "Video editing experts bring a wealth of technical skills and creative insights to enhance your footage, ensuring a polished and professional end product.",
+      "icon": icon4,
+      "active": false,
+    },
+    {
+      "id": 3,
+      "title": "Quality",
+      "description": "Professional video editors have extensive experience and access to advanced editing tools, resulting in high-quality videos that captivate and engage your audience.",
+      "icon": icon2,
+      "active": false,
+    },
+    {
+      "id": 4,
+      "title": "Consistency",
+      "description": "By delegating video editing, you ensure consistency across your content, maintaining a cohesive brand identity and aesthetic that resonates with your viewers.",
+      "icon": icon5,
+      "active": false,
+    },
+    {
+      "id": 5,
+      "title": "Efficiency",
+      "description": "Video editing professionals work efficiently, utilizing their expertise and streamlined workflows to deliver your edited videos promptly, saving you valuable time and effort.",
+      "icon": icon3,
+      "active": false,
+    },
+    
+  ];
   return (
     <>
       <div className="home-page">
@@ -114,6 +158,32 @@ const Home = () => {
             <div className="spectular-services overflow-x-scroll w-full scrollbar-hide">
               <ServicesCards />
             </div>
+          </div>
+        </div>
+
+        {/* Services Section  */}
+        <div className="flex flex-col items-center justify-center py-20">
+          <Heading className="text-white font-tek text-[80px]  uppercase text-center w-2/5 leading-tight">
+            Why its better to deligate video editing
+          </Heading>
+          <p className="text-white text-sm w-2/5 text-center">
+            By delegating video editing, you can harness the expertise of
+            professionals, save time, improve quality, and ultimately deliver
+            outstanding videos that leave a lasting impression on your audience.
+          </p>
+
+          <div className="flex flex-col items-center gap-y-5 pt-20">
+            <div className="flex gap-x-5 pt-14">
+            {services?.map((service) => (
+              <CustomServiceCard
+                key={service.id}
+                title={service.title}
+                description={service.description}
+                icon={service.icon}
+              />
+            ))}
+            </div>
+            <div class="bar"></div>
           </div>
         </div>
       </div>

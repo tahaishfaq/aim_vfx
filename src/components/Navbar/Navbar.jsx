@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
-      <nav className="pt-5">
+      <nav className="pt-5 absolute overflow-hidden z-[1000] top-0 w-full">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex justify-center ">
             <div className="flex">
