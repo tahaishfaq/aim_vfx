@@ -20,51 +20,56 @@ import spectularFrame from "../assets/ORH85K1 copy 1.png";
 import spectuarBackgroud from "../assets/11 copy 3.png";
 import robot from "../assets/Vector.png";
 import ServicesCards from "../components/ServiceCards/ServiceCards";
-import icon1 from '../assets/clock-111.png'
-import icon2 from '../assets/Group 114.png'
-import icon3 from '../assets/Group 77.png'
-import icon4 from '../assets/Group 78.png'
-import icon5 from '../assets/icon.png'
+import icon1 from "../assets/clock-111.png";
+import icon2 from "../assets/Group 114.png";
+import icon3 from "../assets/Group 77.png";
+import icon4 from "../assets/Group 78.png";
+import icon5 from "../assets/icon.png";
 import CustomServiceCard from "../components/CustomServiceCard/CustomServiceCard";
+import HomeGallery from "../components/HomeGallery/HomeGallery";
 
 const Home = () => {
   const services = [
     {
-      "id": 1,
-      "title": "Time-Saving ",
-      "description": "Outsourcing video editing allows you to focus on your core business activities while professionals take care of the time-consuming editing process.",
-      "icon": icon1,
-      "active": true,
+      id: 1,
+      title: "Time-Saving ",
+      description:
+        "Outsourcing video editing allows you to focus on your core business activities while professionals take care of the time-consuming editing process.",
+      icon: icon1,
+      active: true,
     },
     {
-      "id": 2,
-      "title": "Expertise",
-      "description": "Video editing experts bring a wealth of technical skills and creative insights to enhance your footage, ensuring a polished and professional end product.",
-      "icon": icon4,
-      "active": false,
+      id: 2,
+      title: "Expertise",
+      description:
+        "Video editing experts bring a wealth of technical skills and creative insights to enhance your footage, ensuring a polished and professional end product.",
+      icon: icon4,
+      active: false,
     },
     {
-      "id": 3,
-      "title": "Quality",
-      "description": "Professional video editors have extensive experience and access to advanced editing tools, resulting in high-quality videos that captivate and engage your audience.",
-      "icon": icon2,
-      "active": false,
+      id: 3,
+      title: "Quality",
+      description:
+        "Professional video editors have extensive experience and access to advanced editing tools, resulting in high-quality videos that captivate and engage your audience.",
+      icon: icon2,
+      active: false,
     },
     {
-      "id": 4,
-      "title": "Consistency",
-      "description": "By delegating video editing, you ensure consistency across your content, maintaining a cohesive brand identity and aesthetic that resonates with your viewers.",
-      "icon": icon5,
-      "active": false,
+      id: 4,
+      title: "Consistency",
+      description:
+        "By delegating video editing, you ensure consistency across your content, maintaining a cohesive brand identity and aesthetic that resonates with your viewers.",
+      icon: icon5,
+      active: false,
     },
     {
-      "id": 5,
-      "title": "Efficiency",
-      "description": "Video editing professionals work efficiently, utilizing their expertise and streamlined workflows to deliver your edited videos promptly, saving you valuable time and effort.",
-      "icon": icon3,
-      "active": false,
+      id: 5,
+      title: "Efficiency",
+      description:
+        "Video editing professionals work efficiently, utilizing their expertise and streamlined workflows to deliver your edited videos promptly, saving you valuable time and effort.",
+      icon: icon3,
+      active: false,
     },
-    
   ];
   return (
     <>
@@ -174,16 +179,39 @@ const Home = () => {
 
           <div className="flex flex-col items-center gap-y-5 pt-20">
             <div className="flex gap-x-5 pt-14">
-            {services?.map((service) => (
-              <CustomServiceCard
-                key={service.id}
-                title={service.title}
-                description={service.description}
-                icon={service.icon}
-              />
-            ))}
+              {services?.map((service) => (
+                <CustomServiceCard
+                  key={service.id}
+                  title={service.title}
+                  description={service.description}
+                  icon={service.icon}
+                />
+              ))}
             </div>
             <div class="bar"></div>
+            <div className="pt-10 flex gap-x-4">
+              <Button className="px-10 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                Pricing
+              </Button>
+              <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                book a call
+              </Button>
+            </div>
+          </div>
+        </div>
+
+        {/* Gallery Section */}
+        <div className="mx-auto px-10 max-w-7xl py-20">
+          <div className="flex flex-col gap-y-2 items-end">
+            <HomeGallery />
+            <div className="flex items-center justify-center gap-x-4">
+              <Button className="px-10 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                Pricing
+              </Button>
+              <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                book a call
+              </Button>
+            </div>
           </div>
         </div>
       </div>
