@@ -10,7 +10,14 @@
    rgb(26, 73, 70) 80%,
      rgb(40, 95, 101) 100% 
   ); */
-  background: linear-gradient(45deg, #05161e, #0c2c3c, #143e4d, #201a38, #0a1a28);
+  background: linear-gradient(
+    45deg,
+    #05161e,
+    #0c2c3c,
+    #143e4d,
+    #201a38,
+    #0a1a28
+  );
   backdrop-filter: blur(10px);
 }
 
@@ -358,4 +365,45 @@ video::-webkit-media-controls-play-button {
   color: #00ffff;
   padding: 12px;
   display: flex;
+}
+
+/* home-page-portfolio */
+
+.home-page-portfolio {
+  background: linear-gradient(-120deg, #013b49, #0a8c93, #08d4e6e4);
+  border-radius: 0px 375px 0px 375px;
+}
+
+.video-container-portfolio {
+  position: relative;
+  border-radius: 20px;
+  width: 450px;
+  height: 275px;
+  overflow: hidden;
+}
+
+.video-container-portfolio video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* homepage-testimonal */
+
+.video-container-testimonal{
+  position: relative;
+  border-radius: 40px;
+  width: 550px;
+  height: 380px;
+  overflow: hidden;
+  border: 4px solid #15B8C7; 
+  padding: 30px 30px 80px 30px;
+}
+
+.video-container-testimonal video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }

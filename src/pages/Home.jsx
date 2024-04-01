@@ -28,6 +28,10 @@ import icon5 from "../assets/icon.png";
 import CustomServiceCard from "../components/CustomServiceCard/CustomServiceCard";
 import HomeGallery from "../components/HomeGallery/HomeGallery";
 import WorkStreamline from "../components/WorkStreamline/WorkStreamline";
+import customVideoPoster from "../assets/Screenshot 2024-01-29 at 12.00 1.png";
+import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVideo";
+import HomeTestimoal from "../components/HomeTestimonals/HomeTestimonals";
+import { FaStar, FaTrophy, FaPercent } from "react-icons/fa";
 
 const Home = () => {
   const services = [
@@ -117,7 +121,7 @@ const Home = () => {
             <span>Reels</span>
           </BackgroundText>
           <div className="homeVideo">
-            <CustomVideo />
+            <CustomVideo poster={customVideoPoster} />
           </div>
         </div>
 
@@ -230,8 +234,135 @@ const Home = () => {
             </span>
           </div>
           <div className="py-10 ">
-            <div className="flex  justify-center">
+            <div className="flex items-center flex-col gap-y-20 justify-center">
               <WorkStreamline />
+              <div class="bar"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* How it works  */}
+        <div className="flex flex-col gap-y-6 items-center justify-center py-20">
+          <div className="flex flex-col items-center justify-center">
+            <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
+              How it <span className="text-[#2EABAF]">works</span>
+            </Heading>
+            <p className="text-sm text-white w-2/3 text-center">
+              Enjoy peace of mind as we handle the entire video editing process
+              after you submit your footage.
+            </p>
+          </div>
+          <CustomVideo poster="https://s3-alpha-sig.figma.com/img/6d74/ce2f/b7e097622f2234b9ee49767fd81954c0?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c4dqpy1rcF1aAzzLC8uc75J~O9RhHI~Yo-rrFgF9i7VpkMyrwBEcgWEsA~Ta2kwLs0x~mXcndjDMnxfD3NFq7QpyPFKX-BlBPbtuDXmTAVFqeErT-bA2ydH0C4Hh8xcp2nCJ5EcO6GIFCe564b3Le3~kqOVgcSt6OoxVN6Eg1JLzVmpBtChmemnTgTfZYcA3n7UO49hIPZybzo4PSHuLxyZ7Bytf6I-GKxcRLzN9teKDlTq5NQ-GXnMEIIagb4Pu~iOdDCOzFXf1UeSsyYqlS3ZttTfj-2s5bNUKou~ZxyXLPcn9je33uxgk9gpxnvCI0ziMk6G0Gr4cWvWeeGTVHw__" />
+          <div className="flex items-center justify-center gap-x-4">
+            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+              Read more
+            </Button>
+            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+              choose plan
+            </Button>
+          </div>
+        </div>
+
+        {/* Portfolio */}
+        <div className="flex flex-col gap-y-7 items-center justify-center py-20 mt-20 home-page-portfolio">
+          <div className="flex flex-col items-center justify-center">
+            <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
+              Portfolio
+            </Heading>
+            <p className="text-sm text-white  text-center">
+              Uncover Our Rich Array of Work: Browse Categories Ranging from
+              eLearning to Hollywood-style Productions.
+            </p>
+          </div>
+          <div className="flex items-center justify-center gap-x-4">
+            <Button className="px-8 py-2.5 text-sm font-semibold text-black bg-white  hover:border-gray-800 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+              Category
+            </Button>
+            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+              Category
+            </Button>
+            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+              Category
+            </Button>
+          </div>
+          <div className="pt-6 pb-10">
+            <HomePortfolioVideo />
+          </div>
+          <Button className="uppercase text-white border border-white px-8 py-3 rounded-full">
+            Watch More
+          </Button>
+        </div>
+
+        {/* Testimonals */}
+        <div className="flex flex-col gap-y-7 items-center justify-center py-20 mt-20">
+          <div className="flex flex-col items-center justify-center">
+            <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
+              Testimonals
+            </Heading>
+            <p className="text-sm text-white  text-center">
+              A Collection of Client Testimonials That Speak Volumes.
+            </p>
+          </div>
+          <div className="pt-8 pb-10">
+            <HomeTestimoal />
+          </div>
+          <Button className="uppercase text-white border border-[#2EABAF] px-8 py-3 rounded-full">
+            Watch More
+          </Button>
+        </div>
+
+        {/* Awards */}
+        <div className="flex items-center justify-center ">
+          <div className="flex gap-x-8 border border-[#15B8C7] px-20 pt-10 pb-6 rounded-[35px]">
+            <div className="flex flex-col  gap-y-6 ">
+              <Heading className="uppercase text-4xl font-bold italic text-[#15B8C7]">
+                Upword Activity
+              </Heading>
+
+              <div className="flex gap-x-20">
+                <div className="flex flex-col text-white">
+                  <span className="text-gray-300">Hourly Rate</span>
+                  <span className="font-bold">$25.00 - $50.00</span>
+                </div>
+                <div className="flex flex-col text-white">
+                  <span className="text-gray-300">Minimum project size</span>
+                  <span className="font-bold">$1K+</span>
+                </div>
+                <div className="flex flex-col text-white">
+                  <span className="text-gray-300">Total earned</span>
+                  <span className="font-bold">$100K+</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="h-32 w-0.5 bg-gray-500"></div>
+            <div className="flex flex-col gap-y-4">
+              <Heading className="uppercase text-2xl font-bold italic text-[#15B8C7] leading-tight">
+                Awards
+              </Heading>
+              <div className="flex flex-col gap-y-3 -mt-2">
+                <div className="flex flex-col text-white text-sm">
+                  <span className="flex items-center gap-x-1.5">
+                    <FaStar />
+                    Cannes Lions
+                  </span>
+                  <span className="flex items-center gap-x-1.5">
+                    <FaStar />
+                    Red Apple
+                  </span>
+                </div>
+                <div className="flex flex-col text-[#15B8C7]">
+                  <span className="flex items-center gap-x-1.5">
+                    {" "}
+                    <FaTrophy />
+                    100% success rate
+                  </span>
+                  <span className="flex items-center gap-x-1.5">
+                    <FaPercent />
+                    Top Rated
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
