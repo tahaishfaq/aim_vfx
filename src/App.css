@@ -447,5 +447,180 @@ video::-webkit-media-controls-play-button {
   margin-left: 20px;
 }
 .solution-cards {
-  padding: 10px 90px;
+  padding: 0 250px;
+  margin: auto;
+}
+
+.calendar-section {
+  padding: 80px 180px;
+}
+.calendar-container {
+  border-radius: 30px;
+  background-color: #15b8c7;
+  padding: 20px;
+  display: flex;
+}
+
+.calendar-content {
+  padding: 40px;
+  width: 65%;
+}
+.bookCallText {
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-size: 70px;
+  line-height: 99px;
+  z-index: 10000;
+  text-transform: uppercase;
+}
+.nextStepText {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 33px;
+  line-height: 48px;
+  font-weight: 400;
+}
+.mainText {
+  color: white;
+  margin-top: 18px;
+  font-family: "Rubik", sans-serif;
+}
+
+.calendar {
+  padding: 0 0 0 40px;
+}
+
+.rates-section {
+  padding: 80px 200px;
+  background: linear-gradient(196.98deg, #013b49 9.3%, #1bc2cb 84.62%);
+  /* backdrop-filter: blur(10px); */
+  border-radius: 0px 375px 0px 275px;
+}
+.rates-top {
+  text-align: center;
+  /* display: flex; */
+}
+.rate-heading {
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-size: 90px;
+  line-height: 99px;
+  z-index: 10000;
+  text-transform: uppercase;
+}
+.rates-video {
+  padding: 30px 0 20px 0;
+}
+.ser-rates-video {
+  position: relative;
+  border-radius: 40px;
+  margin: auto;
+  width: 500px;
+  height: 320px;
+  overflow: hidden;
+  border: 15px solid #05133786;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.rates-count {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+.rate-count-content {
+  padding: 10px;
+  text-align: center;
+  width: 170px;
+}
+.count-head {
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 200;
+  z-index: 10000;
+  text-transform: uppercase;
+}
+.count-nmbr {
+  color: #00ffff;
+  font-family: "Teko", sans-serif;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 100;
+  z-index: 10000;
+  text-transform: uppercase;
+}
+.count-text {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.countDesc {
+  color: #0b1a28;
+  font-style: italic;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Rubik", sans-serif;
+}
+.third-count-content {
+  padding: 20px 100px;
+}
+
+.service-benefits-section {
+  padding: 0 100px;
+}
+.benefits-container {
+  color: white;
+}
+.benefits-desc-list {
+  font-family: "Teko", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.benefit-head {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.descText {
+  display: flex;
+}
+.descText h5 {
+  font-weight: 400;
+  font-size: 18px;
+}
+.descText p {
+  font-weight: 300;
+}
+
+.save-time-section {
+  padding: 80px 200px;
+  border-radius: 0 375px 0px 275px;
+  background: linear-gradient(
+    45deg,
+    #05161e,
+    #0c2c3c,
+    #143e4d,
+    #201a38,
+    #0a1a28
+  );
+}
+
+.save-time-head {
+  color: white;
+  font-family: "Teko", sans-serif;
+  font-size: 105px;
+  line-height: 99px;
+  z-index: 10000;
+  width: 70%;
+  text-transform: uppercase;
+}
+.time-save {
+  color: white;
+}
+.time {
+  border: 1px solid #15b8c7;
+  border-radius: 20px;
+  padding: 2px 17px;
 }

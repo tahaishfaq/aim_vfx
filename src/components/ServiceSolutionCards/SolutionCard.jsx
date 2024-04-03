@@ -49,7 +49,7 @@ const SolutionCard = () => {
   ];
   return (
     <>
-      <div className="flex flex-wrap justify-center items-center gap-x-5 ">
+      <div className="flex flex-wrap items-center gap-x-5 ">
         {solutions?.map((service) => (
           <CustomSolutionCard
             key={service.id}
