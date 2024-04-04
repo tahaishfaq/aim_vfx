@@ -32,6 +32,10 @@ import customVideoPoster from "../assets/Screenshot 2024-01-29 at 12.00 1.png";
 import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVideo";
 import HomeTestimoal from "../components/HomeTestimonals/HomeTestimonals";
 import { FaStar, FaTrophy, FaPercent } from "react-icons/fa";
+import WorkHistory from "../components/WorkHistory/WorkHistory";
+import FAQ from "../components/FAQ/FAQ";
+import FaqSection from "../components/FAQ/FAQ";
+import FooterForm from "../components/Footer/Footer";
 
 const Home = () => {
   const services = [
@@ -366,6 +370,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <WorkHistory/>
+        <FaqSection/>
+        <FooterForm/>
       </div>
     </>
   );

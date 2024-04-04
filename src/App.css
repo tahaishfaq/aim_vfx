@@ -667,3 +667,11 @@ video::-webkit-media-controls-play-button {
   border-radius: 20px;
   padding: 2px 17px;
 }
+
+
+/* Faq */
+
+.faq{
+  background: linear-gradient(-120deg, #013b49, #0a8c93, #08d4e6e4);
+  border-radius: 0px 375px 0px 375px;
+}
