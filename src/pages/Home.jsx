@@ -370,9 +370,9 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <WorkHistory/>
-        <FaqSection/>
-        <FooterForm/>
+        <WorkHistory />
+        <FaqSection />
+        <FooterForm />
       </div>
     </>
   );
