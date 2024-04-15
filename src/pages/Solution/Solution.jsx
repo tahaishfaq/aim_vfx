@@ -1,29 +1,36 @@
 import React from "react";
-import { Navbar } from "../components/Navbar/Navbar";
-import shape7 from "../assets/127_arrow_icon_logo_with_3d_modern_style copy 1.png";
-import Button from "../components/Button/Button";
-import solution from "../assets/Solution.png";
-import calendar from "../assets/Calendar.png";
-import ServivePageVideo from "../components/CustomVideo/ServicePageVideo";
-import SolutionCard from "../components/ServiceSolutionCards/SolutionCard";
-import ServiceLogoBar from "../components/LogoBars/ServiceLogoBar";
-import SerRatesVideo from "../components/CustomVideo/SerRatesVideo";
-import ServicesBenefits from "../components/ServiceSolutionCards/ServiceBenefits";
-import ServiceRateSection from "../components/RateSection/ServiceRateSection";
-import Heading from "../components/Heading/Heading";
+import { Navbar } from "../../components/Navbar/Navbar";
+import shape7 from "../../assets/video bubbles (1).png";
+import shape1 from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 1.png";
+import Button from "../../components/Button/Button";
+import solution from "../../assets/Solution.png";
+import calendar from "../../assets/Calendar.png";
+// import ServivePageVideo from "../components/CustomVideo/ServicePageVideo";
+// import SolutionCard from "../components/ServiceSolutionCards/SolutionCard";
+// import ServiceLogoBar from "../components/LogoBars/ServiceLogoBar";
+// import SerRatesVideo from "../components/CustomVideo/SerRatesVideo";
+// import ServicesBenefits from "../components/ServiceSolutionCards/ServiceBenefits";
+// import ServiceRateSection from "../components/RateSection/ServiceRateSection";
+// import Heading from "../components/Heading/Heading";
 import { Divider } from "@mui/material";
-import ServiceRateDesc from "../components/RateSection/ServiceRateDesc";
-import ServiceRatesCount from "../components/RateSection/RatesCount";
-import HowItWorks from "../components/ServiceComponents/HowItWorks";
-import ServicePortfolioVideo from "../components/ServiceComponents/ServicePortfolio";
-import HomeTestimoal from "../components/HomeTestimonals/HomeTestimonals";
-import { FaPercent, FaStar, FaTrophy } from "react-icons/fa";
-import WorkHistory from "../components/WorkHistory/WorkHistory";
-import FaqSection from "../components/FAQ/FAQ";
-import FooterForm from "../components/Footer/Footer";
-import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVideo";
+import ServivePageVideo from "../../components/CustomVideo/ServicePageVideo";
+import ServiceLogoBar from "../../components/LogoBars/ServiceLogoBar";
+// import ServiceRateDesc from "../components/RateSection/ServiceRateDesc";
+// import ServiceRatesCount from "../components/RateSection/RatesCount";
+// import HowItWorks from "../components/ServiceComponents/HowItWorks";
+// import ServicePortfolioVideo from "../components/ServiceComponents/ServicePortfolio";
+// import HomeTestimoal from "../components/HomeTestimonals/HomeTestimonals";
+// import { FaPercent, FaStar, FaTrophy } from "react-icons/fa";
+// import WorkHistory from "../components/WorkHistory/WorkHistory";
+// import FaqSection from "../components/FAQ/FAQ";
+// import FooterForm from "../components/Footer/Footer";
+// import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVideo";
+import "./Solution.css";
+import Heading from "../../components/Heading/Heading";
+import ServicesCards from "../../components/ServiceCards/ServiceCards";
+import ServiceIcon from "../../components/ServiceWithIcon/ServiceIcon";
 
-const Services = () => {
+const Solution = () => {
   const descriptions = [
     [
       "Releasing that overwhelming pressure to get through your editing backlog",
@@ -37,43 +44,22 @@ const Services = () => {
   ];
 
   return (
-    <div className="service-page">
-      <div className="service-top-section">
+    <div className="solution-page">
+      <div className="relative h-[120vh]">
         <Navbar />
-        <div className="service-hero-section">
-          <img src={solution} alt="Image 7" class="solutionText" />
-
-          <div className="service-hero-left-part">
-            <span className="service-hero-heading">
-              the video editing service for content creators
+        <div className="flex items-center p-40">
+          <div className="flex flex-col gap-y-3">
+            <span className="solution-hero-heading">
+              design services for ambitious brands
             </span>
-            <div className="services-list">
-              <span>
-                <img src={shape7} alt="img" className="w-7" />
-                For Startups
-              </span>
-              <span>
-                <img src={shape7} alt="img" className="w-7" />
-                For Productions
-              </span>
-              <span>
-                <img src={shape7} alt="img" className="w-7" />
-                For Agencies
-              </span>
-              <span>
-                <img src={shape7} alt="img" className="w-7" />
-                For Enterprise
-              </span>
-              <span>
-                <img src={shape7} alt="img" className="w-7" />
-                For Creators
-              </span>
-              <span>
-                <img src={shape7} alt="img" className="w-7" />
-                For Enterpreneurs
-              </span>
+            <div className="w-96">
+              <p className="text-white">
+                Teams at fast-growing companies use AIMFX to get quality graphic
+                design done at scale. Book a call today and get acess to your
+                dedicated design team.
+              </p>
             </div>
-            <div className="service-hero-buttons flex gap-y-5">
+            <div className="flex gap-y-5 mt-10">
               <Button className="px-8 py-2.5 mr-3 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 Choose a plan
               </Button>
@@ -83,40 +69,95 @@ const Services = () => {
             </div>
           </div>
           {/* ------------ Right Side Hero Section --------------- */}
-          <div className="service-video-section">
-            <img src={shape7} alt="img" className="side-image" />
-            <div className="service-video-img">
+          <div className="relative">
+            <img src={shape7} alt="img" className="" />
+            <div className="absolute top-10">
               <ServivePageVideo />
             </div>
           </div>
         </div>
-        <div className="logoBars-service flex flex-col items-center">
-          <ServiceLogoBar />
+        <div className="flex flex-col gap-y-10 items-center">
+          <div>
+            <p className="text-white text-md">
+              80.082 design projects delivered to 450+ happy clients.
+            </p>
+          </div>
+          <div>
+            <ServiceLogoBar />
+          </div>
         </div>
       </div>
       {/* ============================================ */}
       {/* ------------- Solution Section ------------- */}
       {/* ============================================ */}
 
-      <div className="solution-section">
-        <div className="solution-content">
-          <h3 className="solution-heading">Solutions</h3>
-          <p className="sol-desc">
-            For Startup, For Enterprise, For Agencies/Production, For Creators,
-            For Enterprenuers
-          </p>
+      <div className="flex items-center flex-col justify-center">
+        <div className="">
+          <Heading className="text-[70px] uppercase font-tek text-white">
+            Services
+          </Heading>
         </div>
+        <ServicesCards />
       </div>
+
+      <section className="text-white py-20">
+        <div className="container mx-auto max-w-5xl">
+          <div className="flex items-center ">
+            <div className="relative overflow-hidden">
+              <img src={shape1} alt="Image" className="w-full h-full z-20" />
+              <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="image" className="rounded-lg w-24 absolute top-10 left-[45%] -z-10"/>
+              <img src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-photomix-company-212372.jpg&fm=jpg" alt="image" className="rounded-lg w-32 absolute top-[42%] left-[69%]"/>
+              <img src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-photomix-company-212372.jpg&fm=jpg" alt="image" className="rounded-lg w-20 absolute top-[78%] left-[52%] blur-sm -z-10"/>
+              <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="image" className="rounded-lg w-36 absolute top-[70%] left-[10%]"/>
+              <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="image" className="rounded-lg w-24 absolute top-[20%] left-[12%]  -z-10 blur-sm"/>
+            </div>
+            <div className=" max-w-md">
+              <div className="">
+                <h2 className="text-4xl text-[#00FFFF] w-2/3 uppercase font-tek mb-2">
+                  get graphic design, print, motion, video and more
+                </h2>
+                <p className="text-sm text-[#B6B6B6] ">
+                  Lorem ipsum dolor sit amet consectetur. Sodales euismod vel
+                  pharetra non imperdiet. Feugiat imperdiet faucibus est elit
+                  tortor. Eleifend enim scelerisque proin purus et. Ornare
+                  ultricies in lacinia integer ultricies in in magnis
+                  pellentesque. Sem netus eget purus condimentum neque nunc.
+                  Malesuada ullamcorper donec felis nam curabitur pulvinar
+                  luctus ipsum urna. Amet tincidunt eget ac aliquam nibh id.
+                  Urna laoreet consectetur convallis ultrices pellentesque purus
+                  et vulputate. Nisi purus nam viverra id morbi ultrices
+                  molestie. 
+                  <br/>
+                  <br/>
+                  Nisl lectus massa neque mattis. Integer at leo
+                  elementum.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-16 mx-auto max-w-3xl">
+            <div className="flex items-center gap-x-10 justify-center ">
+              <h2 className="text-3xl font-tek uppercase w-full">What makes our design services different?</h2>
+              <p className="text-xs text-[#B6B6B6]">
+              Lorem ipsum dolor sit amet consectetur. Vitae risus sed nulla mattis eget sed. Morbi sem lorem mauris nulla nullam egestas ultricies id a. Nullam pretium viverra sem adipiscing maecenas facilisi. Tempus mattis est ante lacus condimentum. A volutpat nibh ipsum sed nunc vestibulum eu nunc. Viverra et magna ac venenatis suspendisse. At ipsum commodo interdum euismod laoreet in ipsum. Sed sit nunc facilisis ut velit sed. Luctus et nunc tellus.
+              </p>
+            </div>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center md:justify-start">
+            <div className="">
+              <ServiceIcon/>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* --------------- Solution Section ----------- */}
 
-      <div className="solution-cards">
-        <SolutionCard />
-      </div>
+      <div className="solution-cards">{/* <SolutionCard /> */}</div>
 
       {/* --------------- Calendar Section ----------- */}
 
-      <div className="calendar-section">
+      {/* <div className="calendar-section">
         <div className="calendar-container">
           <div className="calendar-content">
             <h2 className="bookCallText">book a call now</h2>
@@ -136,11 +177,11 @@ const Services = () => {
             <img src={calendar} alt="Calendar" class="h-200" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* --------------- Rates Section ----------- */}
 
-      <div className="rates-section">
+      {/* <div className="rates-section">
         <div className="rates-container">
           <div className="rates-top">
             <h1 className="rate-heading">
@@ -163,16 +204,16 @@ const Services = () => {
         <div className="service-benefits-section">
           <ServicesBenefits />
         </div>
-      </div>
+      </div> */}
 
       {/* --------------- Time Section -------------- */}
 
       <div className="save-time-section">
-        <ServiceRateSection />
+        {/* <ServiceRateSection /> */}
         <div className="dividerStyle">
           <Divider sx={{ backgroundColor: "#d9d9d9" }} />
         </div>
-        <div className="rate-bottom-content">
+        {/* <div className="rate-bottom-content">
           <Heading className="rate-bottom-content-heading uppercase text-white font-tek">
             imagine not doing any of the above while still producing on-brand
             videos you can be proud of...
@@ -185,24 +226,24 @@ const Services = () => {
             aliquet tristique. Donec nunc id eget et sit. Purus nam elementum
             nunc ipsum augue luctus amet risus massa.
           </p>
-        </div>
+        </div> */}
         {/* ---------- Service Rate Description ------------ */}
-        <ServiceRateDesc descriptions={descriptions} />
+        {/* <ServiceRateDesc descriptions={descriptions} /> */}
 
-        <div className="rate-button flex gap-y-5">
+        {/* <div className="rate-button flex gap-y-5">
           <Button className="px-8 py-2.5 mr-3 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
             book a call
           </Button>
           <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
             Choose a plan
           </Button>
-        </div>
+        </div> */}
 
         <div className="dividerStyle">
           <Divider sx={{ backgroundColor: "#d9d9d9" }} />
         </div>
         {/* -------------- How it Works Section ---------- */}
-        <div className="how-it-work-ser">
+        {/* <div className="how-it-work-ser">
           <Heading className="how-it-work-heading uppercase text-white text-center font-tek">
             how it works
           </Heading>
@@ -214,10 +255,10 @@ const Services = () => {
               </Button>
             </div>
           </div>
-        </div>
+        </div> */}
         {/*   ---------- portFolio Section ----------- */}
 
-        <div className="flex flex-col gap-y-7 items-center justify-center py-20 ">
+        {/* <div className="flex flex-col gap-y-7 items-center justify-center py-20 ">
           <div className="flex flex-col items-center justify-center">
             <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
               Portfolio
@@ -244,10 +285,10 @@ const Services = () => {
           <Button className="uppercase text-white border border-white px-8 py-3 rounded-full">
             Watch More
           </Button>
-        </div>
+        </div> */}
 
         {/* ---------- Testimonals Section -----------*/}
-        <div className="flex flex-col gap-y-7 items-center justify-center py-20 mt-20">
+        {/* <div className="flex flex-col gap-y-7 items-center justify-center py-20 mt-20">
           <div className="flex flex-col items-center justify-center">
             <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
               Testimonals
@@ -262,10 +303,10 @@ const Services = () => {
           <Button className="uppercase text-white border border-[#2EABAF] px-8 py-3 rounded-full">
             Watch More
           </Button>
-        </div>
+        </div> */}
 
         {/* ----------- Awards Section ---------- */}
-        <div className="flex items-center justify-center ">
+        {/* <div className="flex items-center justify-center ">
           <div className="flex gap-x-8 border border-[#15B8C7] px-20 pt-10 pb-6 rounded-[35px]">
             <div className="flex flex-col  gap-y-6 ">
               <Heading className="uppercase text-4xl font-bold italic text-[#15B8C7]">
@@ -318,14 +359,16 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <WorkHistory />
+        {/* <WorkHistory /> */}
       </div>
-      <FaqSection />
-      <FooterForm />
+      {/* <FaqSection /> */}
+      {/* <FooterForm /> */}
     </div>
   );
 };
 
-export default Services;
+
+
+export default Solution;

@@ -367,17 +367,22 @@ video::-webkit-media-controls-play-button {
   backdrop-filter: blur(10px);
 }
 .service-top-section {
-  height: 150vh;
+  height: 120vh;
   position: relative;
 }
 
 .service-hero-section {
-  padding: 160px 80px;
+  padding: 40px 0px;
   display: flex;
 }
+
+.service-hero-left-part{
+  padding: 160px 100px;
+}
+
 .service-hero-img {
   position: relative;
-  height: 120vh;
+  /* height: 120vh; */
 }
 .side-image {
   overflow: hidden;
@@ -389,7 +394,7 @@ video::-webkit-media-controls-play-button {
   font-size: 70px;
   line-height: 99px;
   z-index: 10000;
-  width: 90%;
+  width: 100%;
   text-transform: uppercase;
 }
 .services-list {
@@ -416,13 +421,14 @@ video::-webkit-media-controls-play-button {
 
 .service-video-section {
   position: relative;
-  height: 120vh;
+  /* height: 120vh; */
+  padding: 50px 20px;
 }
 
 .service-video-img {
   position: absolute;
-  top: 140px;
-  left: 60px;
+  top: 30%;
+  left: 20%;
 }
 
 .play-icon {
@@ -460,7 +466,7 @@ video::-webkit-media-controls-play-button {
 }
 
 .service-hero-buttons {
-  padding: 84px 0;
+  padding: 60px 0 0 0;
 }
 
 .solution-section {

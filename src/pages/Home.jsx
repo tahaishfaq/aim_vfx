@@ -36,7 +36,7 @@ import WorkHistory from "../components/WorkHistory/WorkHistory";
 import FAQ from "../components/FAQ/FAQ";
 import FaqSection from "../components/FAQ/FAQ";
 import FooterForm from "../components/Footer/Footer";
-
+import howitworks from "../assets/Rectangle 130 (1).png"
 const Home = () => {
   const services = [
     {
@@ -256,7 +256,7 @@ const Home = () => {
               after you submit your footage.
             </p>
           </div>
-          <CustomVideo poster="https://s3-alpha-sig.figma.com/img/6d74/ce2f/b7e097622f2234b9ee49767fd81954c0?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=c4dqpy1rcF1aAzzLC8uc75J~O9RhHI~Yo-rrFgF9i7VpkMyrwBEcgWEsA~Ta2kwLs0x~mXcndjDMnxfD3NFq7QpyPFKX-BlBPbtuDXmTAVFqeErT-bA2ydH0C4Hh8xcp2nCJ5EcO6GIFCe564b3Le3~kqOVgcSt6OoxVN6Eg1JLzVmpBtChmemnTgTfZYcA3n7UO49hIPZybzo4PSHuLxyZ7Bytf6I-GKxcRLzN9teKDlTq5NQ-GXnMEIIagb4Pu~iOdDCOzFXf1UeSsyYqlS3ZttTfj-2s5bNUKou~ZxyXLPcn9je33uxgk9gpxnvCI0ziMk6G0Gr4cWvWeeGTVHw__" />
+          <CustomVideo poster={howitworks} />
           <div className="flex items-center justify-center gap-x-4">
             <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Read more

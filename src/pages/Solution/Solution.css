@@ -1,0 +1,23 @@
+.solution-page{
+    background: linear-gradient(
+        45deg,
+        #05161e,
+        #0c2c3c,
+        #143e4d,
+        #201a38,
+        #0a1a28
+      );
+      backdrop-filter: blur(10px);
+}
+
+.solution-hero-heading{
+    color: #ffffff;
+    font-family: "Teko", sans-serif;
+    font-size: 80px;
+    line-height: 99px;
+    z-index: 10000;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+  
