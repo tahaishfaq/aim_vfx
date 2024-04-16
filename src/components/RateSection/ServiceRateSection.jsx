@@ -18,8 +18,8 @@ const ServiceRateSection = () => {
           <h1>how much time you save with aim fx?</h1>
         </div>
         <div className="mt-10">
-          <div className="flex justify-between items-center ">
-            <div className="">
+          <div className="flex justify-between items-center w-full">
+            <div className="w-1/2">
             <p className="time-content text-[#00FFFF]">
               You save hundreds of collective hours by not doing your own video
               editing:
@@ -92,8 +92,8 @@ const ServiceRateSection = () => {
             </div>
           </div>
           {/* ----------------- */}
-          <div className="flex justify-between mt-10 items-center ">
-            <div className="">
+          <div className="flex justify-between mt-10 items-center w-full">
+            <div className="w-1/2">
             <p className="time-content text-[#00FFFF]">
               You save countless hours by not doing it the old-fashioned way
               with freelancers or full-time editors:
