@@ -42,7 +42,7 @@ const Solution = () => {
   return (
     <div className="solution-page">
       <div className="relative h-[120vh]">
-        <Navbar />
+       
         <div className="flex items-center p-40">
           <div className="flex flex-col gap-y-3">
             <span className="solution-hero-heading">

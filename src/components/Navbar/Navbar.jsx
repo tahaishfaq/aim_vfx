@@ -72,12 +72,21 @@ export const Navbar = () => {
                   <span className="pt-0.5">
                     <IoIosArrowDown />
                   </span>
-                </Link>
+                </Link> 
                 <Link
-                  to="/portfolio"
+                  to="/team-page"
                   className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
-                  Portfolio
+                  Team{" "}
+                  <span className="pt-0.5">
+                    <IoIosArrowDown />
+                  </span>
+                </Link>
+                <Link
+                  to="/about-us-page"
+                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
+                 About Us
                 </Link>
                 <Link
                   to="/reviews"
