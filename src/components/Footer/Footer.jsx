@@ -187,7 +187,7 @@ function FooterForm() {
           </div>
         </div>
 
-        {/* Copyright Section */}
+        
         <div className="text-center mt-10 border-t border-gray-700 pt-4">
           2023 © AiM FX - ALL RIGHTS RESERVED
         </div>

@@ -3,8 +3,9 @@ import logo from "../../assets/LOGO ORIGINAL GREEN.png";
 import logoImg from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 7.png";
 import Button from "../Button/Button";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <>
       <nav className="pt-5 absolute overflow-hidden z-[1000] top-0 w-full">
@@ -110,7 +111,7 @@ export const Navbar = () => {
               <Button className="px-4 py-2.5 text-sm font-semibold text-white bg-transparent hover:bg-gray-700 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 Book A Call
               </Button>
-              <Button className="px-8 py-2.5 text-sm font-semibold text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+              <Button onClick={()=> navigate("/signin")} className="px-8 py-2.5 text-sm font-semibold text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 Sign In
               </Button>
             </div>
