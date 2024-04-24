@@ -1,17 +1,17 @@
 import React from "react";
 import "./Signin.css";
-import Heading from "../Heading/Heading";
-import Button from "../Button/Button";
-import googleicon from "../../assets/icons/flat-color-icons_google.png"
-import back1 from "../../assets/holographic_fluid_drop_shapes_illustration_02 copy 3 (1).png"
-import svg1 from "../../assets/icons/Group 469320 (1).png"
-import svg2 from "../../assets/icons/flowbite_microphone-solid.png"
-import svg3 from "../../assets/icons/foundation_graph-pie.png"
-import svg4 from "../../assets/icons/mdi_stars.png"
-import svg5 from "../../assets/icons/ph_video-fill.png"
+import Heading from "../../Heading/Heading";
+import Button from "../../Button/Button";
+import googleicon from "../../../assets/icons/flat-color-icons_google.png"
+import back1 from "../../../assets/holographic_fluid_drop_shapes_illustration_02 copy 3 (1).png"
+import svg1 from "../../../assets/icons/Group 469320 (1).png"
+import svg2 from "../../../assets/icons/flowbite_microphone-solid.png"
+import svg3 from "../../../assets/icons/foundation_graph-pie.png"
+import svg4 from "../../../assets/icons/mdi_stars.png"
+import svg5 from "../../../assets/icons/ph_video-fill.png"
 const Signin = () => {
   return (
-    <div className="signin-page h-screen">
+    <div className="signin-page ">
       <div className="flex items-center justify-center relative pt-32 overflow-hidden">
         <img src={back1} alt="bg-image" className="absolute -z-10 bg-image-form" />
         <div className="absolute top-[25%] right-[30.5%] form-svg ">

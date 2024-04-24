@@ -47,25 +47,25 @@ const WorkStreamline = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center gap-y-8">
-      <div className="flex items-center justify-center gap-x-40">
+    <div className="flex flex-col items-center justify-center gap-y-8 px-4 md:px-0">
+      <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-center md:gap-x-40">
         {workStream.slice(0, 2).map((stream) => (
-          <div key={stream.id} className="flex flex-col items-start gap-y-2.5">
+          <div key={stream.id} className="flex flex-col items-center gap-y-2.5 text-center md:items-start md:text-left">
             <img src={stream.url} alt={stream.title} className="w-14 h-12"/>
             <Heading className="text-[#56BEC2] font-tek text-[30px] w-48 leading-tight">{stream.title}</Heading>
-            <p className="text-white text-sm w-80 text-justify">{stream.description}</p>
+            <p className="text-white text-sm max-w-sm">{stream.description}</p>
           </div>
         ))}
       </div>
       <div className="w-full">
-      <CapsuleLine />
+        <CapsuleLine />
       </div>
-      <div className="flex items-center justify-center gap-x-40">
+      <div className="flex flex-col items-center gap-y-8 md:flex-row md:justify-center md:gap-x-40">
         {workStream.slice(2).map((stream) => (
-          <div key={stream.id} className="flex flex-col items-start gap-y-2.5 ">
+          <div key={stream.id} className="flex flex-col items-center gap-y-2.5 text-center md:items-start md:text-left">
             <img src={stream.url} alt={stream.title} className="w-14 h-12"/>
             <Heading className="text-[#56BEC2] font-tek text-[30px] w-48 leading-tight">{stream.title}</Heading>
-            <p className="text-white text-sm w-80 text-justify">{stream.description}</p>
+            <p className="text-white text-sm max-w-sm">{stream.description}</p>
           </div>
         ))}
       </div>

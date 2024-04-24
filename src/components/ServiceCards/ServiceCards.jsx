@@ -92,7 +92,7 @@ const ServicesCards = () => {
           </div>
         ))}
       </div>
-      <div class="bar"></div>
+      
     </div>
   );
 };

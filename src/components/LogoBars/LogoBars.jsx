@@ -4,8 +4,8 @@ import logoBar2 from '../../assets/LOGOS BAR - manylogo.png'
 const LogoBars = () => {
   return (
     <>
-    <img src={logoBar1} alt="Image 5" class="" />
-    <img src={logoBar2} alt="Image 6" class="" />
+    <img src={logoBar1} alt="Image 5" class="w-full h-full" />
+    <img src={logoBar2} alt="Image 6" class="w-full h-full" />
     </>
   )
 }

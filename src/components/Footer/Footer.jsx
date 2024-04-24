@@ -41,18 +41,18 @@ function FooterForm() {
   return (
     <>
       <footer className=" text-white pt-40 pb-10">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center gap-x-24 px-32">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center gap-x-24 lg:px-32 px-8">
           <div className="mb-6 flex flex-col items-center gap-y-1.5">
             <h2 className="text-[65px] font-tek font-normal leading-tight">
               STILL HAVE QUESTIONS?
             </h2>
-            <p className="w-96 text-md mb-2">
+            <p className="lg:w-96 w-full text-md mb-2">
               Have some big idea or brand to develop and need help? Then reach
               out we'd love to hear about your project and provide help. Have
               some big idea or brand to develop and need help? Then reach out
               we'd love to hear about your project and provide help.
             </p>
-            <p className="w-96 text-md">
+            <p className="lg:w-96 w-full text-md">
               Have some big idea or brand to develop and need help? Then reach
               out we'd love to hear about your project and provide helpHave some
               big idea or brand to develop and need help? Then reach out we'd
@@ -116,9 +116,9 @@ function FooterForm() {
           </form>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between items-center pt-20 px-40">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center pt-20 lg:px-40 gap-y-2">
           {/* Logo and Rating Section */}
-          <div className="flex flex-col items-start justify-center gap-y-2 border-r border-[#2EABAF] px-10">
+          <div className="flex flex-col lg:items-start items-center lg:justify-center gap-y-2 lg:border-r lg:border-[#2EABAF] px-10">
             <div className="flex items-center">
               <img className="block  h-16 w-auto" src={logoImg} alt="Logo" />
               <img className="block h-7 w-auto -ml-2.5" src={logo} alt="Logo" />
@@ -133,7 +133,7 @@ function FooterForm() {
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap gap-10 justify-center border-r border-[#2EABAF] px-10 py-5">
+          <div className="flex flex-wrap gap-10 justify-center lg:border-r  lg:text-start text-center border-[#2EABAF] px-10 py-5">
             {/* Column 1 */}
             <div className="flex gap-y-2 flex-col ">
               <Link to="/" className="mb-2 hover:text-gray-300">
@@ -151,7 +151,7 @@ function FooterForm() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-10 justify-center border-r border-[#2EABAF] px-10 py-5">
+          <div className="flex flex-wrap gap-10 justify-center lg:border-r lg:text-start text-center lg:border-[#2EABAF] px-10 py-5">
             {/* Column 1 */}
             <div className="flex gap-y-2 flex-col">
               <Link to="/" className="mb-2 hover:text-gray-300">

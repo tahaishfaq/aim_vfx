@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../assets/LOGO ORIGINAL GREEN.png";
 import logoImg from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 7.png";
 import Button from "../Button/Button";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown, IoMdMenu, IoMdClose } from "react-icons/io";
 import { Link, useNavigate } from "react-router-dom";
 export const Navbar = () => {
   const navigate = useNavigate()
@@ -10,8 +10,8 @@ export const Navbar = () => {
     <>
       <nav className="pt-5 absolute overflow-hidden z-[1000] top-0 w-full">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-          <div className="flex justify-center ">
-            <div className="flex">
+          <div className="flex  items-center sm:justify-between lg:justify-center justify-between">
+            <div className="flex ">
               {/* Logo */}
               <div className="flex items-center">
                 <div className="flex items-center">
@@ -111,9 +111,13 @@ export const Navbar = () => {
               <Button className="px-4 py-2.5 text-sm font-semibold text-white bg-transparent hover:bg-gray-700 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 Book A Call
               </Button>
-              <Button onClick={()=> navigate("/signin")} className="px-8 py-2.5 text-sm font-semibold text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                Sign In
+              <Button onClick={()=> navigate("/signin")} className="px-8 py-2.5 -sm font-semibold text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                Sign IN
               </Button>
+            </div>
+
+            <div className="flex items-center text-white sm:hidden">
+              <IoMdMenu className="w-5 h-5"/>
             </div>
           </div>
         </div>

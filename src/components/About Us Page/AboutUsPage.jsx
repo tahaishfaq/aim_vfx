@@ -7,6 +7,8 @@ import shape7 from "../../assets/video bubbles (1).png";
 import OurStory from './OurStory';
 import Heading from '../Heading/Heading';
 import LetsTalk from '../Team Page/LetsTalk';
+import GetToKnowUs from '../GetToKnowUs/GetToKnowUs';
+import Location from '../Location/Location';
 const features = [
     {
       name: 'Dmitriy Gladenko ',
@@ -136,6 +138,8 @@ Specialising in bespoke, eye-catching video content that delivers more clicks, m
             ))}
           </div>
         </div>
+        <GetToKnowUs/>
+        <Location/>
         <OurStory/>
         <div className=" pb-16 pt-24 px-44 sm:pb-24 sm:pt-32 xl:pb-32">
       <div className="bg-[#2EABAF] rounded-xl pb-20 sm:pb-0 pt-0">

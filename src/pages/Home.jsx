@@ -16,7 +16,7 @@ import LogoBars from "../components/LogoBars/LogoBars";
 import BackgroundText from "../components/BackgroundText/BackgroundText";
 import CustomVideo from "../components/CustomVideo/CustomVideo";
 import Heading from "../components/Heading/Heading";
-import spectularFrame from "../assets/ORH85K1 copy 1.png";
+import spectularFrame from "../assets/ORH85K1 copy 1 (1).png";
 import spectuarBackgroud from "../assets/11 copy 3.png";
 import robot from "../assets/Vector.png";
 import ServicesCards from "../components/ServiceCards/ServiceCards";
@@ -36,7 +36,7 @@ import WorkHistory from "../components/WorkHistory/WorkHistory";
 import FAQ from "../components/FAQ/FAQ";
 import FaqSection from "../components/FAQ/FAQ";
 import FooterForm from "../components/Footer/Footer";
-import howitworks from "../assets/Rectangle 130 (1).png"
+import howitworks from "../assets/Rectangle 130 (1).png";
 const Home = () => {
   const services = [
     {
@@ -84,16 +84,24 @@ const Home = () => {
     <>
       <div className="home-page">
         <div className="hero-section">
-          <Navbar />
-          <img src={shape1} alt="Image 1" class="image1" />
-          <img src={shape2} alt="Image 2" class="image2" />
-          <img src={shape3} alt="Image 3" class="image3" />
-          <img src={shape4} alt="Image 4" class="image4" />
-          <img src={shape5} alt="Image 5" class="image5" />
-          <img src={shape6} alt="Image 6" class="image6" />
-          <img src={creativity} alt="Image 7" class="creativityText" />
-          <img src={excellence} alt="Image 8" class="excellenceText" />
-          <img src={shape7} alt="Image 9" class="image7" />
+          <img src={shape1} alt="Image 1" class="image1 hidden md:block" />
+          <img src={shape2} alt="Image 2" class="image2 hidden md:block" />
+          <img src={shape3} alt="Image 3" class="image3 hidden md:block" />
+          <img src={shape4} alt="Image 4" class="image4 hidden md:block" />
+          <img src={shape5} alt="Image 5" class="image5 hidden md:block" />
+          <img src={shape6} alt="Image 6" class="image6 hidden md:block" />
+          <img
+            src={creativity}
+            alt="Image 7"
+            class="creativityText hidden md:block"
+          />
+          <img
+            src={excellence}
+            alt="Image 8"
+            class="excellenceText hidden md:block"
+          />
+          <img src={shape7} alt="Image 9" class="image7 hidden md:block" />
+
           <p className="hero-section-heading">
             Where Creativity Meets Visual Excellence on a Monthly Basis
           </p>
@@ -109,85 +117,116 @@ const Home = () => {
             <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               book a call
             </Button>
+            <div className="lg:hidden sm:block pt-6">
+              <LogoBars />
+            </div>
           </div>
-          <div className="logoBars flex flex-col items-center">
+          <div className="logoBars hidden sm:flex flex-col items-center">
             <LogoBars />
           </div>
         </div>
 
         {/* Video Section  */}
         <div className="home-video-section ">
-          <img src={videobgImg} alt="Logos" className="video-bg-image1" />
-          <img src={videobgImg} alt="Logos" className="video-bg-image2" />
-
-          <BackgroundText className="show-reels">
-            <span>Show</span>
-            <span>Reels</span>
-          </BackgroundText>
-          <div className="homeVideo">
-            <CustomVideo poster={customVideoPoster} />
+          <img
+            src={videobgImg}
+            alt="Logos"
+            className="video-bg-image1  md:block"
+          />
+          <img
+            src={videobgImg}
+            alt="Logos"
+            className="video-bg-image2  md:block"
+          />
+          <div className="relative w-full ">
+            <BackgroundText className="flex items-center justify-center lg:text-[480px] text-[120px] uppercase font-tek show-reels overflow-hidden">
+              <span>Show</span>
+              <span>Reels</span>
+            </BackgroundText>
+            <div className="absolute inset-0 lg:top-[34.5%] sm:top-44 top-44 flex items-center justify-center">
+              <CustomVideo poster={customVideoPoster} />
+            </div>
           </div>
         </div>
 
         {/* Spectular Service Section */}
-        <div className="">
-          <div className=" flex flex-col items-center justify-center ">
-            <Heading className="uppercase text-7xl text-white font-tek">
-              Our <span className="text-[#2EABAF]">spectacular</span> services
+        <div className="mx-auto">
+          <div className=" flex flex-col items-center justify-center">
+            <Heading className="uppercase lg:text-7xl text-6xl text-white font-tek text-center">
+              <span> Our </span>{" "}
+              <span className="text-[#2EABAF]">spectacular</span>{" "}
+              <span>services</span>
             </Heading>
-            <p className="text-white text-sm">
+            <p className="text-white lg:text-sm text-xs">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
 
-          <div className="relative">
-            <img src={shape7} alt="Image 4" class="spectular-bg-image" />
+          <div className="relative overflow-hidden ">
+            <img src={shape7} alt="Image 4" class="spectular-bg-image -z-50" />
             <BackgroundText className="spectular-text">
               <span>SPETACULAR</span>
             </BackgroundText>
 
-            <div className="spectularBackground">
-              <img src={spectuarBackgroud} alt="Image" />
+            <div className="hidden lg:absolute lg:-top-40 lg:right-0 z-0 ">
+              <img src={spectuarBackgroud} alt="Image" className="" />
             </div>
 
-            <div className="spectularImage ">
-              <div class="image-container">
-                <img src={spectularFrame} alt="Image" />
-                <div className="flex flex-col items-start absolute top-[30%] left-7">
-                  <div>
-                    <img src={robot} alt="logo" />
-                  </div>
-                  <p class="text-[#2EABAF] text-[80px] font-tek">AI VIDEOS</p>
-                  <p className="text-white text-sm pb-8">
+            <div className="spectularImage flex justify-center items-center px-5">
+              <div class="image-container overflow-hidden flex items-center flex-row-reverse justify-between ">
+                <div>
+                  <img
+                    src={spectularFrame}
+                    alt="Image"
+                    class="lg:max-w-2xl sm:object-cover sm:object-center"
+                  />
+                </div>
+                <div class="flex lg:gap-y-4 gap-y-2 flex-col items-start  lg:pl-10 pl-2.5 w-full ">
+                  <img
+                    src={robot}
+                    alt="logo"
+                    class="w-6 h-5 md:w-12 md:h-12 lg:w-16 lg:h-16"
+                  />
+
+                  <p class="text-[#2EABAF] text-[20px] font-tek md:text-[60px] lg:text-[80px]">
+                    AI VIDEOS
+                  </p>
+                  <p class="text-white text-[10px] lg:text-base">
                     FB ad with 2D animation <br />
                     Commercial video with 2D animation <br />
-                    Product video with 2D animation{" "}
+                    Product video with 2D animation
                   </p>
-                  <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                  <button class="lg:px-6 lg:py-2 px-4 py-1 lg:text-sm text-xs font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase md:px-8">
                     See More
-                  </Button>
+                  </button>
                 </div>
               </div>
             </div>
-            <div className="spectular-services overflow-x-scroll w-full scrollbar-hide">
-              <ServicesCards />
-            </div>
+            
           </div>
+          <div className="flex flex-col lg:gap-y-12 gap-y-6 items-center justify-center">
+          <div className=" overflow-x-scroll w-full scrollbar-hide">
+              <ServicesCards />
+          </div>
+          <div class="bar"></div>
+          </div>
+
+          
         </div>
 
         {/* Services Section  */}
-        <div className="flex flex-col items-center justify-center py-20">
-          <Heading className="text-white font-tek text-[80px]  uppercase text-center w-2/5 leading-tight">
+        <div className="flex flex-col items-center justify-center py-20 ">
+          <Heading className="text-white font-tek lg:text-[80px] text-5xl uppercase text-center lg:w-2/5 leading-tight">
             Why its better to deligate video editing
           </Heading>
-          <p className="text-white text-sm w-2/5 text-center">
+          <p className="text-white text-sm lg:w-2/5 text-center">
             By delegating video editing, you can harness the expertise of
             professionals, save time, improve quality, and ultimately deliver
             outstanding videos that leave a lasting impression on your audience.
           </p>
 
-          <div className="flex flex-col items-center gap-y-5 pt-20">
-            <div className="flex gap-x-5 pt-14">
+          <div className="flex flex-col items-center justify-center gap-y-5 lg:pt-20 pt-6">
+            <div className="flex lg:flex-row flex-col gap-y-8 gap-x-5 pt-14 justify-center">
               {services?.map((service) => (
                 <CustomServiceCard
                   key={service.id}
@@ -197,7 +236,7 @@ const Home = () => {
                 />
               ))}
             </div>
-            <div class="bar"></div>
+            {/* <div class="bar"></div> */}
             <div className="pt-10 flex gap-x-4">
               <Button className="px-10 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 Pricing
@@ -210,8 +249,8 @@ const Home = () => {
         </div>
 
         {/* Gallery Section */}
-        <div className="mx-auto px-10 max-w-7xl py-20">
-          <div className="flex flex-col gap-y-2 items-end">
+        <div className="mx-auto lg:px-10 lg:max-w-7xl w-full py-20">
+          <div className="flex flex-col lg:gap-y-2 gap-y-4 lg:items-end items-center">
             <HomeGallery />
             <div className="flex items-center justify-center gap-x-4">
               <Button className="px-10 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
@@ -226,12 +265,12 @@ const Home = () => {
 
         {/* Work Streamline  */}
         <div className="flex flex-col items-center justify-center gap-y-10">
-          <div className=" w-2/4 flex flex-col items-center text-white text-center gap-y-3">
-            <Heading className="text-[80px] font-tek  leading-tight uppercase">
+          <div className=" lg:w-2/4 flex flex-col items-center text-white text-center gap-y-3">
+            <Heading className="lg:text-[80px] text-[50px] font-tek  leading-tight uppercase">
               Streamline Your Process: Never Worry About VIDEO Editing Again
               with These Simple Steps.
             </Heading>
-            <span className="text-sm w-2/3">
+            <span className="text-sm lg:w-2/3">
               AIM VFX offers a faster, more cost-effective alternative, saving
               you time and money, instead of hiring, retaining, and overhead
               expenses.
@@ -257,7 +296,7 @@ const Home = () => {
             </p>
           </div>
           <CustomVideo poster={howitworks} />
-          <div className="flex items-center justify-center gap-x-4">
+          <div className="flex items-center justify-center gap-x-4 ">
             <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Read more
             </Button>
@@ -268,28 +307,28 @@ const Home = () => {
         </div>
 
         {/* Portfolio */}
-        <div className="flex flex-col gap-y-7 items-center justify-center py-20 mt-20 home-page-portfolio">
+        <div className="flex flex-col gap-y-7 items-center justify-center lg:py-20 mt-20 py-44 home-page-portfolio">
           <div className="flex flex-col items-center justify-center">
             <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
               Portfolio
             </Heading>
-            <p className="text-sm text-white  text-center">
+            <p className="text-sm text-white  text-center lg:px-0 px-6">
               Uncover Our Rich Array of Work: Browse Categories Ranging from
               eLearning to Hollywood-style Productions.
             </p>
           </div>
-          <div className="flex items-center justify-center gap-x-4">
-            <Button className="px-8 py-2.5 text-sm font-semibold text-black bg-white  hover:border-gray-800 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+          <div className="flex items-center justify-center lg:gap-x-4 gap-x-2">
+            <Button className="lg:px-8 px-6 py-2.5 text-sm font-semibold text-black bg-white  hover:border-gray-800 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Category
             </Button>
-            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+            <Button className="lg:px-8 px-4 lg:py-2.5 py-2 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Category
             </Button>
-            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+            <Button className="lg:px-8 px-4 lg:py-2.5 py-2 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Category
             </Button>
           </div>
-          <div className="pt-6 pb-10">
+          <div className="pt-6 pb-10 lg:px-0 px-2">
             <HomePortfolioVideo />
           </div>
           <Button className="uppercase text-white border border-white px-8 py-3 rounded-full">
@@ -307,7 +346,7 @@ const Home = () => {
               A Collection of Client Testimonials That Speak Volumes.
             </p>
           </div>
-          <div className="pt-8 pb-10">
+          <div className="pt-8 pb-10 lg:px-0 px-3">
             <HomeTestimoal />
           </div>
           <Button className="uppercase text-white border border-[#2EABAF] px-8 py-3 rounded-full">
@@ -317,59 +356,60 @@ const Home = () => {
 
         {/* Awards */}
         <div className="flex items-center justify-center ">
-          <div className="flex gap-x-8 border border-[#15B8C7] px-20 pt-10 pb-6 rounded-[35px]">
-            <div className="flex flex-col  gap-y-6 ">
-              <Heading className="uppercase text-4xl font-bold italic text-[#15B8C7]">
-                Upword Activity
-              </Heading>
+  <div className="flex flex-col md:flex-row gap-x-8 border border-[#15B8C7] px-8 md:px-20 pt-6 md:pt-10 pb-6 rounded-[35px]">
+    <div className="flex flex-col gap-y-6 ">
+      <Heading className="uppercase text-2xl md:text-4xl font-bold italic text-[#15B8C7]">
+        Upword Activity
+      </Heading>
 
-              <div className="flex gap-x-20">
-                <div className="flex flex-col text-white">
-                  <span className="text-gray-300">Hourly Rate</span>
-                  <span className="font-bold">$25.00 - $50.00</span>
-                </div>
-                <div className="flex flex-col text-white">
-                  <span className="text-gray-300">Minimum project size</span>
-                  <span className="font-bold">$1K+</span>
-                </div>
-                <div className="flex flex-col text-white">
-                  <span className="text-gray-300">Total earned</span>
-                  <span className="font-bold">$100K+</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="h-32 w-0.5 bg-gray-500"></div>
-            <div className="flex flex-col gap-y-4">
-              <Heading className="uppercase text-2xl font-bold italic text-[#15B8C7] leading-tight">
-                Awards
-              </Heading>
-              <div className="flex flex-col gap-y-3 -mt-2">
-                <div className="flex flex-col text-white text-sm">
-                  <span className="flex items-center gap-x-1.5">
-                    <FaStar />
-                    Cannes Lions
-                  </span>
-                  <span className="flex items-center gap-x-1.5">
-                    <FaStar />
-                    Red Apple
-                  </span>
-                </div>
-                <div className="flex flex-col text-[#15B8C7]">
-                  <span className="flex items-center gap-x-1.5">
-                    {" "}
-                    <FaTrophy />
-                    100% success rate
-                  </span>
-                  <span className="flex items-center gap-x-1.5">
-                    <FaPercent />
-                    Top Rated
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div className="flex flex-col md:flex-row md:gap-x-20">
+        <div className="flex flex-col text-white">
+          <span className="text-gray-300">Hourly Rate</span>
+          <span className="font-bold">$25.00 - $50.00</span>
         </div>
+        <div className="flex flex-col text-white">
+          <span className="text-gray-300">Minimum project size</span>
+          <span className="font-bold">$1K+</span>
+        </div>
+        <div className="flex flex-col text-white">
+          <span className="text-gray-300">Total earned</span>
+          <span className="font-bold">$100K+</span>
+        </div>
+      </div>
+    </div>
+
+    <div className="hidden md:block h-32 w-0.5 bg-gray-500"></div> {/* Hidden on smaller screens */}
+
+    <div className="flex flex-col gap-y-4 mt-6 md:mt-0"> {/* Added margin top for smaller screens */}
+      <Heading className="uppercase text-xl md:text-2xl font-bold italic text-[#15B8C7] leading-tight">
+        Awards
+      </Heading>
+      <div className="flex flex-col gap-y-3 -mt-2">
+        <div className="flex flex-col text-white text-sm">
+          <span className="flex items-center gap-x-1.5">
+            <FaStar />
+            Cannes Lions
+          </span>
+          <span className="flex items-center gap-x-1.5">
+            <FaStar />
+            Red Apple
+          </span>
+        </div>
+        <div className="flex flex-col text-[#15B8C7]">
+          <span className="flex items-center gap-x-1.5">
+            <FaTrophy />
+            100% success rate
+          </span>
+          <span className="flex items-center gap-x-1.5">
+            <FaPercent />
+            Top Rated
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
         <WorkHistory />
         <FaqSection />
         <FooterForm />

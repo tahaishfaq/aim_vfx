@@ -3,7 +3,7 @@ import { Tab } from "@headlessui/react";
 import ServivePageVideo from "../CustomVideo/ServicePageVideo";
 import Button from "../../components/Button/Button";
 import shape7 from "../../assets/video bubbles (1).png";
-import shape2 from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 1.png";
+import shape2 from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 1 (1).png";
 import shape4 from "../../assets/holographic_fluid_drop_shapes_illustration_02 copy 4.png";
 import "./team.css";
 import Heading from "../Heading/Heading";
@@ -11,7 +11,7 @@ import LetsTalk from "./LetsTalk";
 import FooterForm from "../Footer/Footer";
 import GetToKnowUs from "../GetToKnowUs/GetToKnowUs";
 import Location from "../Location/Location";
-
+import bg1 from "../../assets/11 copy 3.png";
 export const TeamPage = () => {
   const callouts = [
     {
@@ -26,8 +26,13 @@ export const TeamPage = () => {
 
   return (
     <div className="solution-page ">
-      <div className="flex items-center p-32 mx-auto max-w-7xl">
-        <div className="flex flex-col gap-y-3">
+      <div className="flex items-center p-32 mx-auto max-w-7xl justify-center relative">
+        <img
+          src={bg1}
+          alt="bg"
+          className="absolute inset-y-0 -left-40 -z-10 opacity-30"
+        />
+        <div className="flex flex-col gap-y-3 pt-60 pb-40">
           <span className="team-hero-heading">Title text block</span>
           <div className="w-96">
             <p className="text-white">
@@ -50,60 +55,58 @@ export const TeamPage = () => {
         </div>
         {/* ------------ Right Side Hero Section --------------- */}
         <div className="relative">
-          <img src={shape7} alt="img" className="" />
-          <div className="absolute top-10">
-            <ServivePageVideo />
-          </div>
+          {/* <img src={shape7} alt="img" className="" /> */}
+          {/* <div className="absolute top-10"> */}
+          <ServivePageVideo />
+          {/* </div> */}
         </div>
       </div>
-      <div className="flex flex-col items-center text-center">
+      <div className="flex flex-col items-center justify-center text-center ">
         <h2
           id="details-heading"
-          className="text-3xl font-bold tracking-tight uppercase text-white sm:text-5xl"
+          className="text-[60px] font-tek leading-tight  uppercase text-white"
         >
           who are us?
         </h2>
-        <p className="mt-3 max-w-3xl text-lg text-white">
+        <p className="font-light max-w-2xl text-sm text-white">
           Lorem ipsum dolor sit amet consectetur. Scelerisque habitant elementum
           lectus quis risus viverra. Commodo sit imperdiet consectetur fermentum
           non nunc. In et quam vehicula lectus sed leo hac lectus. Pretium et
           egestas nisi in.
         </p>
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto flex justify-center items-center max-w-3xl py-10 sm:py-10 lg:max-w-none lg:py-10">
-          <div className="group flex flex-col items-center w-full ">
-            <div className="relative w-full overflow-hidden rounded-lg mb-8 lg:mb-0 lg:w-1/2 lg:mr-4 ">
-              <div className="absolute top-1/2 left-2 transform -translate-y-1/2 text-center w-2/5">
-                <h1 className="text-4xl uppercase text-white mb-4">Vision</h1>
-                <p className="text-base text-white font-semibold ">
-                  Lorem ipsum dolor sit amet consectetur. Scelerisque habitant
-                  elementum lectus quis risus viverra. Commodo sit imperdiet
-                  consectetur fermentum non nunc. In et quam vehicula lectus sed
-                  leo hac lectus. Pretium et egestas nisi in.
-                </p>
-              </div>
-              <img
-                src={shape2}
-                alt="shape2"
-                className="h-[40rem] w-full object-cover object-center"
-              />
-              <div className="absolute top-1/2 right-2 transform -translate-y-1/2 text-center w-2/5">
-                <h1 className="text-4xl uppercase text-white mb-4">Mission</h1>
-                <p className="text-base text-white font-semibold">
-                  Lorem ipsum dolor sit amet consectetur. Scelerisque habitant
-                  elementum lectus quis risus viverra. Commodo sit imperdiet
-                  consectetur fermentum non nunc. In et quam vehicula lectus sed
-                  leo hac lectus. Pretium et egestas nisi in.
-                </p>
-              </div>
-            </div>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        <section className="flex justify-center items-center  max-w-4xl mx-auto overflow-hidden">
+          <div className="flex flex-col  justify-end -mr-40  w-2/5">
+            <h1 className="text-4xl uppercase text-white mb-4">Mission</h1>
+            <p className="text-white text-sm font-light">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque habitant
+              elementum lectus quis risus viverra. Commodo sit imperdiet
+              consectetur fermentum non nunc. In et quam vehicula lectus sed leo
+              hac lectus. Pretium et egestas nisi in.
+            </p>
           </div>
-        </div>
+          <div className="mx-4">
+            <img
+              src={shape2}
+              alt="shape2"
+              className="h-[42rem] w-[30rem] object-cover object-center z-10"
+            />
+          </div>
+          <div className="flex flex-col  justify-start -ml-2 w-2/5">
+            <h1 className="text-4xl uppercase text-white mb-4">Vision</h1>
+            <p className="text-white text-sm font-light">
+              Lorem ipsum dolor sit amet consectetur. Scelerisque habitant
+              elementum lectus quis risus viverra. Commodo sit imperdiet
+              consectetur fermentum non nunc. In et quam vehicula lectus sed leo
+              hac lectus. Pretium et egestas nisi in.
+            </p>
+          </div>
+        </section>
       </div>
 
-      <GetToKnowUs/>
-       <Location/>  
+      <GetToKnowUs />
+      <Location />
 
       <div className="px-4 sm:px-6 lg:px-8 pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32 mx-auto max-w-7xl">
         <div className="bg-[#2EABAF] rounded-xl overflow-hidden sm:flex sm:items-center">
@@ -128,7 +131,7 @@ export const TeamPage = () => {
       </div>
 
       <LetsTalk />
-      <FooterForm/>
+      <FooterForm />
     </div>
   );
 };

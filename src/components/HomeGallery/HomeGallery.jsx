@@ -30,16 +30,16 @@ const HomeGallery = () => {
   ];
   return (
     <>
-      <div className="flex items-end flex-wrap gap-x-10 gap-y-10">
+      <div className="flex lg:flex-row flex-col lg:items-end items-center flex-wrap gap-x-10 gap-y-10">
         {gallery?.map((entity, index) => (
-          <div className={`flex text-white flex-col w-2/5 gap-y-3 ${entity.id === 3 && "flex-col-reverse w-full"}`}>
+          <div className={`flex text-white flex-col lg:w-2/5 gap-y-3 lg:px-0 px-2 ${entity.id === 3 && "flex-col-reverse lg:w-full"}`}>
             <div>
-            <Heading className="font-tek text-[50px] leading-tight px-2">
+            <Heading className="font-tek text-[35px] lg:text-[50px] leading-tight px-2">
               {entity.title}
             </Heading>
-            <p className={`px-2 text-justify ${entity.id === 3 && "w-2/5"}`}>{entity.description}</p>
+            <p className={`px-2 lg:text-base text-sm text-justify ${entity.id === 3 && "lg:w-2/5"}`}>{entity.description}</p>
             </div>
-            <img src={entity.url} alt="image1" className="max-w-5xl object-cover object-center" />
+            <img src={entity.url} alt="image1" className="object-cover object-center" />
           </div>
         ))}
       </div>
