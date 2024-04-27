@@ -25,7 +25,7 @@ const ServiceRatesCount = () => {
   ];
 
   return (
-    <div className="rates-count">
+    <div className="flex lg:flex-row flex-col items-center justify-center gap-x-4 lg:py-10 pt-6">
       {counts.map((count, index) => (
         <div key={index} className="rate-count-content">
           <h3 className="count-head">{count.title}</h3>

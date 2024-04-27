@@ -34,9 +34,9 @@ const HowItWorks = () => {
     },
   ];
   return (
-    <div className="how-it-works-category">
+    <div className="flex lg:flex-row items-center justify-between flex-col w-full">
       {categories.map((category, index) => (
-        <div className="work-category" key={index}>
+        <div className="work-category lg:py-0 py-6 lg:pt-0 pt-10" key={index}>
           <div className="flex items-center">
             <img
               src={category.icon}

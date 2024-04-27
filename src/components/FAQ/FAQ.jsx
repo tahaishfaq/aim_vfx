@@ -54,7 +54,7 @@ const FaqSection = () => {
       </div>
       <div className="flex flex-wrap justify-center mx-auto max-w-4xl">
         {faqData.map((faq, index) => (
-          <div key={index} className="w-full md:w-1/2 p-4">
+          <div key={index} className="w-full md:w-1/2 lg:p-4 p-2">
             <FaqItem faq={faq} />
           </div>
         ))}

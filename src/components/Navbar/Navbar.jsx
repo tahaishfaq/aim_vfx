@@ -14,7 +14,7 @@ export const Navbar = () => {
             <div className="flex ">
               {/* Logo */}
               <div className="flex items-center">
-                <div className="flex items-center">
+                <Link  to="/" className="flex items-center">
                   <img
                     className="block lg:hidden h-16 w-auto"
                     src={logoImg}
@@ -25,8 +25,8 @@ export const Navbar = () => {
                     src={logo}
                     alt="Logo"
                   />
-                </div>
-                <div className="flex items-center">
+                </Link>
+                <Link to="/" className="flex items-center">
                   <img
                     className="hidden lg:block h-16 w-auto"
                     src={logoImg}
@@ -37,7 +37,7 @@ export const Navbar = () => {
                     src={logo}
                     alt="Logo"
                   />
-                </div>
+                </Link>
               </div>
               {/* Navigation Links */}
               <div className="hidden sm:-my-px sm:ml-8 sm:flex  sm:space-x-8">

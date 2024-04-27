@@ -14,19 +14,19 @@ const ServiceRateSection = () => {
   return (
     <>
       <div className="serviceRateSection">
-        <div className="save-time-head">
+        <div className="text-white lg:text-[80px] text-[50px] uppercase font-tek">
           <h1>how much time you save with aim fx?</h1>
         </div>
-        <div className="mt-10">
-          <div className="flex justify-between items-center w-full">
-            <div className="w-1/2">
-            <p className="time-content text-[#00FFFF]">
+        <div className="lg:mt-10 mt-5">
+          <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full gap-y-2 gap-x-3 lg:pb-10 pb-4">
+            <div className="lg:w-1/2">
+            <p className="px-2 pb-4 text-[#00FFFF]">
               You save hundreds of collective hours by not doing your own video
               editing:
             </p>
             </div>
-            <div className="time-save">
-              <div className="time">
+            <div className="text-[#00FFFF] flex flex-col gap-y-3">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5">
                 <span>Cutting</span>
                 <span>
                   <img
@@ -36,7 +36,7 @@ const ServiceRateSection = () => {
                   />
                 </span>
               </div>
-              <div className="time">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5">
                 <span>Color Correction</span>
                 <span>
                   <img
@@ -46,7 +46,7 @@ const ServiceRateSection = () => {
                   />
                 </span>
               </div>
-              <div className="time">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5">
                 <span>Adding Subtitles</span>
                 <span>
                   <img
@@ -58,8 +58,8 @@ const ServiceRateSection = () => {
               </div>
             </div>
 
-            <div className="time-save">
-              <div className="time">
+            <div className="text-[#00FFFF] flex flex-col gap-y-3">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5 ">
                 <span>Slicing</span>
                 <span>
                   <img
@@ -69,7 +69,7 @@ const ServiceRateSection = () => {
                   />
                 </span>
               </div>
-              <div className="time">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5 ">
                 <span>Fixing Audio</span>
                 <span>
                   <img
@@ -79,7 +79,7 @@ const ServiceRateSection = () => {
                   />
                 </span>
               </div>
-              <div className="time">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5 ">
                 <span>Transitions</span>
                 <span>
                   <img
@@ -92,54 +92,73 @@ const ServiceRateSection = () => {
             </div>
           </div>
           {/* ----------------- */}
-          <div className="flex justify-between mt-10 items-center w-full">
-            <div className="w-1/2">
-            <p className="time-content text-[#00FFFF]">
-              You save countless hours by not doing it the old-fashioned way
-              with freelancers or full-time editors:
+          <div className="flex lg:flex-row flex-col justify-between lg:items-center items-start w-full gap-y-2 gap-x-3">
+            <div className="lg:w-1/2">
+            <p className="px-2 pb-4 text-[#00FFFF]">
+              You save hundreds of collective hours by not doing your own video
+              editing:
             </p>
             </div>
-
-            <div className="time-save">
-              <div className="time">
-                <span>Searching</span>
+            <div className="text-[#00FFFF] flex flex-col gap-y-3">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5">
+                <span>Cutting</span>
                 <span>
                   <img
-                    src={search}
-                    alt="Search vector"
+                    src={scissor}
+                    alt="Scissor vector"
                     className="ser-vector-set"
                   />
                 </span>
               </div>
-              <div className="time">
-                <span>Training</span>
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5">
+                <span>Color Correction</span>
                 <span>
                   <img
-                    src={training}
-                    alt="Training"
+                    src={color}
+                    alt="Color vector"
+                    className="ser-vector-set"
+                  />
+                </span>
+              </div>
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5">
+                <span>Adding Subtitles</span>
+                <span>
+                  <img
+                    src={subtitle}
+                    alt="Subtitle vector"
                     className="ser-vector-set"
                   />
                 </span>
               </div>
             </div>
 
-            <div className="time-save">
-              <div className="time">
-                <span>Hiring</span>
+            <div className="text-[#00FFFF] flex flex-col gap-y-3">
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5 ">
+                <span>Slicing</span>
                 <span>
                   <img
-                    src={file}
-                    alt="File vector"
+                    src={slicing}
+                    alt="Slicing vector"
                     className="ser-vector-set"
                   />
                 </span>
               </div>
-              <div className="time">
-                <span>Managing</span>
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5 ">
+                <span>Fixing Audio</span>
                 <span>
                   <img
-                    src={users}
-                    alt="Users vector"
+                    src={audio}
+                    alt="Audio vector"
+                    className="ser-vector-set"
+                  />
+                </span>
+              </div>
+              <div className="flex items-center justify-between border border-[#00FFFF] rounded-full w-80 px-4 py-1.5 ">
+                <span>Transitions</span>
+                <span>
+                  <img
+                    src={star}
+                    alt="Transition vector"
                     className="ser-vector-set"
                   />
                 </span>

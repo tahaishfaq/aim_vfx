@@ -18,12 +18,12 @@ const ServiceIcon = () => {
     ];
 
     return (
-        <div className="py-10">
-            <div className="flex gap-y-10  flex-wrap justify-center">
+        <div className="lg:py-10 py-0">
+            <div className="flex lg:flex-row flex-col lg:gap-y-10 gap-y-6  flex-wrap justify-center">
                 {services.map((service, index) => (
-                    <div key={index} className='flex flex-col gap-y-1.5 items-start w-1/3'>
-                        <img src={service.icon} className='w-20 h-20' alt={`icon-${index}`} />
-                        <Heading className="font-tek text-3xl w-60 uppercase text-[#56BEC2]">{service.title}</Heading>
+                    <div key={index} className='flex flex-col gap-y-1.5 items-center lg:items-start lg:w-1/3'>
+                        <img src={service.icon} className='lg:w-20 lg:h-20 h-12 w-12' alt={`icon-${index}`} />
+                        <Heading className="font-tek lg:text-3xl text-xl lg:w-60 w-full lg:text-start text-center uppercase text-[#56BEC2]">{service.title}</Heading>
                     </div>
                 ))}
             </div>

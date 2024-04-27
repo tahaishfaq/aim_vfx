@@ -503,14 +503,18 @@ video::-webkit-media-controls-play-button {
 
 .service-video {
   position: relative;
-  border-radius: 40px;
-  width: 500px;
-  height: 320px;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* Limit maximum width */
+  margin: 0 auto; /* Center the video horizontally */
   overflow: hidden;
-  border: 15px solid #05133786;
+  border: 10px solid #05133786;
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.2);
 }
+
+
 
 .service-video-section {
   position: relative;
@@ -894,4 +898,100 @@ video::-webkit-media-controls-play-button {
 .faq {
   background: linear-gradient(-120deg, #013b49, #0a8c93, #08d4e6e4);
   border-radius: 0px 375px 0px 375px;
+}
+
+
+@media (max-width: 767px) {
+  .service-top-section {
+    height: auto;
+  }
+  
+  
+  
+  .service-hero-left-part {
+    padding: 50px 20px ;
+  }
+  
+  
+  .service-hero-heading {
+ 
+    font-size: 40px;
+    line-height: 40px;
+    
+  }
+  .services-list span {
+
+    padding: 12px 12px 12px 0px;
+    
+  }
+  .solutionText {
+    position: absolute;
+    top: 340px;
+    
+  }
+
+  .side-image {
+   display: none;
+  }
+
+  .service-video-section {
+    
+    padding: 0px 0px 0px 0px;
+  }
+ 
+  .service-video-img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    
+  }
+
+  .service-video {
+ 
+    height: 250px;
+    max-width: 400px; 
+   
+  }
+
+  .solution-cards {
+    padding: 10px 10px;
+  }
+  
+ 
+  .rates-section {
+    padding: 200px 20px 150px 20px;
+   
+  }
+  .save-time-section {
+    padding: 0 0px;
+   
+    
+  }
+  .serviceRateSection {
+    padding: 170px 20px 50px 20px;
+  }
+
+  .rate-bottom-content {
+    
+    padding: 10px 20px;
+  }
+
+  .rate-desc {
+  
+    padding: 10px 10px;
+ 
+  }
+  .rate-button {
+
+    padding: 40px 0;
+  }
+  .work-category {
+    color: white;
+    width: 90%;
+  }
+  .how-work-btn {
+    padding: 30px 0;
+  
+  
+  }
 }

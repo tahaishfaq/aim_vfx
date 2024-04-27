@@ -3,7 +3,7 @@ import { IoCheckmarkCircleOutline } from "react-icons/io5";
 
 const ServiceRateDesc = ({ descriptions }) => {
   return (
-    <div className="rate-desc">
+    <div className="rate-desc lg:flex-nowrap flex-wrap gap-6">
       {descriptions.map((description, index) => (
         <div key={index} className="rate-desc-list">
           {description.map((item, i) => (

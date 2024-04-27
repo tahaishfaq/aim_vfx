@@ -16,7 +16,7 @@ import ServiceIcon from "../../components/ServiceWithIcon/ServiceIcon";
 import SolutionCard from "../../components/ServiceSolutionCards/SolutionCard";
 import SerRatesVideo from "../../components/CustomVideo/SerRatesVideo";
 import ServiceRatesCount from "../../components/RateSection/RatesCount";
-import ServiceBenefits from "../../components/ServiceSolutionCards/ServiceBenefits";
+// import ServiceBenefits from "../../components/ServiceSolutionCards/ServiceBenefits";
 import ServiceRateSection from "../../components/RateSection/ServiceRateSection";
 import ServiceRateDesc from "../../components/RateSection/ServiceRateDesc";
 import HowItWorks from "../../components/ServiceComponents/HowItWorks";
@@ -25,6 +25,7 @@ import HomeTestimoal from "../../components/HomeTestimonals/HomeTestimonals";
 import FaqSection from "../../components/FAQ/FAQ";
 import FooterForm from "../../components/Footer/Footer";
 import WorkHistory from "../../components/WorkHistory/WorkHistory";
+import ServiceBenefits from "../../components/ServiceSolutionCards/ServiceBenefits";
 
 const Solution = () => {
   const descriptions = [
@@ -41,21 +42,20 @@ const Solution = () => {
 
   return (
     <div className="solution-page">
-      <div className="relative h-[120vh]">
-       
-        <div className="flex items-center p-40">
+      <div className="relative lg:h-[120vh] h-auto">
+        <div className="flex lg:flex-row flex-col items-center gap-y-6 lg:px-40 lg:py-40 pt-32 pb-10 px-3">
           <div className="flex flex-col gap-y-3">
-            <span className="solution-hero-heading">
+            <span className="lg:text-[80px] text-[50px] font-tek leading-tight text-white uppercase z-10">
               design services for ambitious brands
             </span>
             <div className="w-96">
-              <p className="text-white">
+              <p className="text-white lg:text-base text-sm">
                 Teams at fast-growing companies use AIMFX to get quality graphic
                 design done at scale. Book a call today and get acess to your
                 dedicated design team.
               </p>
             </div>
-            <div className="flex gap-y-5 mt-10">
+            <div className="flex gap-y-5 lg:mt-10 mt-6">
               <Button className="px-8 py-2.5 mr-3 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 Choose a plan
               </Button>
@@ -65,16 +65,16 @@ const Solution = () => {
             </div>
           </div>
           {/* ------------ Right Side Hero Section --------------- */}
-          <div className="relative">
-            <img src={shape7} alt="img" className="" />
-            <div className="absolute top-10">
+          <div className="relative flex items-center justify-center ">
+            <img src={shape7} alt="img" className="lg:block hidden" />
+            <div className="lg:absolute lg:top-10 ">
               <ServivePageVideo />
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-y-10 items-center">
+        <div className="flex lg:flex-col flex-col-reverse gap-y-10 items-center">
           <div>
-            <p className="text-white text-md">
+            <p className="text-gray-400 lg:text-md text-sm ">
               80.082 design projects delivered to 450+ happy clients.
             </p>
           </div>
@@ -87,28 +87,50 @@ const Solution = () => {
       {/* ------------- Solution Section ------------- */}
       {/* ============================================ */}
 
-      <div className="flex items-center flex-col justify-center">
+      <div className="flex items-center flex-col justify-center lg:py-0 py-10">
         <div className="">
           <Heading className="text-[70px] uppercase font-tek text-white">
             Services
           </Heading>
         </div>
+        <div className=" overflow-x-scroll w-full scrollbar-hide">
         <ServicesCards />
+        </div>
       </div>
 
       <section className="text-white py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="flex items-center ">
-            <div className="relative overflow-hidden">
+            <div className="lg:relative lg:overflow-hidden hidden lg:block">
               <img src={shape1} alt="Image" className="w-full h-full z-20" />
-              <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="image" className="rounded-lg w-24 absolute top-10 left-[45%] -z-10"/>
-              <img src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-photomix-company-212372.jpg&fm=jpg" alt="image" className="rounded-lg w-32 absolute top-[42%] left-[69%]"/>
-              <img src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-photomix-company-212372.jpg&fm=jpg" alt="image" className="rounded-lg w-20 absolute top-[78%] left-[52%] blur-sm -z-10"/>
-              <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="image" className="rounded-lg w-36 absolute top-[70%] left-[10%]"/>
-              <img src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg" alt="image" className="rounded-lg w-24 absolute top-[20%] left-[12%]  -z-10 blur-sm"/>
+              <img
+                src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg"
+                alt="image"
+                className="rounded-lg w-24 absolute top-10 left-[45%] -z-10"
+              />
+              <img
+                src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-photomix-company-212372.jpg&fm=jpg"
+                alt="image"
+                className="rounded-lg w-32 absolute top-[42%] left-[69%]"
+              />
+              <img
+                src="https://images.pexels.com/photos/212372/pexels-photo-212372.jpeg?cs=srgb&dl=pexels-photomix-company-212372.jpg&fm=jpg"
+                alt="image"
+                className="rounded-lg w-20 absolute top-[78%] left-[52%] blur-sm -z-10"
+              />
+              <img
+                src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg"
+                alt="image"
+                className="rounded-lg w-36 absolute top-[70%] left-[10%]"
+              />
+              <img
+                src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg"
+                alt="image"
+                className="rounded-lg w-24 absolute top-[20%] left-[12%]  -z-10 blur-sm"
+              />
             </div>
-            <div className=" max-w-md">
-              <div className="">
+            <div className="lg:max-w-md w-full ">
+              <div className="lg:px-0 px-3">
                 <h2 className="text-4xl text-[#00FFFF] w-2/3 uppercase font-tek mb-2">
                   get graphic design, print, motion, video and more
                 </h2>
@@ -122,56 +144,62 @@ const Solution = () => {
                   luctus ipsum urna. Amet tincidunt eget ac aliquam nibh id.
                   Urna laoreet consectetur convallis ultrices pellentesque purus
                   et vulputate. Nisi purus nam viverra id morbi ultrices
-                  molestie. 
-                  <br/>
-                  <br/>
-                  Nisl lectus massa neque mattis. Integer at leo
-                  elementum.
+                  molestie.
+                  <br />
+                  <br />
+                  Nisl lectus massa neque mattis. Integer at leo elementum.
                 </p>
               </div>
             </div>
           </div>
-          <div className="mt-16 mx-auto max-w-3xl">
-            <div className="flex items-center gap-x-10 justify-center ">
-              <h2 className="text-3xl font-tek uppercase w-full">What makes our design services different?</h2>
+          <div className="mt-16 lg:mx-auto lg:max-w-3xl max-w-full">
+            <div className="flex lg:flex-row flex-col items-center gap-x-10 justify-center lg:px-0 px-3">
+              <h2 className="text-3xl font-tek uppercase w-full">
+                What makes our design services different?
+              </h2>
               <p className="text-xs text-[#B6B6B6]">
-              Lorem ipsum dolor sit amet consectetur. Vitae risus sed nulla mattis eget sed. Morbi sem lorem mauris nulla nullam egestas ultricies id a. Nullam pretium viverra sem adipiscing maecenas facilisi. Tempus mattis est ante lacus condimentum. A volutpat nibh ipsum sed nunc vestibulum eu nunc. Viverra et magna ac venenatis suspendisse. At ipsum commodo interdum euismod laoreet in ipsum. Sed sit nunc facilisis ut velit sed. Luctus et nunc tellus.
+                Lorem ipsum dolor sit amet consectetur. Vitae risus sed nulla
+                mattis eget sed. Morbi sem lorem mauris nulla nullam egestas
+                ultricies id a. Nullam pretium viverra sem adipiscing maecenas
+                facilisi. Tempus mattis est ante lacus condimentum. A volutpat
+                nibh ipsum sed nunc vestibulum eu nunc. Viverra et magna ac
+                venenatis suspendisse. At ipsum commodo interdum euismod laoreet
+                in ipsum. Sed sit nunc facilisis ut velit sed. Luctus et nunc
+                tellus.
               </p>
             </div>
           </div>
-          <div className="mt-20 max-w-3xl mx-auto">
-            <div className="">
-              <ServiceIcon/>
+          <div className="lg:mt-20 mt-10 lg:max-w-3xl lg:mx-auto">
+            <div className="lg:px-0 px-3">
+              <ServiceIcon />
             </div>
           </div>
         </div>
       </section>
-
-     
 
       {/* --------------- Rates Section ----------- */}
 
       <div className="rates-section">
         <div className="rates-container">
           <div className="rates-top">
-            <h1 className="rate-heading">
+            <h1 className="lg:text-[80px] text-[50px] text-white font-tek uppercase leading-tight">
               better rates than hiring a creative in house
             </h1>
-            <div className="rates-video">
+            <div className="flex items-center justify-center pt-6">
               <SerRatesVideo />
             </div>
           </div>
         </div>
         <ServiceRatesCount />
-        <div className="third-count-content">
-          <h1 className="countDesc">
+        <div className="flex items-center justify-center lg:p-10 py-4 px-3">
+          <h1 className="italic lg:text-3xl text-xl font-semibold">
             All benefits of getting your video editing done for you, without the
             headaches of hiring, managing or spending $$$ on equipment and
             software
           </h1>
         </div>
 
-        <div className="service-benefits-section">
+        <div className="lg:px-10 px-3">
           <ServiceBenefits />
         </div>
       </div>
@@ -184,11 +212,11 @@ const Solution = () => {
           <Divider sx={{ backgroundColor: "#d9d9d9" }} />
         </div>
         <div className="rate-bottom-content">
-          <Heading className="rate-bottom-content-heading uppercase text-white font-tek">
+          <Heading className="lg:text-[80px] text-[50px] uppercase text-white font-tek leading-tight">
             imagine not doing any of the above while still producing on-brand
             videos you can be proud of...
           </Heading>
-          <p className="rate-bottom-content-para">
+          <p className="text-white text-center text-sm pt-4">
             Lorem ipsum dolor sit amet consectetur. Mollis in vestibulum et sit
             duis viverra. Purus lacus amet mollis aenean fringilla. Diam ornare
             in purus viverra. Nullam amet neque in consectetur suspendisse sem
@@ -213,11 +241,11 @@ const Solution = () => {
           <Divider sx={{ backgroundColor: "#d9d9d9" }} />
         </div>
         {/* -------------- How it Works Section ---------- */}
-        <div className="how-it-work-ser">
-          <Heading className="how-it-work-heading uppercase text-white text-center font-tek">
+        <div className="py-10">
+          <Heading className="lg:text-[80px] text-[50px] uppercase text-white text-center font-tek">
             how it works
           </Heading>
-          <div className="ser-work-sec">
+          <div className="lg:px-40 lg:pt-10">
             <HowItWorks />
             <div className="how-work-btn">
               <Button className="how-work-btn-style px-8 py-2.5 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
@@ -228,28 +256,28 @@ const Solution = () => {
         </div>
         {/*   ---------- portFolio Section ----------- */}
 
-        <div className="flex flex-col gap-y-7 items-center justify-center py-20 ">
+        <div className="flex flex-col gap-y-7 items-center justify-center lg:py-10  py-6 ">
           <div className="flex flex-col items-center justify-center">
             <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
               Portfolio
             </Heading>
-            <p className="text-sm text-white  text-center">
+            <p className="text-sm text-white  text-center lg:px-0 px-6">
               Uncover Our Rich Array of Work: Browse Categories Ranging from
               eLearning to Hollywood-style Productions.
             </p>
           </div>
-          <div className="flex items-center justify-center gap-x-4">
-            <Button className="px-8 py-2.5 text-sm font-semibold text-black bg-white  hover:border-gray-800 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+          <div className="flex items-center justify-center lg:gap-x-4 gap-x-2">
+            <Button className="lg:px-8 px-6 py-2.5 text-sm font-semibold text-black bg-white  hover:border-gray-800 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Category
             </Button>
-            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+            <Button className="lg:px-8 px-4 lg:py-2.5 py-2 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Category
             </Button>
-            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+            <Button className="lg:px-8 px-4 lg:py-2.5 py-2 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Category
             </Button>
           </div>
-          <div className="pt-6 pb-10">
+          <div className="pt-6 pb-10 lg:px-0 px-2">
             <HomePortfolioVideo />
           </div>
           <Button className="uppercase text-white border border-white px-8 py-3 rounded-full">
@@ -258,7 +286,7 @@ const Solution = () => {
         </div>
 
         {/* ---------- Testimonals Section -----------*/}
-        <div className="flex flex-col gap-y-7 items-center justify-center py-20 mt-20">
+        <div className="flex flex-col gap-y-7 items-center justify-center py-20 ">
           <div className="flex flex-col items-center justify-center">
             <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
               Testimonals
@@ -267,7 +295,7 @@ const Solution = () => {
               A Collection of Client Testimonials That Speak Volumes.
             </p>
           </div>
-          <div className="pt-8 pb-10">
+          <div className="pt-8 pb-10 lg:px-0 px-3">
             <HomeTestimoal />
           </div>
           <Button className="uppercase text-white border border-[#2EABAF] px-8 py-3 rounded-full">
@@ -277,13 +305,13 @@ const Solution = () => {
 
         {/* ----------- Awards Section ---------- */}
         <div className="flex items-center justify-center ">
-          <div className="flex gap-x-8 border border-[#15B8C7] px-20 pt-10 pb-6 rounded-[35px]">
-            <div className="flex flex-col  gap-y-6 ">
-              <Heading className="uppercase text-4xl font-bold italic text-[#15B8C7]">
+          <div className="flex flex-col md:flex-row gap-x-8 border border-[#15B8C7] px-8 md:px-20 pt-6 md:pt-10 pb-6 rounded-[35px]">
+            <div className="flex flex-col gap-y-6 ">
+              <Heading className="uppercase text-2xl md:text-4xl font-bold italic text-[#15B8C7]">
                 Upword Activity
               </Heading>
 
-              <div className="flex gap-x-20">
+              <div className="flex flex-col md:flex-row md:gap-x-20">
                 <div className="flex flex-col text-white">
                   <span className="text-gray-300">Hourly Rate</span>
                   <span className="font-bold">$25.00 - $50.00</span>
@@ -298,10 +326,12 @@ const Solution = () => {
                 </div>
               </div>
             </div>
-
-            <div class="h-32 w-0.5 bg-gray-500"></div>
-            <div className="flex flex-col gap-y-4">
-              <Heading className="uppercase text-2xl font-bold italic text-[#15B8C7] leading-tight">
+            <div className="hidden md:block h-32 w-0.5 bg-gray-500"></div>{" "}
+            {/* Hidden on smaller screens */}
+            <div className="flex flex-col gap-y-4 mt-6 md:mt-0">
+              {" "}
+              {/* Added margin top for smaller screens */}
+              <Heading className="uppercase text-xl md:text-2xl font-bold italic text-[#15B8C7] leading-tight">
                 Awards
               </Heading>
               <div className="flex flex-col gap-y-3 -mt-2">
@@ -317,7 +347,6 @@ const Solution = () => {
                 </div>
                 <div className="flex flex-col text-[#15B8C7]">
                   <span className="flex items-center gap-x-1.5">
-                    {" "}
                     <FaTrophy />
                     100% success rate
                   </span>
@@ -331,36 +360,15 @@ const Solution = () => {
           </div>
         </div>
 
-        <WorkHistory />
-        <div className="calendar-section">
-        <div className="calendar-container">
-          <div className="calendar-content">
-            <h2 className="bookCallText">book a call now</h2>
-            <h4 className="nextStepText">
-              To discuss details and take the next step
-            </h4>
-            <p className="mainText">
-              Lorem ipsum dolor sit amet consectetur. Mollis in vestibulum et
-              sit duis viverra. Purus lacus amet mollis aenean fringilla. Diam
-              ornare in purus viverra. Nullam amet neque in consectetur
-              suspendisse sem elit vel. Arcu lorem nulla risus dis. Eu euismod
-              hac amet enim aliquet tristique. Donec nunc id eget et sit. Purus
-              nam elementum nunc ipsum augue luctus amet risus massa.
-            </p>
-          </div>
-          <div className="calendar">
-            <img src={calendar} alt="Calendar" class="h-200" />
-          </div>
+        <div className="lg:pb-20 pb-40">
+          <WorkHistory />
         </div>
       </div>
-      </div>
-      
+
       <FaqSection />
       <FooterForm />
     </div>
   );
 };
-
-
 
 export default Solution;

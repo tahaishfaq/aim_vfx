@@ -7,7 +7,7 @@ const ServivePageVideo = () => {
       <video
         controls
         poster={video}
-        className="object-cover h-[310px] w-[500px]"
+        className="object-cover w-full h-auto lg:h-[310px] lg:w-[500px]"
       >
         <source src="video-file.mp4" type="video/mp4" />
       </video>

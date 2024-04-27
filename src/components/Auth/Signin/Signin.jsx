@@ -9,6 +9,7 @@ import svg2 from "../../../assets/icons/flowbite_microphone-solid.png"
 import svg3 from "../../../assets/icons/foundation_graph-pie.png"
 import svg4 from "../../../assets/icons/mdi_stars.png"
 import svg5 from "../../../assets/icons/ph_video-fill.png"
+import { Link } from "react-router-dom";
 const Signin = () => {
   return (
     <div className="signin-page ">
@@ -72,7 +73,7 @@ const Signin = () => {
               </div>
 
               <div className="mt-16">
-                <span className="font-light text-[#D4E7F5]">No account? <span className="underline text-[#00FFFF] font-light">Create one</span></span>
+                <span className="font-light text-[#D4E7F5]">No account? <Link to="/signup" className="underline text-[#00FFFF] font-light">Create one</Link></span>
               </div>
             </div>
           </div>
