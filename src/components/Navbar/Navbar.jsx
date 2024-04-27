@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import { IoIosArrowDown, IoMdMenu, IoMdClose } from "react-icons/io";
 import { Link, useNavigate } from "react-router-dom";
 export const Navbar = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   return (
     <>
       <nav className="pt-5 absolute overflow-hidden z-[1000] top-0 w-full">
@@ -73,7 +73,7 @@ export const Navbar = () => {
                   <span className="pt-0.5">
                     <IoIosArrowDown />
                   </span>
-                </Link> 
+                </Link>
                 <Link
                   to="/team-page"
                   className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
@@ -87,15 +87,32 @@ export const Navbar = () => {
                   to="/about-us-page"
                   className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
-                 About Us
+                  About Us
                 </Link>
                 <Link
-                  to="/reviews"
+                  to="/promotional-page"
                   className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
-                  Reviews
+                  Promotional
                 </Link>
-
+                <Link
+                  to="/blogpost"
+                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
+                  BlogPost
+                </Link>
+                <Link
+                  to="/blog"
+                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
+                  Blog
+                </Link>
+                <Link
+                  to="/forstartup"
+                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                >
+                  start
+                </Link>
                 {/* <div className="relative inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-white">
                 <span>Contact</span>
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10 hidden">
@@ -111,8 +128,8 @@ export const Navbar = () => {
               <Button className="px-4 py-2.5 text-sm font-semibold text-white bg-transparent hover:bg-gray-700 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 Book A Call
               </Button>
-              <Button onClick={()=> navigate("/signin")} className="px-8 py-2.5 -sm font-semibold text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                Sign IN
+              <Button onClick={()=> navigate("/signin")} className="px-8 py-2.5 text-sm font-semibold text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                Sign In
               </Button>
             </div>
 

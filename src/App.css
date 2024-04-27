@@ -901,6 +901,7 @@ video::-webkit-media-controls-play-button {
 }
 
 
+
 @media (max-width: 767px) {
   .service-top-section {
     height: auto;
@@ -995,3 +996,11 @@ video::-webkit-media-controls-play-button {
   
   }
 }
+
+.promotional-section {
+  padding: 80px 0;
+  background: linear-gradient(196.98deg, #013b49 9.3%, #1bc2cb 84.62%);
+  /* backdrop-filter: blur(10px); */
+  border-radius: 0px 375px 0px 275px;
+}
+
