@@ -18,7 +18,8 @@ import BriefProject2 from "./components/Dashboard/OnBoard/BriefProject2/BriefPro
 import BlogPost from "./components/BlogPost/BlogPost";
 import Promotional from "./components/PromationalAbout/Promotional";
 import Blog from "./components/Blog/Blog";
-import ForStartup from "./components/ForStratup/ForStartup"
+import ForStartup from "./components/ForStratup/ForStartup";
+import HelpCenter from "./components/HelpCenter/HelpCenter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -52,6 +53,7 @@ function App() {
           <Route path="/promotional-page" element={<Promotional />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/forstartup" element={<ForStartup />} />
+          <Route path="/help" element={<HelpCenter />} />
         </Routes>
       </BrowserRouter>
     </>
