@@ -52,8 +52,6 @@ function App() {
           <Route path="/blogpost" element={<BlogPost />} />
           <Route path="/promotional-page" element={<Promotional />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/forstartup" element={<ForStartup />} />
-          <Route path="/help" element={<HelpCenter />} />
         </Routes>
       </BrowserRouter>
     </>

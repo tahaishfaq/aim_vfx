@@ -118,18 +118,7 @@ export const Navbar = () => {
                 >
                   Blog
                 </Link>
-                <Link
-                  to="/forstartup"
-                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
-                >
-                  start
-                </Link>
-                <Link
-                  to="/help"
-                  className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
-                >
-                  start
-                </Link>
+
                 {/* <div className="relative inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-white">
                 <span>Contact</span>
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-10 hidden">
@@ -188,7 +177,7 @@ export const Navbar = () => {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-lg  bg-gradient-to-r from-[#0B1A28CC] to-[#15B8C700] px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-32 sm:w-full sm:max-w-6xl sm:p-6">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-3xl ring-1 ring-black	 bg-[#0B1A28CC]  px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-32 sm:w-full sm:max-w-6xl sm:p-6">
                   <div className="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
                     <button
                       type="button"
@@ -355,7 +344,27 @@ export const Navbar = () => {
                                 </div>
                               </div>
                             </div>
+                            <div className="col-span-5 flex gap-x-4 items-center">
+                              <label
+                                className="text-[#fff] text-[20px] font-[700]"
+                                htmlFor=""
+                              >
+                                DEADLINE
+                              </label>
+                              <input
+                                type="date"
+                                name=""
+                                id=""
+                                className="w-full px-3 py-1.5 rounded-full text-[#9191d2] outline-none"
+                              />
+                            </div>
                           </div>
+                        </div>
+                        <div className="flex justify-center">
+                          <button></button>
+                          <Button className="px-8 py-2.5 text-sm font-semibold text-[#000]  bg-gradient-to-r from-[#15B8C7] to-[#8CE1EC] rounded-full  hover:text-[#000] hover:bg-cyan-600  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                            SEND PROJECT BRIEF
+                          </Button>
                         </div>
                       </form>
                     </div>
