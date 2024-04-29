@@ -6,9 +6,9 @@ import Button from "../../../Button/Button";
 const BriefProject = () => {
   return (
     <div className="brief-project">
-      <div className="flex w-full">
-        <div className="w-1/2 flex items-center justify-center px-44">
-          <div className="brief-project-border text-white pl-16 pr-16 py-20">
+      <div className="flex w-full items-center justify-center lg:flex-row flex-col lg:py-0 py-10">
+        <div className="lg:w-1/2 w-full flex items-center justify-center lg:px-44 px-3">
+          <div className="brief-project-border text-white lg:px-16 px-4 py-20">
             <div className=" uppercase flex flex-col">
               <h1 className="font-tek text-[50px]">Find your team</h1>
               <span className="font-tek font-semibold">
@@ -35,15 +35,15 @@ const BriefProject = () => {
         <img
           src={bg1}
           alt="bg-image "
-          className="bg-image absolute -z-10 bottom-0"
+          className="bg-image absolute -z-10 bottom-0 lg:block hidden"
         />
-        <div className="w-1/2 brief-project-border-2 ">
-          <div className="text-white  flex items-start justify-center flex-col mx-auto h-screen px-32 ">
+        <div className="lg:w-1/2 w-full brief-project-border-2 lg:py-0 py-10">
+          <div className="text-white  flex items-start justify-center flex-col mx-auto lg:h-screen lg:px-32 px-3">
             <h1 className="uppercase text-[40px] font-tek leading-tight">
               Please fill in this brief
             </h1>
             <div className="mt-10 w-full flex flex-col gap-y-4">
-              <div className="flex flex-col gap-y-20">
+              <div className="flex flex-col lg:gap-y-20 gap-y-6">
                 <div className="w-full">
                   <label
                     htmlFor="large-input"

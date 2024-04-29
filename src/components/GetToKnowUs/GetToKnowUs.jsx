@@ -17,8 +17,8 @@ const GetToKnowUs = () => {
   ];
   return (
     <div className="gettoknow-section">
-    <div className="flex justify-between mx-auto max-w-5xl ">
-      <div className="w-1/2 p-8">
+    <div className="flex lg:flex-row flex-col-reverse lg:justify-between justify-center mx-auto lg:max-w-5xl w-full">
+      <div className="lg:w-1/2 w-full lg:p-8 px-3 pt-10 pb-20">
         <KnowUsCard
           imageSrc={team}
           title="Smith"
@@ -27,7 +27,7 @@ const GetToKnowUs = () => {
           paragraph="Lorem ipsum dolor sit amet consectetur. Hendrerit varius neque mauris nisi malesuada eget tellus vitae porta."
         />
       </div>
-      <div className="w-1/2 p-8 mt-10 flex flex-col items-start gap-y-14">
+      <div className="lg:w-1/2 w-full lg:p-8 px-3 lg:mt-10 mt-0 flex flex-col items-start gap-y-8 lg:gap-y-14">
         <div>
           <h2 className="text-[60px] font-normal font-tek uppercase text-white leading-tight">
             Get to Know us
@@ -36,7 +36,7 @@ const GetToKnowUs = () => {
             Find out 3 random facts about our team
           </p>
         </div>
-        <div className="flex gap-x-10 gap-y-4 flex-wrap"> 
+        <div className="flex lg:gap-x-10 gap-x-4 gap-y-4 flex-wrap"> 
         {teamMembers?.map((teamMember) => (
           <TeamMembers
             name={teamMember?.name}

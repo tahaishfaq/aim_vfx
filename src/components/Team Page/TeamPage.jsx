@@ -26,15 +26,15 @@ export const TeamPage = () => {
 
   return (
     <div className="solution-page ">
-      <div className="flex items-center p-32 mx-auto max-w-7xl justify-center relative">
+      <div className="flex items-center lg:flex-row flex-col pt-0 pb-16 px-3 lg:p-32 mx-auto max-w-7xl justify-center relative">
         <img
           src={bg1}
           alt="bg"
-          className="absolute inset-y-0 -left-40 -z-10 opacity-30"
+          className="absolute lg:inset-y-0 lg:-left-40 -z-10 opacity-30 top-40 right-14"
         />
-        <div className="flex flex-col gap-y-3 pt-60 pb-40">
+        <div className="flex flex-col gap-y-3 lg:pt-60 lg:pb-40 pt-32 pb-12">
           <span className="team-hero-heading">Title text block</span>
-          <div className="w-96">
+          <div className="lg:w-96">
             <p className="text-white">
               JUST THE SUBHEAD HERE:
               <br />
@@ -61,7 +61,7 @@ export const TeamPage = () => {
           {/* </div> */}
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center text-center ">
+      <div className="flex flex-col items-center justify-center text-center lg:px-0 px-3">
         <h2
           id="details-heading"
           className="text-[60px] font-tek leading-tight  uppercase text-white"
@@ -75,9 +75,9 @@ export const TeamPage = () => {
           egestas nisi in.
         </p>
       </div>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-        <section className="flex justify-center items-center  max-w-4xl mx-auto overflow-hidden">
-          <div className="flex flex-col  justify-end -mr-40  w-2/5">
+      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 py-10">
+        <section className="flex lg:flex-row flex-col justify-center items-center  max-w-4xl mx-auto overflow-hidden gap-y-3">
+          <div className="flex flex-col  justify-center lg:justify-end lg:-mr-40  lg:w-2/5">
             <h1 className="text-4xl uppercase text-white mb-4">Mission</h1>
             <p className="text-white text-sm font-light">
               Lorem ipsum dolor sit amet consectetur. Scelerisque habitant
@@ -90,10 +90,10 @@ export const TeamPage = () => {
             <img
               src={shape2}
               alt="shape2"
-              className="h-[42rem] w-[30rem] object-cover object-center z-10"
+              className="lg:h-[42rem] lg:w-[30rem] object-cover object-center z-10"
             />
           </div>
-          <div className="flex flex-col  justify-start -ml-2 w-2/5">
+          <div className="flex flex-col  justify-start lg:-ml-2 lg:w-2/5">
             <h1 className="text-4xl uppercase text-white mb-4">Vision</h1>
             <p className="text-white text-sm font-light">
               Lorem ipsum dolor sit amet consectetur. Scelerisque habitant
@@ -108,27 +108,38 @@ export const TeamPage = () => {
       <GetToKnowUs />
       <Location />
 
-      <div className="px-4 sm:px-6 lg:px-8 pb-16 pt-24 sm:pb-24 sm:pt-32 xl:pb-32 mx-auto max-w-7xl">
-        <div className="bg-[#2EABAF] rounded-xl overflow-hidden sm:flex sm:items-center">
-          <img
-            className="w-full sm:max-w-md sm:w-auto object-cover"
-            src={shape4}
-            alt=""
-          />
-          <div className="p-6 sm:p-8 flex flex-col justify-center">
-            <h2 className="text-3xl sm:text-5xl uppercase text-white font-semibold leading-tight mb-4">
-              Let’s create our future together
-            </h2>
-            <p className="text-white text-lg sm:text-xl mb-6">
-              Don’t forget to check out our career page to see available
-              positions
-            </p>
-            <button className="px-8 py-3 text-sm sm:text-base font-semibold text-white bg-transparent hover:bg-white hover:text-[#2EABAF] border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray uppercase">
-              Available positions
-            </button>
+      <div className=" lg:pb-16 pb-10 lg:pt-24 pt-10 lg:px-44 px-3">
+          <div className="bg-[#2EABAF] rounded-xl pb-10 lg:pb-14 px-0 ">
+            <div className="flex flex-col lg:flex-row lg:items-center items-start justify-center gap-x-40 gap-y-6">
+              <div className="w-1/2">
+                <img
+                  className="  w-auto  object-cover"
+                  src={shape4}
+                  alt=""
+                />
+              </div>
+
+              <div className="w-full px-3">
+                <figure className=" ">
+                  <blockquote className="text-white leading-tight">
+                    <Heading className="lg:text-[60px] text-[40px] uppercase font-tek">
+                      Let’s create our future together
+                    </Heading>
+                    <p className="lg:text-base text-sm pt-4">
+                      Don’t forget to check out our career page to see available
+                      positions
+                    </p>
+                  </blockquote>
+                  <figcaption className="mt-10 text-base">
+                    <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                      Available positions
+                    </Button>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
       <LetsTalk />
       <FooterForm />

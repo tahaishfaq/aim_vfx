@@ -36,10 +36,10 @@ const CreateNewProject = () => {
       
       
   return (
-    <div className="create-new-project">
-      <div className="flex w-full">
-        <div className="w-1/2 flex items-center justify-center px-44">
-          <div className="create-new-project-border text-white pl-16 pr-16 py-20">
+    <div className="create-new-project ">
+      <div className="flex w-full items-center justify-center lg:flex-row flex-col lg:py-0 py-8">
+        <div className="lg:w-1/2 w-full flex items-center justify-center lg:px-44 px-4">
+          <div className="create-new-project-border text-white lg:px-16 px-6 py-20">
             <div className=" uppercase flex flex-col">
               <h1 className="font-tek text-[50px]">Find your team</h1>
               <span className="font-tek font-semibold">Welcome to Aim Fx, User!</span>
@@ -64,15 +64,15 @@ const CreateNewProject = () => {
         <img
           src={bg1}
           alt="bg-image "
-          className="bg-image absolute -z-10 bottom-0"
+          className="bg-image absolute -z-10 bottom-0 lg:block hidden"
         />
-        <div className="w-1/2 form-border-2 ">
-          <div className="text-white  flex items-start justify-center flex-col mx-auto h-screen px-[8rem] ">
+        <div className="lg:w-1/2 w-full form-border-2  lg:py-0 py-8 overflow-hidden">
+          <div className="text-white  flex lg:items-start items-center justify-center flex-col lg:mx-auto lg:h-screen lg:px-[8rem] ">
             <h1 className="uppercase text-[40px] font-tek leading-tight">
               Create Your Brief
             </h1>
 
-            <div className="flex flex-wrap gap-x-4 gap-y-4">
+            <div className="flex flex-wrap gap-x-4 gap-y-4 lg:h-auto h-screen overflow-y-scroll items-center justify-center mt-6">
                 {categories?.map((item) => 
                 <div className="flex flex-col items-start gap-y-2 border border-white rounded-2xl card-background pt-2 pb-5 px-2">
                     <img src={item?.image} alt="project" className="w-64 max-h-32"/> 

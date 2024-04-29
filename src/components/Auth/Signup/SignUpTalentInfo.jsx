@@ -15,35 +15,35 @@ const SignUpTalentInfo = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
     <div className="signup-talentinfo-page ">
-      <div className="flex items-center justify-center relative pt-32 overflow-hidden">
+      <div className="flex items-center justify-center relative pt-32 overflow-hidden lg:px-0 px-3 lg:pb-0 pb-8">
         <img
           src={back1}
           alt="bg-image"
-          className="absolute -z-10 bg-image-form"
+          className="absolute -z-10 bg-image-form lg:block hidden"
         />
-        <div className="absolute top-[25%] right-[22.5%] form-svg ">
+        <div className="absolute top-[25%] right-[22.5%] form-svg lg:block hidden">
           <img src={svg2} alt="bg-image" className="w-7 h-7" />
         </div>
-        <div className="absolute top-[40%] left-[21%] form-svg2 ">
+        <div className="absolute top-[40%] left-[21%] form-svg2 lg:block hidden">
           <img src={svg1} alt="bg-image" className="w-8 h-8" />
         </div>
-        <div className="absolute top-[35%] left-[12%] form-svg3 ">
+        <div className="absolute top-[35%] left-[12%] form-svg3 lg:block hidden">
           <img src={svg4} alt="bg-image" className="w-5 h-5" />
         </div>
-        <div className="absolute top-[68%] left-[18%] form-svg4 ">
+        <div className="absolute top-[68%] left-[18%] form-svg4 lg:block hidden">
           <img src={svg5} alt="bg-image" className="w-8 h-8" />
         </div>
-        <div className="absolute top-[65%] right-[20%] form-svg5 ">
+        <div className="absolute top-[65%] right-[20%] form-svg5 lg:block hidden">
           <img src={svg3} alt="bg-image" className="w-5 h-5" />
         </div>
-        <div className="singup-onboarding-form-border">
-          <div className="px-12 pt-6  pb-8 w-full flex items-start justify-center flex-col">
+        <div className="singup-onboarding-form-border lg:w-auto w-full">
+          <div className="lg:px-12 pt-6  pb-8 w-full flex items-start justify-center flex-col">
             <Heading className="uppercase text-[50px] font-tek text-white ">
               Sign up
             </Heading>
-            <div className="flex flex-col items-center justify-center gap-y-6 w-ful mt-4">
-              <div className="flex gap-x-4 ">
-                <div className="w-80">
+            <div className="flex flex-col items-center justify-center gap-y-6 w-full mt-4">
+              <div className="flex gap-x-4 lg:flex-row flex-col gap-y-2 w-full">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -57,7 +57,7 @@ const SignUpTalentInfo = () => {
                     className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                   />
                 </div>
-                <div className="w-80">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -72,8 +72,8 @@ const SignUpTalentInfo = () => {
                   />
                 </div>
               </div>
-              <div className="flex gap-x-4 ">
-                <div className="w-80">
+              <div className="flex gap-x-4 lg:flex-row flex-col gap-y-2 w-full">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -87,7 +87,7 @@ const SignUpTalentInfo = () => {
                     className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                   />
                 </div>
-                <div className="w-80">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -102,8 +102,8 @@ const SignUpTalentInfo = () => {
                   />
                 </div>
               </div>
-              <div className="flex gap-x-4 ">
-                <div className="w-80">
+              <div className="flex gap-x-4 lg:flex-row flex-col gap-y-2 w-full">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -117,7 +117,7 @@ const SignUpTalentInfo = () => {
                     className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                   />
                 </div>
-                <div className="w-80">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -132,8 +132,8 @@ const SignUpTalentInfo = () => {
                   />
                 </div>
               </div>
-              <div className="flex gap-x-4 ">
-                <div className="w-80">
+              <div className="flex gap-x-4 lg:flex-row flex-col gap-y-2 w-full">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -147,7 +147,7 @@ const SignUpTalentInfo = () => {
                     className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                   />
                 </div>
-                <div className="w-80">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -163,8 +163,8 @@ const SignUpTalentInfo = () => {
                 </div>
               </div>
 
-              <div className="flex gap-x-4 ">
-                <div className="w-80">
+              <div className="flex gap-x-4 lg:flex-row flex-col gap-y-2 w-full">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -178,7 +178,7 @@ const SignUpTalentInfo = () => {
                     className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                   />
                 </div>
-                <div className="w-80">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -194,8 +194,8 @@ const SignUpTalentInfo = () => {
                 </div>
               </div>
 
-              <div className="flex gap-x-4 ">
-                <div className="w-80">
+              <div className="flex gap-x-4 lg:flex-row flex-col gap-y-2 w-full">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -209,7 +209,7 @@ const SignUpTalentInfo = () => {
                     className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                   />
                 </div>
-                <div className="w-80">
+                <div className="lg:w-80 w-full">
                   <label
                     htmlFor="large-input"
                     className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "

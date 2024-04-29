@@ -46,15 +46,15 @@ const Blog = () => {
   ];
   return (
     <div className="solution-page pt-36">
-      <div className="px-48">
-        <div className="text-center text-[#fff] pb-5">
-          <h1 className="text-[100px] ">creative performance</h1>
+      <div className="lg:px-48 px-3">
+        <div className="text-center text-[#fff] pb-5 ">
+          <h1 className="text-[60px] lg:text-[80px] font-tek uppercase leading-tight">creative performance</h1>
           <p>
             Creative ides, practical tips and insider info...the AIM-FX blog
             helps your team get great design done at scale.
           </p>
         </div>
-        <div className="grid grid-cols-7 pt-12 pb-10 gap-4 ">
+        <div className="grid lg:grid-cols-7 grid-cols-2 pt-12 pb-10 gap-4 ">
           {logo.map((item, ind) => {
             return (
               <span
@@ -62,7 +62,7 @@ const Blog = () => {
                 key={ind}
               >
                 <img className="w-12 h-12 object-cover" src={item.img} alt="" />
-                <span className="font-[400] text-[30px] text-[#fff] text-center">
+                <span className="font-[400] lg:text-[30px] text-base capitalize text-[#fff] text-center">
                   {item.name}
                 </span>
               </span>
@@ -73,21 +73,21 @@ const Blog = () => {
           <img className="z-10" src={Rectangle7535} alt="" />
         </div>
       </div>
-      <div className="relative bottom-28 promotional-section grid grid-cols-2 p-40">
+      <div className="relative bottom-28 promotional-section grid lg:grid-cols-2 lg:p-40 py-40 px-4">
         <div className="px-7">
-          <span className="team-hero-heading">dont miss out</span>
-          <p className="font-[300] text-[20px] text-[#FFF]">
+          <span className="text-[50px] lg:text-[80px] uppercase text-white font-tek">dont miss out</span>
+          <p className="font-[300] lg:text-[20px] text-sm text-[#FFF]">
             Join our community of 30,000+ who receive the best in design and
             video development content weekly.
           </p>
         </div>
-        <div className="flex	items-end	justify-evenly ">
-          <span>
+        <div className="flex lg:flex-row flex-col gap-y-6	lg:items-end	lg:justify-evenly items-center justify-center lg:mt-0 mt-6">
+          <span className="w-full px-6">
             <input
               type="email"
               name="email"
               placeholder="Your base Email"
-              className="px-4 py-2.5 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] "
+              className="px-4 py-2.5 text-sm  w-full rounded-full text-gray-700 bg-[#D4E7F5] "
             />
           </span>
           <span>

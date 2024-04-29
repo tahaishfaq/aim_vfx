@@ -5,9 +5,9 @@ import { FaArrowRight } from 'react-icons/fa';
 const FindYourTeam = () => {
   return (
     <div className="signin-page">
-      <div className="flex w-full">
-        <div className="w-1/2 flex items-center justify-center px-44">
-          <div className="form-border text-white pl-16 pr-16 py-20">
+      <div className="flex w-full items-center justify-center lg:flex-row flex-col">
+        <div className="lg:w-1/2 w-full flex items-center justify-center lg:px-44 px-4 py-10">
+          <div className="form-border text-white px-8 lg:px-16 py-20">
             <div className=" uppercase flex flex-col">
               <h1 className="font-tek text-[50px]">Find your team</h1>
               <span className="font-tek font-semibold">Welcome to Aim Fx, User!</span>
@@ -32,16 +32,16 @@ const FindYourTeam = () => {
         <img
           src={bg1}
           alt="bg-image "
-          className="bg-image absolute -z-10 bottom-0"
+          className="bg-image absolute -z-10 bottom-0 hidden lg:block"
         />
-        <div className="w-1/2 form-border-2 ">
-          <div className="text-white  flex items-start justify-center flex-col mx-auto h-screen px-40 ">
+        <div className="lg:w-1/2 w-full form-border-2 ">
+          <div className="text-white  flex items-start justify-center flex-col mx-auto h-screen lg:px-40 px-4">
             <h1 className="uppercase text-[40px] font-tek leading-tight">
               Organizations Teams
             </h1>
             <span className="uppercase font-bold text-sm -mt-1 ml-0.5">For User@mail.com</span>
             <div className="mt-10 w-full flex flex-col gap-y-4">
-            <div className="border-4 border-[#00FFFF] w-full flex justify-between items-end pl-10 pr-3 py-5 rounded-2xl card-background ">
+            <div className="border-4 border-[#00FFFF] w-full flex justify-between items-end lg:pl-10 lg:pr-3 py-5 px-3 rounded-2xl card-background ">
               <div className="flex gap-x-4 items-center">
                 <span className="bg-[#0B1A28] rounded-full w-16 h-16 flex items-center justify-center">
                   LT
@@ -61,7 +61,7 @@ const FindYourTeam = () => {
                 </span>
               </div>
             </div>
-            <div className="border-4 border-[#00FFFF] w-full flex justify-between items-end pl-10 pr-3 py-5 rounded-2xl card-background ">
+            <div className="border-4 border-[#00FFFF] w-full flex justify-between items-end lg:pl-10 lg:pr-3 py-5 px-3  rounded-2xl card-background ">
               <div className="flex gap-x-4 items-center">
                 <span className="bg-[#3F6B93] rounded-full w-16 h-16 flex items-center justify-center">
                   LT
@@ -81,7 +81,7 @@ const FindYourTeam = () => {
                 </span>
               </div>
             </div>
-            <div className="border-4 border-[#00FFFF] w-full flex justify-between items-end pl-10 pr-3 py-5 rounded-2xl card-background ">
+            <div className="border-4 border-[#00FFFF] w-full flex justify-between items-end lg:pl-10 lg:pr-3 py-5 px-3  rounded-2xl card-background ">
               <div className="flex gap-x-4 items-center">
                 <span className="bg-[#7C6296] rounded-full w-16 h-16 flex items-center justify-center">
                   LT

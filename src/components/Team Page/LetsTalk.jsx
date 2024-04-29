@@ -24,15 +24,15 @@ const LetsTalk = () => {
         alert("Form submitted. Check the console for form data.");
       };
   return (
-    <div className="max-w-7xl pt-4 mx-auto flex flex-col md:flex-row justify-center gap-x-24 px-32">
+    <div className="max-w-7xl pt-4 mx-auto flex flex-col lg:flex-row justify-center gap-x-24 lg:px-32 px-3">
     <div className="mb-6 flex flex-col  gap-y-1.5">
       <h2 className="text-[65px] font-tek font-normal leading-tight">
       Let’s Talk
       </h2>
-      <p className="w-96 text-md mb-2">
+      <p className="lg:w-96 text-md mb-2">
       Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help. Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help
       </p>
-      <p className="w-96 text-md">
+      <p className="lg:w-96 text-md">
       Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide helpHave some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help
       </p>
     </div>

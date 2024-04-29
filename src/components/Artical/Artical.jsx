@@ -56,19 +56,19 @@ const Artical = () => {
   return (
     <div className="">
       <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div className="md:flex md:items-center md:justify-between">
-          <span className="flex">
+        <div className="flex items-center justify-center flex-col gap-y-4">
+          <span className="flex items-center justify-center">
             <img src={Article1} alt="" />
-            <h3 className="text-[50px] font-[300]  tracking-tight text-[#56BEC2]">
+            <h3 className="text-[50px] font-[300] font-tek leading-tight text-[#56BEC2]">
               Latest articles
             </h3>
           </span>
-          <Button className="px-8 py-2.5 text-sm font-semibold border-2 border-[#fff] text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+          <Button className="px-8 py-2 text-sm font-semibold border-2 border-[#fff] text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
             SEE ALL
           </Button>
         </div>
 
-        <div className="mt-6 grid grid-cols-2 gap-x-4 gap-y-14 sm:gap-x-6 md:grid-cols-3 md:gap-y-10 lg:gap-x-8">
+        <div className="mt-6 grid lg:grid-cols-2 grid-cols-1 gap-x-4 gap-y-14 sm:gap-x-6 md:grid-cols-3 md:gap-y-10 lg:gap-x-8">
           {products.map((product) => (
             <div key={product.id} className="group relative">
               <div className=" w-full overflow-hidden   ">

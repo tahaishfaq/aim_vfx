@@ -25,13 +25,20 @@
 
 .brief-project2-border-2 {
   background: linear-gradient(196.98deg, #013b49 9.3%, #1bc2cb 84.62%);
-  height: 100vh;
+  /* height: 100vh; */
   /* backdrop-filter: blur(10px); */
-  border-radius: 0 0 0 375px;
+  border-radius: 0 0 0 275px;
 }
 
 .card-background {
   background-color: #ffffff25;
+}
+
+@media (max-width: 767px) {
+  .brief-project2-border-2 {
+   
+    border-radius: 0 0 0 125px;
+  }
 }
 
 

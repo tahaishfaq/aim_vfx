@@ -13,36 +13,36 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   return (
-    <div className="signin-page ">
-      <div className="flex items-center justify-center relative pt-32 overflow-hidden">
+    <div className="signin-page h-auto">
+      <div className="flex items-center justify-center relative lg:pt-32 pt-28 overflow-hidden lg:px-0 px-3 lg:pb-0 pb-10">
         <img
           src={back1}
           alt="bg-image"
-          className="absolute -z-10 bg-image-form"
+          className="absolute -z-10 bg-image-form lg:block hidden"
         />
-        <div className="absolute top-[25%] right-[30.5%] form-svg ">
+        <div className="absolute top-[25%] right-[30.5%] form-svg lg:block hidden">
           <img src={svg2} alt="bg-image" className="w-7 h-7" />
         </div>
-        <div className="absolute top-[40%] left-[30%] form-svg2 ">
+        <div className="absolute top-[40%] left-[30%] form-svg2 lg:block hidden">
           <img src={svg1} alt="bg-image" className="w-8 h-8" />
         </div>
-        <div className="absolute top-[38%] left-[20%] form-svg3 ">
+        <div className="absolute top-[38%] left-[20%] form-svg3 lg:block hidden">
           <img src={svg4} alt="bg-image" className="w-5 h-5" />
         </div>
-        <div className="absolute top-[68%] left-[18%] form-svg4 ">
+        <div className="absolute top-[68%] left-[18%] form-svg4 lg:block hidden">
           <img src={svg5} alt="bg-image" className="w-8 h-8" />
         </div>
-        <div className="absolute top-[65%] right-[20%] form-svg5 ">
+        <div className="absolute top-[65%] right-[20%] form-svg5 lg:block hidden">
           <img src={svg3} alt="bg-image" className="w-5 h-5" />
         </div>
         <div className="form-border ">
-          <div className="px-12 pt-4 pb-4 w-full flex items-center justify-center flex-col">
-            <Heading className="uppercase text-[80px] font-tek text-white">
+          <div className="lg:px-12 lg:pt-4 lg:pb-4 py-8 w-full flex items-center justify-center flex-col">
+            <Heading className="uppercase text-[60px] lg:text-[80px] font-tek text-white">
               Sign up
             </Heading>
             <div className="flex flex-col items-center justify-center gap-y-2 w-full">
-              <div className="flex flex-col gap-y-4 ml-3 mb-4">
-                <div class="w-96">
+              <div className="flex flex-col gap-y-4 lg:ml-3 mb-4">
+                <div class="lg:w-96 w-full">
                   <input
                     id="default-radio-1"
                     type="radio"
@@ -57,7 +57,7 @@ const Signup = () => {
                     I’m a client, looking for a creative team
                   </label>
                 </div>
-                <div class="w-96">
+                <div class="lg:w-96 w-full">
                   <input
                     checked
                     id="default-radio-2"
@@ -74,7 +74,7 @@ const Signup = () => {
                   </label>
                 </div>
               </div>
-              <div className="w-96">
+              <div className="lg:w-96 w-full">
                 <label
                   htmlFor="large-input"
                   className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -88,7 +88,7 @@ const Signup = () => {
                   className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                 />
               </div>
-              <div className="w-96">
+              <div className="lg:w-96 w-full">
                 <label
                   htmlFor="large-input"
                   className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -102,7 +102,7 @@ const Signup = () => {
                   className="px-4 py-3 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] w-full"
                 />
               </div>
-              <div className="w-96 ">
+              <div className="lg:w-96 w-full ">
                 <label
                   htmlFor="large-input"
                   className="block mb-2 text-sm font-medium ml-3 text-[#D4E7F5] "
@@ -149,7 +149,7 @@ const Signup = () => {
                 </Button>
               </div>
 
-              <div className="mt-10">
+              <div className="mt-10 lg:text-base text-sm">
                 <span className="font-light text-[#D4E7F5]">
                   Already have an account?{" "}
                   <span className="underline text-[#00FFFF] font-light">

@@ -27,7 +27,7 @@
     background: linear-gradient(196.98deg, #013b49 9.3%, #1bc2cb 84.62%);
     height: 100vh;
   /* backdrop-filter: blur(10px); */
-  border-radius: 0 0  0 375px; 
+  border-radius: 0 0  0 275px; 
   }
 
 
@@ -36,3 +36,4 @@
 
 
 }
+

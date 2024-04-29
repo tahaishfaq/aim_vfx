@@ -6,10 +6,10 @@ const Location = () => {
     "Take a look at all the countries that AIM FX team members are based in.";
 
   return (
-    <div className=" flex flex-col items-center justify-center">
-      <div className="mt-8 flex flex-col items-center">
+    <div className=" flex flex-col items-center justify-center lg:py-0 py-6">
+      <div className="mt-8 flex flex-col items-center lg:px-0 px-3">
         <h2 className="text-[60px] text-white font-tek leading-tight">Location</h2>
-        <p className="text-gray-200 text-sm">
+        <p className="text-gray-200 text-sm lg:text-start text-center">
           Take a look at all the countries that AIM FX team members are based
           in.
         </p>
