@@ -20,6 +20,8 @@ import Promotional from "./components/PromationalAbout/Promotional";
 import Blog from "./components/Blog/Blog";
 import ForStartup from "./components/ForStratup/ForStartup";
 import HelpCenter from "./components/HelpCenter/HelpCenter";
+import HelpCatogry from "./components/HelpCategory/HelpCategory";
+import HelpTutorial from "./components/HelpTutorial/HelpTutorial";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -52,6 +54,7 @@ function App() {
           <Route path="/blogpost" element={<BlogPost />} />
           <Route path="/promotional-page" element={<Promotional />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/hepltutorial" element={<HelpTutorial />} />
         </Routes>
       </BrowserRouter>
     </>
