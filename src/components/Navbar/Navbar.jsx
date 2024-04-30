@@ -119,10 +119,10 @@ export const Navbar = () => {
                   Blog
                 </Link>
                 <Link
-                  to="/hepltutorial"
+                  to="/careers"
                   className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
-                  help
+                  careers
                 </Link>
 
                 {/* <div className="relative inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-white">

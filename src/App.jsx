@@ -22,6 +22,7 @@ import ForStartup from "./components/ForStratup/ForStartup";
 import HelpCenter from "./components/HelpCenter/HelpCenter";
 import HelpCatogry from "./components/HelpCategory/HelpCategory";
 import HelpTutorial from "./components/HelpTutorial/HelpTutorial";
+import Careers from "./components/Careers/Careers";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -54,7 +55,7 @@ function App() {
           <Route path="/blogpost" element={<BlogPost />} />
           <Route path="/promotional-page" element={<Promotional />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/hepltutorial" element={<HelpTutorial />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
       </BrowserRouter>
     </>

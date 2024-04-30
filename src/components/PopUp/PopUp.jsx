@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import {
   ExclamationTriangleIcon,
   XMarkIcon,
@@ -6,10 +6,95 @@ import {
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import Button from "../Button/Button";
+import { Dialog, Transition } from "@headlessui/react";
+import chevron from "../../assets/images/chevron-right (1).png";
+import Group from "../../assets/images/Group 469477.png";
+import Rectangle7590 from "../../assets/images/Rectangle 7590.png";
+import Rectangle7591 from "../../assets/images/Rectangle 7591.png";
+import Rectangle7592 from "../../assets/images/Rectangle 7592.png";
+import Rectangle7593 from "../../assets/images/Rectangle 7593.png";
+import Rectangle7594 from "../../assets/images/Rectangle 7594.png";
+import Rectangle7595 from "../../assets/images/Rectangle 7595.png";
+import Rectangle7596 from "../../assets/images/Rectangle 7596.png";
+import Rectangle7597 from "../../assets/images/Rectangle 7597.png";
+import Rectangle7598 from "../../assets/images/Rectangle 7598.png";
+import Rectangle7510 from "../../assets/images/Rectangle 7510.png";
+import Rectangle7511 from "../../assets/images/Rectangle 7511.png";
+import Rectangle7512 from "../../assets/images/Rectangle 7512.png";
+import Rectangle7513 from "../../assets/images/Rectangle 7513.png";
+import Rectangle7514 from "../../assets/images/Rectangle 7514.png";
+import Rectangle750 from "../../assets/images/Rectangle 7510.png";
+import Group469614 from "../../assets/images/Group 469614.png";
+import PopUpVideo from "./PopUpVideo";
+const PopUp = ({ open, setOpen }) => {
+  const imgData = [
+    {
+      id: 1,
+      src: Rectangle7591,
+      colspan: "col-span-3",
+    },
+    {
+      id: 2,
+      src: Rectangle7592,
+      colspan: "col-span-3",
+    },
+    {
+      id: 3,
+      src: Rectangle7593,
+      colspan: "col-span-3",
+    },
+    {
+      id: 4,
+      src: Rectangle7594,
+      colspan: "col-span-3",
+    },
+    {
+      id: 5,
+      src: Rectangle7595,
+      colspan: "col-span-6",
+    },
+    {
+      id: 6,
+      src: Rectangle7596,
+      colspan: "col-span-2",
+    },
+    {
+      id: 7,
+      src: Rectangle7597,
+      colspan: "col-span-2",
+    },
+    {
+      id: 8,
+      src: Rectangle7598,
+      colspan: "col-span-2",
+    },
+    {
+      id: 9,
+      src: Rectangle7510,
+      colspan: "col-span-6",
+    },
+    {
+      id: 10,
+      src: Rectangle7511,
+      colspan: "col-span-3",
+    },
+    {
+      id: 11,
+      src: Rectangle7512,
+      colspan: "col-span-3",
+    },
+    {
+      id: 12,
+      src: Rectangle7513,
+      colspan: "col-span-2",
+    },
+    {
+      id: 13,
+      src: Rectangle7514,
+      colspan: "col-span-4",
+    },
+  ];
 
-const PopUp = () => {
-  const [open, setOpen] = useState(false);
-  const [value, setValue] = useState("");
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -36,7 +121,7 @@ const PopUp = () => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-3xl ring-1 ring-black	 bg-[#0B1A28CC]  px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-32 sm:w-full sm:max-w-6xl sm:p-6">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-3xl ring-1 ring-slate-400	 bg-[#0B1A28CC]  px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-24 sm:w-full sm:max-w-6xl sm:p-6">
                 <div className="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
                   <button
                     type="button"
@@ -47,180 +132,94 @@ const PopUp = () => {
                     <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
                 </div>
-                <div className=" flex justify-center">
-                  <div>
-                    <div className="text-center text-[#fff]">
-                      <h1 className=" text-[50px] font-[400]">
-                        SEND PROJECT BRIEF
-                      </h1>
-                      <p>
-                        We can tailor the perfect video experience for your
-                        studio, give us a hi:
-                      </p>
-                    </div>
-                    <form className="w-[780px] shadow-sm ring-1 ring-gray-900/5 sm:rounded-xl ">
-                      <div className="px-4 py-6 sm:p-8">
-                        <div className="grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-                          <div className="sm:col-span-3">
-                            <label
-                              htmlFor="first-name"
-                              className="block text-sm font-medium leading-6 text-[#FFFFFF]"
-                            >
-                              project name
-                            </label>
-                            <div className="mt-2">
-                              <input
-                                type="text"
-                                name="first-name"
-                                id="first-name"
-                                autoComplete="given-name"
-                                className="block w-full bg-[#D4E7F5] outline-none rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                              />
-                            </div>
-                          </div>
-                          <div className="sm:col-span-3">
-                            <label
-                              htmlFor="country"
-                              className="block text-sm font-medium leading-6 text-[#FFFFFF]"
-                            >
-                              Project Type
-                            </label>
-                            <div className="mt-2">
-                              <select
-                                id="country"
-                                name="country"
-                                autoComplete="country-name"
-                                className="block bg-[#D4E7F5] outline-none w-full rounded-full border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600  sm:text-sm sm:leading-6"
-                              >
-                                <option>Select</option>
-                                <option>United States</option>
-                                <option>Canada</option>
-                                <option>Mexico</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div className="col-span-6 text-[#fff]">
-                            <h1 className="text-[20px] font-[700]">
-                              Creative Assets
-                            </h1>
-                            <p>What best fits your assets needs?</p>
-                          </div>
-                          <div className="sm:col-span-3">
-                            <div className="mt-2">
-                              <select
-                                id="country"
-                                name="country"
-                                autoComplete="country-name"
-                                className="block bg-[#D4E7F5] outline-none w-full rounded-full border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600  sm:text-sm sm:leading-6"
-                              >
-                                <option>Select</option>
-                                <option>United States</option>
-                                <option>Canada</option>
-                                <option>Mexico</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div className="sm:col-span-3">
-                            <div className="mt-2">
-                              <select
-                                id="country"
-                                name="country"
-                                autoComplete="country-name"
-                                className="block bg-[#D4E7F5] outline-none w-full rounded-full border-0 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600  sm:text-sm sm:leading-6"
-                              >
-                                <option>Select</option>
-                                <option>United States</option>
-                                <option>Canada</option>
-                                <option>Mexico</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div className="col-span-full">
-                            <div className="text-[#fff] ">
-                              <h1 className=" text-[20px] font-[700]">
-                                Describe the project
-                              </h1>
-                              <p>
-                                Consideer providing context, challenges,
-                                requirements, playback duration, past work,
-                                preferences, scripts or instructions, references
-                                and links
-                              </p>
-                            </div>
-                            <div className="mt-2 overflow-hidden rounded-xl">
-                              <ReactQuill
-                                theme="snow"
-                                value={value}
-                                onChange={setValue}
-                                className=" bg-[#D4E7F5] h-28  "
-                                placeholder="Add description..."
-                              />
-                            </div>
-                          </div>
-                          <div className="col-span-full text-[#fff] leading-7">
-                            <h1 className="text-[20px] font-[700]">
-                              Formats, sizes or ad set
-                            </h1>
-                            <p>
-                              Are there any specific requirements for assets
-                              formats, sizes or dimensions?
-                            </p>
-
-                            <div className="flex items-start pt-4">
-                              <div className="flex h-6 items-center">
-                                <input
-                                  name="plan"
-                                  type="radio"
-                                  className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                                />
-                              </div>
-                              <div className="ml-3 text-sm leading-6">
-                                <label htmlFor="plan" className="font-medium ">
-                                  Yes, I’ll provide the creative specs/chase
-                                  list
-                                </label>
-                              </div>
-                            </div>
-                            <div className=" flex items-start pt-4">
-                              <div className="flex h-6 items-center ">
-                                <input
-                                  name="plan"
-                                  type="radio"
-                                  className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
-                                />
-                              </div>
-                              <div className="ml-3 text-sm leading-6">
-                                <label htmlFor="plan" className="font-medium ">
-                                  No, I’d Superside to suggest the creative
-                                  specs
-                                </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="col-span-5 flex gap-x-4 items-center">
-                            <label
-                              className="text-[#fff] text-[20px] font-[700]"
-                              htmlFor=""
-                            >
-                              DEADLINE
-                            </label>
-                            <input
-                              type="date"
-                              name=""
-                              id=""
-                              className="w-full px-3 py-1.5 rounded-full text-[#9191d2] outline-none"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                      <div className="flex justify-center">
-                        <button></button>
-                        <Button className="px-8 py-2.5 text-sm font-semibold text-[#000]  bg-gradient-to-r from-[#15B8C7] to-[#8CE1EC] rounded-full  hover:text-[#000] hover:bg-cyan-600  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                          SEND PROJECT BRIEF
-                        </Button>
-                      </div>
-                    </form>
+                <div className="w-[90%] mx-auto  text-white  ">
+                  <div className="flex items-center mt-2 py-4">
+                    <span>Our Works</span>
+                    <span>
+                      <img src={chevron} alt="" />
+                    </span>
+                    <span className="text-[#00FFFF] font-[500]">Bolt</span>
                   </div>
+                  <div className="pb-4">
+                    <video controls poster={Group}>
+                      <source src="your-video-file.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+
+                  <div className="w-[85%] mx-auto">
+                    <div className="grid grid-cols-2 ">
+                      <div className="  flex flex-col justify-center gap-3">
+                        <h1 className="font-[500] text-3xl pb-4">
+                          Bolt Bets on Video to Generate Brand Awareness
+                        </h1>
+                        <p>
+                          Bolt requested a video to showcase their unique
+                          offering of making customer checkouts quick, easy, and
+                          painless. The brand’s Electric Dynamism reflects the
+                          excitement and instantaneity of a one-click checkout
+                          process through the use of dramatic wide-angle lenses,
+                          energetic movement
+                        </p>
+                      </div>
+                      <div className="p-6">
+                        <img src={Rectangle7590} alt="" />
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-2 uppercase py-10">
+                      <div className=" flex flex-col justify-center gap-4">
+                        <h1 className="font-[500] text-3xl pb-4">YEAR</h1>
+                        <span className="text-[#00FFFF] text-7xl font-tek">
+                          2024-2025
+                        </span>
+                      </div>
+                      <div className=" flex flex-col justify-center gap-3">
+                        <h1 className="font-[500] text-3xl pb-4">industry</h1>
+                        <span className="text-[#00FFFF] text-7xl font-tek">
+                          SOFTWARE
+                        </span>
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-6 gap-4">
+                      {imgData.slice(0, 8).map((item) => {
+                        return (
+                          <div key={item.id} className={item.colspan}>
+                            <img src={item.src} alt="" />
+                          </div>
+                        );
+                      })}
+                    </div>
+                    <p className="px-10 py-14 text-xl">
+                      Lorem ipsum dolor sit amet consectetur. Curabitur rhoncus
+                      vitae posuere sit pharetra. Purus donec enim sagittis
+                      parturient imperdiet mauris cras. Urna morbi imperdiet
+                      dolor amet. Mi et aliquam elementum vestibulum risus
+                      velit. Quam aliquet morbi id nisl nunc.
+                    </p>
+                    <div className="grid grid-cols-6 gap-4">
+                      {imgData.slice(8, 13).map((item) => {
+                        return (
+                          <div key={item.id} className={item.colspan}>
+                            <img src={item.src} alt="" />
+                          </div>
+                        );
+                      })}
+                    </div>
+                    <p className="px-10 py-14 text-xl">
+                      Lorem ipsum dolor sit amet consectetur. Curabitur rhoncus
+                      vitae posuere sit pharetra. Purus donec enim sagittis
+                      parturient imperdiet mauris cras. Urna morbi imperdiet
+                      dolor amet. Mi et aliquam elementum vestibulum risus
+                      velit. Quam aliquet morbi id nisl nunc.
+                    </p>
+                  </div>
+
+                  <div>
+                    <img src={Group469614} alt="" />
+                  </div>
+                  <h1 className="font-[500] text-3xl py-14">
+                    DISCOVER MORE AMAZING PROJECTS
+                  </h1>
+                  <PopUpVideo />
                 </div>
               </Dialog.Panel>
             </Transition.Child>
