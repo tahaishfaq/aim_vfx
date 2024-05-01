@@ -4,7 +4,6 @@ import Persntage from "../Persentage/Persentage";
 import CareersCards from "./CareersCards";
 import CareersCards2 from "./CareersCards2";
 import FooterForm from "../Footer/Footer";
-import Compare from "../Campare/Compare";
 import CheckOut from "../CheckOut/CheckOut";
 
 const Careers = () => {

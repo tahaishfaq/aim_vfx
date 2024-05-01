@@ -2,7 +2,6 @@ import React from "react";
 import Group469764 from "../../assets/images/Group 469764.png";
 import Group469766 from "../../assets/images/Group 469766.png";
 import Group469765 from "../../assets/images/Group 469765.png";
-
 import Rectagle7604 from "../../assets/images/Rectangle 7604.png";
 import Rectagle7605 from "../../assets/images/Rectangle 7605.png";
 
