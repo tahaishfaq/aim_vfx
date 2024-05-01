@@ -89,7 +89,7 @@ const BlogPost = () => {
             </div>
             <div className="">
               <h4 className="text-[16px] italic font-[700] ">
-                Published:{" "}
+                Published:
                 <span className="text-[#00FFFF] font-[300]">Feb 12, 2024</span>
               </h4>
             </div>

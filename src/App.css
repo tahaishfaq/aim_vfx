@@ -229,8 +229,6 @@ video::-webkit-media-controls-play-button {
   display: none !important;
 }
 
-
-
 .spectular-service-section {
   font-family: "Teko";
   /* border: 1px solid red; */
@@ -256,20 +254,16 @@ video::-webkit-media-controls-play-button {
   inset: -22% 0 0 0;
 }
 
-
-
 .image-container {
-  
   border-radius: 40px;
   border: 15px solid #0513375a; /* Border color */
   backdrop-filter: blur(20px); /* Apply blur effect to content behind */
   background: rgba(5, 19, 55, 0.4);
 }
 
-
 .spectular-services {
   position: absolute;
-  inset:  0;
+  inset: 0;
 }
 
 .scrollbar-hide {
@@ -292,9 +286,6 @@ video::-webkit-media-controls-play-button {
   background: linear-gradient(to right, #2eabaf 40%, gray 40%);
 }
 
-
-
-
 /* home-page-portfolio */
 
 .home-page-portfolio {
@@ -316,8 +307,6 @@ video::-webkit-media-controls-play-button {
   object-fit: cover;
 }
 
-
-
 /* homepage-testimonal */
 
 .video-container-testimonal {
@@ -336,7 +325,6 @@ video::-webkit-media-controls-play-button {
   object-fit: cover;
   border-radius: 20px;
 }
-
 
 @media (max-width: 767px) {
   .hero-section {
@@ -397,7 +385,7 @@ video::-webkit-media-controls-play-button {
   }
 
   .video-bg-image1 {
-   display: none;
+    display: none;
   }
 
   .video-bg-image2 {
@@ -411,13 +399,13 @@ video::-webkit-media-controls-play-button {
     align-items: center;
     justify-content: center;
     left: 0;
-  top: 0;
+    top: 0;
   }
 
   .spectular-bg-image {
     visibility: hidden;
   }
-  
+
   .spectularImage {
     position: absolute;
     inset: -5% 0 0 0;
@@ -426,15 +414,12 @@ video::-webkit-media-controls-play-button {
     width: 80%; /* Adjust width for mobile screens */
     height: 10px; /* Adjust height for mobile screens */
   }
- 
+
   .home-page-portfolio {
-    
     border-radius: 0px 400px 0px 400px;
   }
 
-
   .video-container-testimonal {
-    
     width: auto; /* Remove fixed width */
     max-width: 100%; /* Ensure it doesn't overflow its container */
     height: auto; /* Remove fixed height */
@@ -442,9 +427,6 @@ video::-webkit-media-controls-play-button {
     border: 4px solid #15b8c7;
     overflow: hidden;
   }
-  
-  
-  
 }
 
 /* ---------- Service Page Styling ------------- */
@@ -513,8 +495,6 @@ video::-webkit-media-controls-play-button {
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.2);
 }
-
-
 
 .service-video-section {
   position: relative;
@@ -900,90 +880,68 @@ video::-webkit-media-controls-play-button {
   border-radius: 0px 375px 0px 375px;
 }
 
-
-
 @media (max-width: 767px) {
   .service-top-section {
     height: auto;
   }
-  
-  
-  
+
   .service-hero-left-part {
-    padding: 50px 20px ;
+    padding: 50px 20px;
   }
-  
-  
+
   .service-hero-heading {
- 
     font-size: 40px;
     line-height: 40px;
-    
   }
   .services-list span {
-
     padding: 12px 12px 12px 0px;
-    
   }
   .solutionText {
     position: absolute;
     top: 340px;
-    
   }
 
   .side-image {
-   display: none;
+    display: none;
   }
 
   .service-video-section {
-    
     padding: 0px 0px 0px 0px;
   }
- 
+
   .service-video-img {
     position: absolute;
     top: 0%;
     left: 0%;
-    
   }
 
   .service-video {
- 
     height: 250px;
-    max-width: 400px; 
-   
+    max-width: 400px;
   }
 
   .solution-cards {
     padding: 10px 10px;
   }
-  
- 
+
   .rates-section {
     padding: 200px 20px 150px 20px;
-   
   }
   .save-time-section {
     padding: 0 0px;
-   
-    
   }
   .serviceRateSection {
     padding: 170px 20px 50px 20px;
   }
 
   .rate-bottom-content {
-    
     padding: 10px 20px;
   }
 
   .rate-desc {
-  
     padding: 10px 10px;
- 
   }
   .rate-button {
-
     padding: 40px 0;
   }
   .work-category {
@@ -992,15 +950,12 @@ video::-webkit-media-controls-play-button {
   }
   .how-work-btn {
     padding: 30px 0;
-  
-  
   }
 }
 
 .promotional-section {
   padding: 80px 0;
-  background: linear-gradient(196.98deg, #013b49 9.3%, #1bc2cb 84.62%);
+  background: linear-gradient(196.98deg, #013b49 9.3%, #29b6bd 84.62%);
   /* backdrop-filter: blur(10px); */
   border-radius: 0px 375px 0px 275px;
 }
-
