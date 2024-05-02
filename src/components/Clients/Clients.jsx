@@ -5,15 +5,15 @@ const Clients = () => {
   return (
     <div className="">
       <div className="text-center">
-        <h1 className="font-tek font-[400] text-[#fff] text-[100px]">
+        <h1 className="font-tek font-[400] text-[#fff] text-[40px] sm:text-[50px] lg:text-[100px]">
           why clients love aimfx
         </h1>
       </div>
-      <div className="px-60 grid grid-cols-10 items-center">
-        <div className="col-span-1">
+      <div className=" xl:px-60 lg:px-36 md:px-28 grid lg:grid-cols-10 items-center">
+        <div className="hidden lg:block  col-span-1">
           <img className="rotate-180" src={Arrow} alt="" />
         </div>
-        <div className="col-span-8 grid grid-cols-2 gap-3 p-4 border-[2px] rounded-3xl border-[#15B8C7]">
+        <div className="col-span-8 grid  lg:grid-cols-2 gap-3 p-4 border-[2px] rounded-3xl border-[#15B8C7]">
           <div className="col-span-1 p-5">
             <img src={Group469461} alt="" />
           </div>
@@ -31,7 +31,7 @@ const Clients = () => {
             <p className="text-[24px]">Company VideoFx</p>
           </div>
         </div>
-        <div className="col-span-1 flex justify-end">
+        <div className="hidden md:block col-span-1 lg:flex justify-end">
           <img src={Arrow} alt="" />
         </div>
       </div>

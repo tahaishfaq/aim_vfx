@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Article from "../../assets/images/article 1.png";
 import article from "../../assets/images/article.png";
 import teenyicons from "../../assets/images/teenyicons_book-solid.png";
@@ -12,8 +12,10 @@ import Design3d from "../Design3d/Design3d";
 import Future from "../Future/Future";
 import Future2 from "../Future/Future2";
 import FooterForm from "../Footer/Footer";
+import PopUp from "../PopUp/PopUp";
 
 const Blog = () => {
+  const [open, setOpen] = useState(false);
   const logo = [
     {
       img: Article,
@@ -90,7 +92,7 @@ const Blog = () => {
               className="px-4 py-2.5 text-sm  w-full rounded-full text-gray-700 bg-[#D4E7F5] "
             />
           </span>
-          <span>
+          <span onClick={() => setOpen(true)}>
             <Button className="px-4 py-2.5 text-sm font-semibold text-[#100e0e] bg-[#fff] rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               SEE OPENNINGS
             </Button>
@@ -105,6 +107,7 @@ const Blog = () => {
       <Future />
 
       <FooterForm />
+      <PopUp open={open} setOpen={setOpen} />
     </div>
   );
 };

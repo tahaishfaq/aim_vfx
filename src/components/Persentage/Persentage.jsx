@@ -29,12 +29,15 @@ const stats = [
 export default function Persntage() {
   return (
     <div className="">
-      <div className="mx-auto max-w-7xl px-38">
+      <div className="mx-auto max-w-6xl px-38">
         <div className="grid grid-cols-1 gap-px sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
-            <div key={stat.id} className=" px-4 py-6 sm:px-6 lg:px-8">
+            <div
+              key={stat.id}
+              className="flex justify-center py-6 sm:px-6 lg:px-8"
+            >
               <div>
-                <div className="Teko font-[300] text-[20px] text-[#FFFF]">
+                <div className="Teko font-[600] text-[30px] text-[#FFFF]">
                   {stat.name}
                 </div>
                 <span className="Teko font-[300] text-[80px] text-[#00FFFF]">

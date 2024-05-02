@@ -21,6 +21,7 @@ import Blog from "./components/Blog/Blog";
 import ForStartup from "./components/ForStratup/ForStartup"
 import BookCall from "./components/Book Call/BookCall";
 
+
 function App() {
   const [count, setCount] = useState(0);
 
