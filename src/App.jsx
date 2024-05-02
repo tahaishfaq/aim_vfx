@@ -20,7 +20,10 @@ import Promotional from "./components/PromationalAbout/Promotional";
 import Blog from "./components/Blog/Blog";
 import ForStartup from "./components/ForStratup/ForStartup"
 import BookCall from "./components/Book Call/BookCall";
-
+import HelpCenter from "./components/HelpCenter/HelpCenter";
+import HelpCatogry from "./components/HelpCategory/HelpCategory";
+import HelpTutorial from "./components/HelpTutorial/HelpTutorial";
+import Careers from "./components/Careers/Careers";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -56,6 +59,10 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/forstartup" element={<ForStartup />} />
           <Route path="/book-call" element={<BookCall />} />
+          <Route path="/help-center" element={<HelpCenter />} />
+          <Route path="/help-category" element={<HelpCatogry />} />
+          <Route path="/help-tutorial" element={<HelpTutorial />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
       </BrowserRouter>
     </>
