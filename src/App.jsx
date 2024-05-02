@@ -19,6 +19,7 @@ import BlogPost from "./components/BlogPost/BlogPost";
 import Promotional from "./components/PromationalAbout/Promotional";
 import Blog from "./components/Blog/Blog";
 import ForStartup from "./components/ForStratup/ForStartup"
+import BookCall from "./components/Book Call/BookCall";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -29,6 +30,7 @@ function App() {
         {window.location.pathname !== "/findyourteam" &&
         window.location.pathname !== "/create-new-project" &&
         window.location.pathname !== "/brief-project" &&
+        window.location.pathname !== "/book-call" &&
         window.location.pathname !== "/brief-project2" ? (
           <Navbar />
         ) : (
@@ -52,6 +54,7 @@ function App() {
           <Route path="/promotional-page" element={<Promotional />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/forstartup" element={<ForStartup />} />
+          <Route path="/book-call" element={<BookCall />} />
         </Routes>
       </BrowserRouter>
     </>
