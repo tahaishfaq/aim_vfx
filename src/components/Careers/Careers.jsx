@@ -5,6 +5,12 @@ import CareersCards from "./CareersCards";
 import CareersCards2 from "./CareersCards2";
 import FooterForm from "../Footer/Footer";
 import CheckOut from "../CheckOut/CheckOut";
+import DropDown from "../DropDown/DropDown";
+import ControlFreelancer from "../ControlFreelancer/ControlFreelancer";
+import Panel from "../ControlPanel/Panel";
+import ProjectBrief from "../ProjectBrief/ProjectBrief";
+import Pricing from "../Pricing/Pricing";
+import Setting from "../Setting/Setting";
 
 const Careers = () => {
   //  'main div of Careers component all component rendered in '
@@ -15,9 +21,9 @@ const Careers = () => {
       <CareersCards />
       <CareersCards2 />
       <FooterForm />
-      <CheckOut />
     </div>
   );
 };
 
 export default Careers;
+// <ControlPanel />
