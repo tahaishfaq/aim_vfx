@@ -28,7 +28,7 @@ const stats = [
 
 export default function Persntage() {
   return (
-    <div className="">
+    <div className=" pb-10">
       <div className="mx-auto max-w-6xl px-38">
         <div className="grid grid-cols-1 gap-px sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (

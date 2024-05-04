@@ -6,8 +6,16 @@ import "react-quill/dist/quill.snow.css";
 import { Select } from "@mui/material";
 import { PhotoIcon } from "@heroicons/react/24/outline";
 import Button from "../Button/Button";
+import ReactDatePicker from "react-datepicker";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { ClipboardDocumentListIcon } from "@heroicons/react/24/outline";
+import { UserIcon } from "@heroicons/react/24/outline";
+import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
+import { DocumentTextIcon } from "@heroicons/react/24/outline";
 
 const ProjectBrief = () => {
+  const [startDate, setStartDate] = useState(new Date());
   const [value, setValue] = useState("");
   const data = [
     {
@@ -51,7 +59,7 @@ const ProjectBrief = () => {
           </div>
           {/* ------------ From 1 Section --------------- */}
 
-          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-400">
+          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-600">
             <div className="flex items-center gap-4">
               <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
               <span className="text-[25px] md:text-[35px] uppercase">
@@ -104,7 +112,7 @@ const ProjectBrief = () => {
           </div>
           {/* ------------ From 2 Section --------------- */}
 
-          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-400">
+          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-700">
             <div className="flex items-center gap-4">
               <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
               <span className="text-[25px] md:text-[35px] uppercase">
@@ -150,7 +158,7 @@ const ProjectBrief = () => {
           </div>
           {/* ------------ From 3 Section --------------- */}
 
-          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-400">
+          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-600">
             <div className="flex items-center pb-4 gap-4">
               <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
               <span className="text-[25px] md:text-[35px] uppercase">
@@ -415,13 +423,13 @@ const ProjectBrief = () => {
                   <div className="flex items-start pt-4">
                     <div className="flex h-6 items-center">
                       <input
-                        name="plan"
+                        name="react"
                         type="radio"
                         className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                       />
                     </div>
                     <div className="ml-3 text-sm leading-6">
-                      <label htmlFor="plan" className="font-medium ">
+                      <label htmlFor="react" className="font-medium ">
                         Yes
                       </label>
                     </div>
@@ -429,19 +437,177 @@ const ProjectBrief = () => {
                   <div className=" flex items-start pt-4">
                     <div className="flex h-6 items-center ">
                       <input
-                        name="plan"
+                        name="react"
                         type="radio"
                         className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                       />
                     </div>
                     <div className="ml-3 text-sm leading-6">
-                      <label htmlFor="plan" className="font-medium ">
+                      <label htmlFor="react" className="font-medium ">
                         No
                       </label>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* ------------ Delivery  Section --------------- */}
+
+          <div className="w-full  bg-[#0B1A2880]   px-5 py-6 rounded-lg ring-1 ring-gray-600">
+            <div className="flex items-center gap-4">
+              <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
+              <span className="text-[35px] uppercase">Delivery</span>
+            </div>
+            <div className="grid md:grid-cols-3 gap-5">
+              <div>
+                <label htmlFor="date" className="text-xl">
+                  Deadline
+                </label>
+              </div>
+              <div className="w-full text-black rounded-full md:col-span-2">
+                <DatePicker
+                  name="date"
+                  selected={startDate}
+                  onChange={(date) => setStartDate(date)}
+                  isClearable
+                  placeholderText="I have been cleared!"
+                  className="px-5 outline-none  w-full rounded-full border-0 py-1.5 text-blue-500 shadow-sm  ring-gray-300 placeholder:text-blue-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 "
+                />
+              </div>
+            </div>
+            <div className="py-6">
+              <h2 className="text-2xl uppercase py-2">AI-enhanced [beta]</h2>
+              <p className="mt-1 text-sm leading-6 text-gray-200">
+                Would you be open to us using AI for greater efficiences and
+                boosted creativity?
+              </p>
+              <div className="flex items-start pt-4">
+                <div className="flex h-6 items-center">
+                  <input
+                    name="react"
+                    type="radio"
+                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                  />
+                </div>
+                <div className="ml-3 text-sm leading-6">
+                  <label htmlFor="react" className="font-medium ">
+                    Yes, please feel free to use AI where it makes sense
+                  </label>
+                </div>
+              </div>
+              <div className=" flex items-start pt-4">
+                <div className="flex h-6 items-center ">
+                  <input
+                    name="react"
+                    type="radio"
+                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                  />
+                </div>
+                <div className="ml-3 text-sm leading-6">
+                  <label htmlFor="react" className="font-medium ">
+                    No, please feel free to use AI where it makes sense
+                  </label>
+                </div>
+              </div>
+            </div>{" "}
+            <div className="py-5">
+              <h2 className="text-2xl uppercase py-2">
+                Skip estimate approval
+              </h2>
+              <p className="mt-1 text-sm leading-6 text-gray-200">
+                Would you like help with copywriting?
+              </p>
+              <div className="flex items-start pt-4">
+                <div className="flex h-6 items-center">
+                  <input
+                    name="react"
+                    type="radio"
+                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                  />
+                </div>
+                <div className="ml-3 text-sm leading-6">
+                  <label htmlFor="react" className="font-medium ">
+                    Yes, I would like to skip the estimate approval, and start
+                    the project straight away
+                  </label>
+                </div>
+              </div>
+              <div className=" flex items-start pt-4">
+                <div className="flex h-6 items-center ">
+                  <input
+                    name="react"
+                    type="radio"
+                    className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                  />
+                </div>
+                <div className="ml-3 text-sm leading-6">
+                  <label htmlFor="react" className="font-medium ">
+                    No, I would like to skip the estimate approval, and start
+                    the project straight away
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* ------------ Summery  Section --------------- */}
+
+          <div className="w-full my-6  bg-[#0B1A2880]   px-5 py-6 rounded-lg ring-1 ring-gray-700">
+            <div className="flex items-center gap-4">
+              <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
+              <span className="text-[35px] uppercase">Summery</span>
+            </div>
+            <div className="p-8">
+              <div className="md:p-8 p-2 rounded-2xl ring-1 ring-gray-600">
+                <div className="flex gap-4 py-2">
+                  <ClipboardDocumentListIcon className="h-6 w-6 text-gray-50" />
+
+                  <span>[From Create your brief]</span>
+                </div>
+                <div className="flex gap-4 py-2">
+                  <UserIcon className="h-6 w-6 text-gray-50" />
+
+                  <span>[By Terrence Jeffords]</span>
+                </div>
+                <div className="flex gap-4 py-2">
+                  <CurrencyDollarIcon className="h-6 w-6 text-gray-50" />
+                  <span>
+                    Minimum 3 hours, rates depends on scope and your
+                    subscription plan
+                  </span>
+                </div>
+                <div className="flex gap-4 py-2">
+                  <DocumentTextIcon className="h-6 w-6 text-gray-50" />
+
+                  <span>48+ hours deadline | Oct 31 at 08:00 AM</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="px-5">
+              <h2 className="uppercase text-xl py-2">please note</h2>
+
+              <ul className="list-disc gap-6">
+                <li className="py-2">
+                  Your CPM will review your project request, and get back to you
+                  within 12 hours to confirm or ask any clarifying questions
+                </li>
+                <li className="py-2">
+                  If you have chosen to start the project with a kick off call,
+                  your CPM will set this up.
+                </li>
+                <li className="py-2">
+                  If you have chosen to review and approve the hourly estimate,
+                  or there is a possibility of overages, your CPM will
+                  communicate and confirm all estimates before we start your
+                  project
+                </li>
+                <li className="py-2">
+                  We will agree on a timeline for drafts, feedback and
+                  revisions, and delivery of final designs within the deadline.
+                </li>
+              </ul>
             </div>
           </div>
         </div>

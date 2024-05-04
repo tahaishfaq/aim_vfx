@@ -10,26 +10,12 @@ import Arrow from "../../assets/images/Arrow.png";
 import Button from "../Button/Button";
 import holographic from "../../assets/images/holographic_fluid.png";
 import Promotionalimage from "../PromotionalVideo/Promotionalimage";
-import Question from "../PromationalAbout/Question";
 import FooterForm from "../Footer/Footer";
 const BlogPost = () => {
-  const data = [
-    {
-      btn: `Oyster's Rerband`,
-    },
-    {
-      btn: `Oyster's Rerband`,
-    },
-    {
-      btn: `Oyster's Rerband`,
-    },
-    {
-      btn: `Oyster's Rerband`,
-    },
-    {
-      btn: `Oyster's Rerband`,
-    },
-  ];
+  const data = Array(5).fill({
+    btn: `Oyster's Rerband`,
+  });
+
   const Que = [
     {
       id: 1,
@@ -62,6 +48,7 @@ const BlogPost = () => {
         "You should ensure that your services are safe and compliant with all applicable regulations and standards. You should also provide clear warnings and instructions, and be prepared to address any product liability issues that may arise.",
     },
   ];
+
   const [show, setShow] = useState(false);
   return (
     <div className="solution-page pt-32">

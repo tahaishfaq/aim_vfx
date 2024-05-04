@@ -94,7 +94,7 @@ const Solution = () => {
           </Heading>
         </div>
         <div className=" overflow-x-scroll w-full scrollbar-hide">
-        <ServicesCards />
+          <ServicesCards />
         </div>
       </div>
 

@@ -41,7 +41,7 @@ const Panel = () => {
             <div className="flex items-center gap-x-5 ">
               <span className="text-[35px] uppercase">Projects</span>
 
-              <button className=" bg-[#2EABAF] hover:bg-[#15B8C7] text-white font-bold py-3 px-10 rounded-full">
+              <button className="uppercase bg-[#2EABAF] hover:bg-[#15B8C7] text-white font-bold py-3 px-10 rounded-full">
                 Create project
               </button>
             </div>

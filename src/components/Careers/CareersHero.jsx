@@ -13,7 +13,7 @@ import Arrow from "../../assets/images/arrow logo.png";
 const CareersHero = () => {
   return (
     <div className=" lg:relative">
-      <div className="lg:block hidden">
+      <div className="lg:block hidden max-h-[70vh]">
         <img className="" src={Holographic1} alt="" />
       </div>
       <div className=" grid md:grid-cols-5  lg:absolute top-10 pt-12">
