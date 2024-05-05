@@ -13,6 +13,7 @@ import Future from "../Future/Future";
 import Future2 from "../Future/Future2";
 import FooterForm from "../Footer/Footer";
 import PopUp from "../PopUp/PopUp";
+import PopupForDate from "../PopUpForDate/PopupForDate";
 
 const Blog = () => {
   const [open, setOpen] = useState(false);
@@ -105,9 +106,8 @@ const Blog = () => {
       <Design3d />
       <Design3d />
       <Future />
-
       <FooterForm />
-      <PopUp open={open} setOpen={setOpen} />
+      <PopupForDate open={open} setOpen={setOpen} />
     </div>
   );
 };

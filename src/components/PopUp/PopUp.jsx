@@ -3,9 +3,9 @@ import {
   ExclamationTriangleIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import ReactQuill from "react-quill";
+
 import "react-quill/dist/quill.snow.css";
-import Button from "../Button/Button";
+
 import { Dialog, Transition } from "@headlessui/react";
 import chevron from "../../assets/images/chevron-right (1).png";
 import Group from "../../assets/images/Group 469477.png";
