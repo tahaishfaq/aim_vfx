@@ -19,7 +19,7 @@ export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <>
-      <nav className="pt-5 absolute overflow-hidden z-[1000] top-0 w-full">
+      <nav className="pt-5 absolute  z-[1000] top-0 w-full">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex  items-center sm:justify-between lg:justify-center justify-between">
             <div className="flex ">
@@ -58,23 +58,53 @@ export const Navbar = () => {
                 >
                   Pricing
                 </Link>
+
                 <Link
                   to="/solutions"
-                  className="flex items-center justify-center gap-x-1.5 text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                  className="navlinks relative flex items-center justify-center gap-x-1.5 text-sm  font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
                   Solutions{" "}
                   <span className="pt-0.5">
                     <IoIosArrowDown />
                   </span>
+                  <div className="dropdown absolute hidden mt-1.5 w-32 bg-white shadow-lg  z-80  top-10 inset-x-0">
+                    <Link
+                      to="/solution1"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Solution 1
+                    </Link>
+                    <Link
+                      to="/solution2"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Solution 2
+                    </Link>
+                  </div>
                 </Link>
+
                 <Link
                   to="/services"
-                  className="flex items-center justify-center gap-x-1.5 text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
+                  className="navlinks relative flex items-center justify-center gap-x-1.5 text-sm  font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
                   Services{" "}
                   <span className="pt-0.5">
                     <IoIosArrowDown />
                   </span>
+                  <div className="dropdown absolute hidden mt-1.5 w-32 bg-white shadow-lg  z-80  top-10 inset-x-0">
+                    <Link
+                      to="/solution1"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Service 1
+                    </Link>
+                    <Link
+                      to="/solution2"
+                      className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                    >
+                      Service 2
+                    </Link>
+                  </div>
                 </Link>
                 <Link
                   to="/company"
@@ -100,7 +130,7 @@ export const Navbar = () => {
                 >
                   About Us
                 </Link>
-                <Link
+                {/* <Link
                   to="/promotional-page"
                   className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
@@ -123,7 +153,7 @@ export const Navbar = () => {
                   className="flex items-center justify-center  gap-x-1.5  text-sm font-medium leading-5 text-white hover:text-gray-300 hover:border-gray-300 focus:outline-none focus:text-gray-300 focus:border-gray-300 transition duration-150 ease-in-out"
                 >
                   careers
-                </Link>
+                </Link> */}
 
                 {/* <div className="relative inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-white">
                 <span>Contact</span>

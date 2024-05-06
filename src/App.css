@@ -959,3 +959,8 @@ video::-webkit-media-controls-play-button {
   /* backdrop-filter: blur(10px); */
   border-radius: 0px 375px 0px 275px;
 }
+
+
+.navlinks:hover .dropdown {
+  display: block;
+}
