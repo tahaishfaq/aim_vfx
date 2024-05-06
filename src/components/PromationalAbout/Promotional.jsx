@@ -64,7 +64,14 @@ const Promotional = () => {
       <Promotionalvideo />
       <Persntage />
       <Helpus />
-      <Clients />
+      <div>
+        <div className="text-center">
+          <h1 className="font-tek font-[400] text-[#fff] text-[40px] sm:text-[50px] lg:text-[100px]">
+            why clients love aimfx
+          </h1>
+          <Clients />
+        </div>
+      </div>
       <Question />
       <Promotionalimage />
       <FooterForm />

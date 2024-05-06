@@ -6,9 +6,9 @@ import Persntage from "../Persentage/Persentage";
 import Arrow from "../../assets/images/Arrow.png";
 
 const CreativeaAds = () => {
-  const data = Array(7).fill({ text: "Website" });
-  const data1 = Array(7).fill({ text: "Website" });
-  data1[1] = { span: "Agencies" };
+  const data = Array(7).fill({ text: "Website", span1: "Agencies" });
+  const data1 = Array(7).fill({ text: "Website", span1: "Agencies" });
+
   //   data1[3] = { span: "Freelancer" };
   return (
     <div>
@@ -62,7 +62,9 @@ const CreativeaAds = () => {
             {data1.map((item, ind) => {
               return (
                 <>
-                  {ind !== 1 ? (
+                  {ind == 1 || ind == 3 ? (
+                    <h1 className="py-5 text-[20px]">{item.span1}</h1>
+                  ) : (
                     <div key={ind} className=" cursor-pointer py-3">
                       <div className=" flex flex-1 justify-between px-5 py-3 rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4]  hover:bg-gray-700">
                         <button>{item.text}</button>
@@ -71,8 +73,6 @@ const CreativeaAds = () => {
                         </span>
                       </div>
                     </div>
-                  ) : (
-                    <h1 className="py-5 text-[20px]">{item.span}</h1>
                   )}
                 </>
               );

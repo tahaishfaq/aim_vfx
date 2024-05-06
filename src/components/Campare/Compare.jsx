@@ -4,7 +4,6 @@ import arrow11 from "../../assets/images/arrow11.png";
 import Rectangle21 from "../../assets/images/Rectangle21.png";
 import Rectangle7525 from "../../assets/images/Rectangle 7525.png";
 import Rectangle7526 from "../../assets/images/Rectangle 7526.png";
-import x from "../../assets/images/x.png";
 import Creative from "./Creative";
 import CreativeaAds from "./CreativeaAds";
 import FooterForm from "../Footer/Footer";
@@ -13,44 +12,20 @@ const Compare = () => {
   const Rectangle = [
     {
       src: Rectangle21,
+      title: " creative teams",
+      hed: "Pros:",
+      text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
     },
 
     {
       src: Rectangle7525,
+      title: "agencies",
+      hed: "Pros:",
+      text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
     },
     {
       src: Rectangle7526,
-    },
-    {
-      title: "In house creative teams",
-    },
-    {
-      title: "agencies",
-    },
-    {
       title: "freelancers",
-    },
-    {
-      hed: "Pros:",
-      text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
-    },
-    {
-      hed: "Pros:",
-      text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
-    },
-    {
-      hed: "Pros:",
-      text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
-    },
-    {
-      hed: "Pros:",
-      text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
-    },
-    {
-      hed: "Pros:",
-      text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
-    },
-    {
       hed: "Pros:",
       text: "Lorem ipsum dolor sit amet consectetur. Sit vel dui lacus",
     },
@@ -103,14 +78,14 @@ const Compare = () => {
           </p>
         </div>
         <div>
-          <div className="px-6 grid sm:grid-cols-3 gap-3">
+          <div className="px-6 mx-auto max-w-4xl grid sm:grid-cols-3 gap-3">
             {Rectangle.map((item) => {
               return (
                 <div>
                   <img className="mx-auto" src={item.src} alt="" />
                   <h1 className="text-[30px] uppercase py-4">{item.title}</h1>
-                  <div className="mx-auto sm:px-10  lg:px-20">
-                    <span className="text-[#00ffff]">{item.hed}</span>
+                  <div className="mx-auto py-6 flex flex-col justify-center ">
+                    <h2 className="text-[#00ffff] py-5">{item.hed}</h2>
                     <p> {item.text}</p>
                     <p>{item.text}</p>
                   </div>

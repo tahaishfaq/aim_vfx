@@ -80,12 +80,12 @@ const Creative = () => {
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 py-10 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 py-10 gap-7">
           {data.map((item, ind) => {
             return (
-              <div key={ind}>
-                <img src={item.src} alt="" />
-                <p className="text-[#18565c] text-[30px] py-5 uppercase">
+              <div key={ind} className="flex flex-col justify-between">
+                <img src={item.src} alt="" className="w-20 h-20" />
+                <p className="text-[#18565c] text-[25px] font-[500] py-5 uppercase">
                   {item.span}
                 </p>
                 <p className="text-[#E4E4E4]">{item.text}</p>
