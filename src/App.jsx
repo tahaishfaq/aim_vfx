@@ -24,6 +24,13 @@ import HelpCenter from "./components/HelpCenter/HelpCenter";
 import HelpCatogry from "./components/HelpCategory/HelpCategory";
 import HelpTutorial from "./components/HelpTutorial/HelpTutorial";
 import Careers from "./components/Careers/Careers";
+import ContactUs from "./components/ContactUs/ContactUs";
+import StoryPage from "./components/SotryPage/StoryPage";
+import SucessStories from "./components/SucessSroeries/SucessStories";
+import ControlFreelancer from "./components/ControlFreelancer/ControlFreelancer";
+import Compare from "./components/Campare/Compare";
+import BookConsulation from "./components/BookConsulation/BookConsulation";
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -63,6 +70,13 @@ function App() {
           <Route path="/help-category" element={<HelpCatogry />} />
           <Route path="/help-tutorial" element={<HelpTutorial />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/story-page" element={<StoryPage />} />
+          <Route path="/success-story" element={<SucessStories />} />
+          <Route path="/control-freelancer" element={<ControlFreelancer />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/book-consultation" element={<BookConsulation />} />
+          
         </Routes>
       </BrowserRouter>
     </>
