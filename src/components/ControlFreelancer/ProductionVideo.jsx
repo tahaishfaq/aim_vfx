@@ -7,14 +7,14 @@ import { EllipsisHorizontalIcon } from "@heroicons/react/24/outline";
 const ProductionVideo = () => {
   return (
     <div>
-      <div className="flex sm:flex-row flex-col mt-3 gap-3">
+      <div className="flex sm:flex-row flex-col mt-2 gap-3">
         <div className="">
-          <img src={Screenshot} alt="" className="h-full w-full" />
+          <img src={Screenshot} alt="" className="sm:h-full :w-full" />
         </div>
         <div className="w-full bg-[#0B1A2880] px-5 py-3  rounded-lg ring-1 ring-gray-400">
           <div className="flex sm:flex-row flex-col justify-between items-center">
             <div className="box-border">
-              <h1 className="text-[35px] font-tek">
+              <h1 className="text-3xl sm:text-4xl font-tek">
                 789654 - LOREM_IPSUM_1200X628_SS
               </h1>
               <span className="flex items-center gap-3">
@@ -22,28 +22,31 @@ const ProductionVideo = () => {
 
                 <p>vIDEO pRODUCTION</p>
               </span>
-              <div className="flex pt-3">
+              <div className="flex pt-3 font-[Rubik]">
                 <span>
-                  <button className="px-4 py-3 rounded-[50%] bg-[#00ffff]">
+                  <button className="px-4 py-3 rounded-[50%] bg-[#D55757] font-medium">
                     GF
                   </button>
                 </span>
                 <span>
-                  <button className="px-4 py-3 rounded-[50%] bg-[#004cff]">
+                  <button className="px-4 py-3 rounded-[50%] bg-[#00ffff] font-medium">
                     AI
                   </button>
                 </span>
 
                 <span>
-                  <button className="px-4 py-3 rounded-[50%] bg-[#dd6f34]">
+                  <button className="px-4 py-3 rounded-[50%] bg-[#57D5CE] font-medium">
                     TJ
                   </button>
                 </span>
               </div>
             </div>
-            <button className="py-2 px-3 rounded-xl bg-yellow-500 opacity-90">
-              In Review
-            </button>
+            <div className="py-5 sm:py-0">
+              <button className="py-1 px-2 rounded-xl bg-[#D7B14F] opacity-90">
+                In Review
+              </button>
+              <p className="text-base font-light font-[Rubik]">Due in 2 days</p>
+            </div>
           </div>
 
           <div className=" flex justify-end gap-3 items-end">

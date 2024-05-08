@@ -1,5 +1,5 @@
 import React from "react";
-import PanelLeft from "../ControlPanel/PanelLeft";
+import PanelLeft from "../Panel/PanelLeft";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import ControlLeftDiv from "../ControlFreelancer/ ControlLeftDiv";
 import { Cog8ToothIcon } from "@heroicons/react/24/outline";
@@ -8,42 +8,43 @@ import { CreditCardIcon } from "@heroicons/react/24/outline";
 
 const Setting = () => {
   return (
-    <div className="solution-page py-28">
-      <div className="px-10 grid xl:grid-cols-8 text-white gap-6">
+    <div className="solution-page py-24">
+      <div className="px-10 grid xl:grid-cols-8 text-white gap-4">
         <div className="col-span-full  xl:col-span-2 ">
           <ControlLeftDiv />
         </div>
         {/* ------------ Center div  Section --------------- */}
 
         <div className=" xl:col-span-4 ">
-          <div className="w-full gap-y-4 bg-[#0B1A2880] flex md:flex-row flex-col  items-center justify-between px-3 py-5 rounded-lg ring-1 ring-gray-400">
-            <div className="flex items-center gap-x-5 ">
-              <Cog8ToothIcon className="h-6 w-6 text-gray-200" />
+          <div className="w-full gap-y-4 bg-[#0B1A2880] flex flex-row   items-center justify-between px-3 py-5 rounded-lg ring-1 ring-gray-400">
+            <div className="flex  gap-x-2 ">
+              <Cog8ToothIcon className="h-6 w-6 pt-1 text-gray-200" />
 
-              <span className="text-[35px] uppercase">Projects</span>
+              <h2 className="text-4xl uppercase font-[Teko]">settings</h2>
             </div>
             <div className="flex items-center  rounded-full py-2 px-3">
-              <span className="px-4 py-3 rounded-[50%] bg-[#2EABAF]">TJ</span>
+              <span className="px-3 py-2 rounded-[50%] bg-[#2EABAF]">TJ</span>
             </div>
           </div>
-          <div className="w-full gap-y-4 bg-[#0B1A2880] rounded-xl my-5">
+          <div className="w-full gap-y-4 bg-[#0B1A2880] rounded-xl mt-6">
             <form className="p-6 w-full">
               {/* ------------ input For City and Country  div  Section --------------- */}
 
               <div className="border-b-[1px] border-gray-500 pb-8 grid lg:grid-cols-5">
                 <div className="col-span-3">
-                  <div className="flex items-center gap-4">
-                    <CurrencyDollarIcon className="h-7 w-7 text-gray-200" />
-
+                  <div className="flex items-center gap-x-2">
+                    <div>
+                      <CurrencyDollarIcon className="h-7 w-7 text-white" />
+                    </div>
                     <h2 className="text-4xl uppercase font-[Teko]">
                       billing details
                     </h2>
                   </div>
 
-                  <div className=" py-4">
+                  <div className="py-2">
                     <label
                       htmlFor="first-name"
-                      className="block text-xl font-medium leading-6 text-[#FFFFFF]"
+                      className="block text-base  font-bold  leading-6 text-[#FFFFFF]"
                     >
                       City
                     </label>
@@ -58,10 +59,10 @@ const Setting = () => {
                       />
                     </div>
                   </div>
-                  <div className=" py-4">
+                  <div className="py-2">
                     <label
                       htmlFor="first-name"
-                      className="block text-xl font-medium leading-6 text-[#FFFFFF]"
+                      className="block text-base  font-bold leading-6 text-[#FFFFFF]"
                     >
                       Contry
                     </label>
@@ -81,14 +82,14 @@ const Setting = () => {
 
               {/* ------------ input For Name and Surname  div  Section --------------- */}
 
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pt-4 pb-12 md:grid-cols-3">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pt-5  md:grid-cols-3">
                 <div>
                   <h2 className="text-base font-semibold leading-7">
                     Personal Information
                   </h2>
                 </div>
 
-                <div className="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6 md:col-span-2">
+                <div className="grid max-w-2xl grid-cols-1 gap-x-9 gap-y-10 sm:grid-cols-6 md:col-span-2">
                   <div className="sm:col-span-3">
                     <label
                       htmlFor="first-name"
@@ -151,15 +152,15 @@ const Setting = () => {
           </div>
           {/* ------------ Payment Method   div  Section --------------- */}
           <div className="w-full gap-y-4 bg-[#0B1A2880] rounded-xl my-5 p-6">
-            <div className="py-5 border-b-[1px] border-gray-500">
-              <div className="flex items-center gap-x-4">
-                <CreditCardIcon className="h-7 w-7 text-gray-200" />
+            <div className="p border-b-[1px] border-gray-500">
+              <div className="flex items-center gap-x-2 pb-4">
+                <CreditCardIcon className="h-8 w-8 text-gray-200" />
 
-                <h1 className="text-4xl uppercase font-[Teko]">
+                <h1 className="text-5xl uppercase font-[Teko]">
                   payment methods
                 </h1>
               </div>
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-12 md:grid-cols-3">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-4 md:grid-cols-3">
                 <div>
                   <h2 className="uppercase text-base font-semibold leading-7 ">
                     Credit/debit cards
@@ -169,9 +170,9 @@ const Setting = () => {
                   </p>
                 </div>
 
-                <div className="grid max-w-2xl grid-cols-1 gap-x-1 gap-y-8 sm:grid-cols-4 md:col-span-2">
+                <div className="grid max-w-2xl grid-cols-1 gap-x-1 gap-y-3 sm:grid-cols-4 md:col-span-2">
                   <div className="sm:col-span-full">
-                    <h2 className="text-base py-2 font-semibold leading-7 text-gray-100 uppercase">
+                    <h2 className="text-base font-semibold leading-7 text-gray-100 uppercase">
                       add new card
                     </h2>
                   </div>
@@ -194,8 +195,8 @@ const Setting = () => {
             </div>
             {/* ------------ Bank  Account   div  Section --------------- */}
 
-            <div className="py-5 border-b-[1px] border-gray-500">
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-12 md:grid-cols-3">
+            <div className=" border-gray-500">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-10 pt-12 md:grid-cols-3">
                 <div>
                   <h2 className="uppercase text-base font-semibold leading-7 ">
                     Bank accounts

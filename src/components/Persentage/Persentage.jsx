@@ -28,22 +28,19 @@ const stats = [
 
 export default function Persntage() {
   return (
-    <div className=" pb-10">
+    <div className=" py-20">
       <div className="mx-auto max-w-6xl px-38">
-        <div className="grid grid-cols-1 gap-px sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-5 text-center sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat) => (
-            <div
-              key={stat.id}
-              className="flex justify-center py-6 sm:px-6 lg:px-8"
-            >
+            <div key={stat.id} className="flex justify-center  sm:px-6 lg:px-8">
               <div>
-                <div className="Teko font-[600] text-[30px] text-[#FFFF]">
+                <div className="font-[Teko] font-light text-5xl text-[#FFFF]">
                   {stat.name}
                 </div>
-                <span className="Teko font-[300] text-[80px] text-[#00FFFF]">
+                <span className="font-[Teko] font-light text-8xl text-[#00FFFF] py-4">
                   {stat.value}
                 </span>
-                <p className="font-[300] text-[#FFFF]">{stat.p}</p>
+                <p className="font-light text-white font-[Rubik]">{stat.p}</p>
               </div>
             </div>
           ))}

@@ -42,15 +42,17 @@ const ProjectBrief = () => {
 
   return (
     <div className="solution-page py-20 text-[#fff]">
-      <div className="px-6 md:max-w-6xl mx-auto">
+      <div className="px-6 md:max-w-5xl mx-auto">
         <div>
-          <div className="w-full md:flex bg-[#0B1A2880]  items-center justify-between px-3 py-6 rounded-lg ring-1 ring-gray-400">
+          <div className="w-full md:flex bg-[#0B1A2880]  items-center justify-between px-8 py-6 rounded-lg ring-1 ring-gray-400">
             <div className="flex items-center gap-4">
-              <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
-              <span className="text-[35px] uppercase">edit Projects</span>
+              <ChevronLeftIcon className="h-4 w-4 text-gray-300" />
+              <span className="text-5xl font-[Teko] font-normal uppercase">
+                edit Projects
+              </span>
             </div>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 lg:gap-4">
               <button className="cursor-pointer bg-[#2EABAF] hover:bg-[#15B8C7] text-white font-bold py-3 px-10 rounded-full">
                 Save Changes
               </button>
@@ -59,17 +61,17 @@ const ProjectBrief = () => {
           </div>
           {/* ------------ From 1 Section --------------- */}
 
-          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-600">
-            <div className="flex items-center gap-4">
-              <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
-              <span className="text-[25px] md:text-[35px] uppercase">
+          <div className="w-full  bg-[#0B1A2880]  mt-6 px-8 rounded-lg ring-1 ring-gray-600">
+            <div className="flex items-center gap-x-2 py-9">
+              <ChevronLeftIcon className="h-4 w-4 text-gray-100" />
+              <span className="text-5xl font-[Teko] font-normal uppercase">
                 Please fill in this brief
               </span>
             </div>
-            <div>
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 pb-14 md:grid-cols-3">
+            <div className="px-2">
+              <div className="grid grid-cols-1 gap-x-8 lg:gap-y-10 gap-4 pb-14 md:grid-cols-3">
                 <div>
-                  <h2 className="text-2xl font-semibold leading-7">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7">
                     project name
                   </h2>
                 </div>
@@ -87,10 +89,12 @@ const ProjectBrief = () => {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 pb-12 md:grid-cols-3">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-10 pb-6 md:grid-cols-3">
                 <div>
-                  <h2 className="text-2xl font-semibold leading-7">Job</h2>
-                  <p className="mt-1 text-sm leading-6 text-gray-200">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7">
+                    Job
+                  </h2>
+                  <p className="text-base font-light font-[Rubik] leading-7">
                     How can we help?
                   </p>
                 </div>
@@ -112,21 +116,21 @@ const ProjectBrief = () => {
           </div>
           {/* ------------ From 2 Section --------------- */}
 
-          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-700">
-            <div className="flex items-center gap-4">
-              <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
-              <span className="text-[25px] md:text-[35px] uppercase">
+          <div className="w-full  bg-[#0B1A2880]  mt-6 px-8 rounded-lg ring-1 ring-gray-700">
+            <div className="flex items-center gap-4 py-9">
+              <ChevronLeftIcon className="h-4 w-4 text-gray-100" />
+              <h1 className="text-5xl font-[Teko] font-normal uppercase">
                 Creative Assets
-              </span>
+              </h1>
             </div>
             <div>
-              <div className="pt-5 grid grid-cols-1 gap-x-8 gap-y-10 pb-14 md:grid-cols-3">
+              <div className="pt-5 grid grid-cols-1 gap-x-8 gap-y-10 px-2 pb-6 md:grid-cols-3">
                 <div>
-                  <h2 className="text-2xl font-semibold leading-7">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7">
                     New or edits
                   </h2>
 
-                  <p className="mt-1 text-sm leading-6 text-gray-200">
+                  <p className="text-base font-light font-[Rubik]">
                     What best fits your assets needs?
                   </p>
                 </div>
@@ -158,20 +162,20 @@ const ProjectBrief = () => {
           </div>
           {/* ------------ From 3 Section --------------- */}
 
-          <div className="w-full  bg-[#0B1A2880]  my-5 px-3 py-6 rounded-lg ring-1 ring-gray-600">
-            <div className="flex items-center pb-4 gap-4">
-              <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
-              <span className="text-[25px] md:text-[35px] uppercase">
+          <div className="w-full  bg-[#0B1A2880]  my-5 px-8 rounded-lg ring-1 ring-gray-600">
+            <div className="flex items-center py-12 gap-4">
+              <ChevronLeftIcon className="h-4 w-4 text-gray-300" />
+              <h1 className="text-5xl font-[Teko] font-normal uppercase">
                 lets design new creative assets
-              </span>
+              </h1>
             </div>
             <div>
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 pb-4 md:grid-cols-3">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-10 pb-4 px-2 md:grid-cols-3">
                 <div>
-                  <h2 className="text-xl font-semibold leading-7 uppercase">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
                     Goals
                   </h2>
-                  <p className="mt-1 text-sm leading-6 text-gray-200">
+                  <p className="text-base font-light font-[Rubik]">
                     What would make this project a win?
                   </p>
                 </div>
@@ -191,10 +195,10 @@ const ProjectBrief = () => {
               </div>
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 pb-4 md:grid-cols-3">
                 <div>
-                  <h2 className="text-xl font-semibold leading-7 uppercase">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
                     Channels
                   </h2>
-                  <p className="mt-1 text-sm leading-6 text-gray-200">
+                  <p className="text-base font-light font-[Rubik]">
                     Where do you want people to see your assets?
                   </p>
                 </div>
@@ -214,10 +218,10 @@ const ProjectBrief = () => {
               </div>
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 pb-4 md:grid-cols-3">
                 <div>
-                  <h2 className="text-xl font-semibold leading-7 uppercase">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
                     target audience
                   </h2>
-                  <p className="mt-1 text-sm leading-6 text-gray-200">
+                  <p className="text-base font-light font-[Rubik]">
                     Who are they and do they have any especial interests or pain
                     points?
                   </p>
@@ -241,11 +245,11 @@ const ProjectBrief = () => {
 
             <div>
               <div className="py-4">
-                <h2 className="text-xl font-semibold leading-7 uppercase">
+                <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
                   target audience
                 </h2>
 
-                <p className="mt-1 text-sm leading-6 text-gray-200">
+                <p className="text-base font-light font-[Rubik]">
                   Who are they and do they have any <br /> especial interests or
                   pain points?
                 </p>
@@ -256,21 +260,23 @@ const ProjectBrief = () => {
                   return (
                     <div key={ind} className={item.col}>
                       <div className=" flex flex-1 justify-between px-5 py-3   rounded-full bg-slate-800  font-bold  text-[#E4E4E4]  hover:bg-gray-700">
-                        <button>{item.text}</button>
+                        <button className="font-[Rubik] text-xs font-semibold">
+                          {item.text}
+                        </button>
                         <span>
-                          <PlusIcon className="h-6 w-6 text-gray-200" />
+                          <PlusIcon className="h-4 w-4 text-gray-50" />
                         </span>
                       </div>
                     </div>
                   );
                 })}
               </div>
-              <div className="col-span-full">
+              <div className="col-span-full pt-7">
                 <div className="text-[#fff] ">
-                  <h1 className=" text-[20px] font-[700]">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
                     Describe the project
-                  </h1>
-                  <p>
+                  </h2>
+                  <p className="text-base font-light font-[Rubik]">
                     Consideer providing context, challenges, requirements,
                     playback duration,
                     <br /> past work, preferences, scripts or instructions,
@@ -289,10 +295,10 @@ const ProjectBrief = () => {
                   />
                 </div>
                 <div className="col-span-full text-[#fff] py-5 leading-7">
-                  <h1 className="text-[20px] font-[700]">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
                     Formats, sizes or ad set
-                  </h1>
-                  <p className="mt-1 text-sm leading-6 text-gray-200">
+                  </h2>
+                  <p className="text-base font-light font-[Rubik]">
                     Are there any specific requirements for assets formats,
                     sizes or dimensions?
                   </p>
@@ -306,12 +312,15 @@ const ProjectBrief = () => {
                       />
                     </div>
                     <div className="ml-3 text-sm leading-6">
-                      <label htmlFor="plan" className="font-medium ">
+                      <label
+                        htmlFor="plan"
+                        className="text-base font-light font-[Rubik] "
+                      >
                         Yes, I’ll provide the creative specs/chase list
                       </label>
                     </div>
                   </div>
-                  <div className=" flex items-start pt-4">
+                  <div className=" flex items-start py-4">
                     <div className="flex h-6 items-center ">
                       <input
                         name="plan"
@@ -319,8 +328,11 @@ const ProjectBrief = () => {
                         className="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"
                       />
                     </div>
-                    <div className="ml-3 text-sm leading-6">
-                      <label htmlFor="plan" className="font-medium ">
+                    <div className="ml-3  text-sm leading-6">
+                      <label
+                        htmlFor="plan"
+                        className="text-base font-light font-[Rubik] "
+                      >
                         No, I’d Superside to suggest the creative specs
                       </label>
                     </div>
@@ -330,9 +342,11 @@ const ProjectBrief = () => {
                 {/* ------------ Choose option Text About 3 Section --------------- */}
 
                 <div className="grid lg:grid-cols-2 gap-x-4 items-center">
-                  <div>
-                    <h2 className="text-xl">Creative exploration</h2>
-                    <p className="mt-1 text-sm leading-6 text-gray-200">
+                  <div className="py-4">
+                    <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
+                      Creative exploration
+                    </h2>
+                    <p className="text-base font-light font-[Rubik] ">
                       How far would you like us to push our creativity on this
                       project?
                     </p>
@@ -353,10 +367,12 @@ const ProjectBrief = () => {
                 {/* ------------ Upload File option Text About 3 Section --------------- */}
 
                 <div>
-                  <div className="max-w-4xl mx-4 py-5">
+                  <div className="max-w-4xl  mx-4">
                     <h2 className="text-xl py-3">Files</h2>
-                    <p>Upload any relevant files, references or chase lists</p>
-                    <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-100 px-6 py-10">
+                    <p className="text-base font-light font-[Rubik] ">
+                      Upload any relevant files, references or chase lists
+                    </p>
+                    <div className="mt-2 flex justify-center rounded-lg border border-dashed border-gray-100 px-6 py-24">
                       <div className="text-center">
                         <PhotoIcon
                           className="mx-auto h-12 w-12 text-gray-300"
@@ -398,13 +414,10 @@ const ProjectBrief = () => {
                             />
                           </label>
                         </div>
-                        <p className="text-xs leading-5 text-gray-600">
-                          PNG, JPG, GIF up to 10MB
-                        </p>
                       </div>
                     </div>
                     <div>
-                      <div className="hidden sm:flex py-1 justify-end  sm:items-center  gap-x-3">
+                      <div className=" flex py-1 justify-end  items-center  gap-x-3">
                         <Button className="px-4 py-2.5 text-sm font-semibold text-white bg-transparent hover:bg-gray-700 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                           Book A Call
                         </Button>
@@ -415,9 +428,11 @@ const ProjectBrief = () => {
                     </div>
                   </div>
                 </div>
-                <div>
-                  <h2 className="text-2xl">Copywriting</h2>
-                  <p className="mt-1 text-sm leading-6 text-gray-200">
+                <div className="pb-8 px-3">
+                  <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
+                    Copywriting
+                  </h2>
+                  <p className="text-base font-light font-[Rubik] ">
                     Would you like help with copywriting?
                   </p>
                   <div className="flex items-start pt-4">
@@ -455,31 +470,35 @@ const ProjectBrief = () => {
 
           {/* ------------ Delivery  Section --------------- */}
 
-          <div className="w-full  bg-[#0B1A2880]   px-5 py-6 rounded-lg ring-1 ring-gray-600">
+          <div className="w-full  bg-[#0B1A2880]   px-8 py-6 rounded-lg ring-1 ring-gray-600">
             <div className="flex items-center gap-4">
-              <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
-              <span className="text-[35px] uppercase">Delivery</span>
+              <ChevronLeftIcon className="h-4 w-4 text-white" />
+              <h1 className="text-5xl font-[Teko] font-normal uppercase">
+                Delivery
+              </h1>
             </div>
-            <div className="grid md:grid-cols-3 gap-5">
-              <div>
-                <label htmlFor="date" className="text-xl">
-                  Deadline
-                </label>
-              </div>
-              <div className="w-full text-black rounded-full md:col-span-2">
-                <DatePicker
+            <div className="px-2 grid md:grid-cols-5 gap-5">
+              <label htmlFor="date" className="text-xl col-span-2">
+                Deadline
+              </label>
+              <div className="w-full lg:px-11 text-black rounded-full col-span-3">
+                <input
                   name="date"
+                  type="date"
                   selected={startDate}
                   onChange={(date) => setStartDate(date)}
                   isClearable
                   placeholderText="I have been cleared!"
-                  className="px-5 outline-none  w-full rounded-full border-0 py-1.5 text-blue-500 shadow-sm  ring-gray-300 placeholder:text-blue-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 "
+                  placeholder="date"
+                  className="px-5 outline-none w-full rounded-full border-0 py-1.5 text-blue-500 shadow-sm  ring-gray-300 placeholder:text-blue-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 "
                 />
               </div>
             </div>
-            <div className="py-6">
-              <h2 className="text-2xl uppercase py-2">AI-enhanced [beta]</h2>
-              <p className="mt-1 text-sm leading-6 text-gray-200">
+            <div className="py-6 px-2">
+              <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
+                AI-enhanced [beta]
+              </h2>
+              <p className="text-base font-light font-[Rubik] ">
                 Would you be open to us using AI for greater efficiences and
                 boosted creativity?
               </p>
@@ -513,10 +532,10 @@ const ProjectBrief = () => {
               </div>
             </div>{" "}
             <div className="py-5">
-              <h2 className="text-2xl uppercase py-2">
+              <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
                 Skip estimate approval
               </h2>
-              <p className="mt-1 text-sm leading-6 text-gray-200">
+              <p className="text-base font-light font-[Rubik] ">
                 Would you like help with copywriting?
               </p>
               <div className="flex items-start pt-4">
@@ -543,7 +562,10 @@ const ProjectBrief = () => {
                   />
                 </div>
                 <div className="ml-3 text-sm leading-6">
-                  <label htmlFor="react" className="font-medium ">
+                  <label
+                    htmlFor="react"
+                    className="text-base font-light font-[Rubik] "
+                  >
                     No, I would like to skip the estimate approval, and start
                     the project straight away
                   </label>
@@ -556,12 +578,14 @@ const ProjectBrief = () => {
           <div className="w-full my-6  bg-[#0B1A2880]   px-5 py-6 rounded-lg ring-1 ring-gray-700">
             <div className="flex items-center gap-4">
               <ChevronLeftIcon className="h-6 w-6 text-gray-300" />
-              <span className="text-[35px] uppercase">Summery</span>
+              <h1 className="text-5xl font-[Teko] font-normal uppercase">
+                Summery
+              </h1>
             </div>
             <div className="p-8">
               <div className="md:p-8 p-2 rounded-2xl ring-1 ring-gray-600">
                 <div className="flex gap-4 py-2">
-                  <ClipboardDocumentListIcon className="h-6 w-6 text-gray-50" />
+                  <ClipboardDocumentListIcon className="h-4 w-4 text-gray-50" />
 
                   <span>[From Create your brief]</span>
                 </div>
@@ -586,7 +610,9 @@ const ProjectBrief = () => {
             </div>
 
             <div className="px-5">
-              <h2 className="uppercase text-xl py-2">please note</h2>
+              <h2 className="text-base font-bold font-[Rubik] leading-7 uppercase">
+                please note
+              </h2>
 
               <ul className="list-disc gap-6">
                 <li className="py-2">

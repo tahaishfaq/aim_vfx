@@ -18,11 +18,11 @@ import BriefProject2 from "./components/Dashboard/OnBoard/BriefProject2/BriefPro
 import BlogPost from "./components/BlogPost/BlogPost";
 import Promotional from "./components/PromationalAbout/Promotional";
 import Blog from "./components/Blog/Blog";
-import ForStartup from "./components/ForStratup/ForStartup"
+import ForStartup from "./components/ForStratup/ForStartup";
 import BookCall from "./components/Book Call/BookCall";
 import HelpCenter from "./components/HelpCenter/HelpCenter";
 import HelpCatogry from "./components/HelpCategory/HelpCategory";
-import HelpTutorial from "./components/HelpTutorial/HelpTutorial";
+import HelpTutorial from "./components/HelpCategoryPage28/HelpTutorial";
 import Careers from "./components/Careers/Careers";
 import ContactUs from "./components/ContactUs/ContactUs";
 import StoryPage from "./components/SotryPage/StoryPage";
@@ -30,7 +30,6 @@ import SucessStories from "./components/SucessSroeries/SucessStories";
 import ControlFreelancer from "./components/ControlFreelancer/ControlFreelancer";
 import Compare from "./components/Campare/Compare";
 import BookConsulation from "./components/BookConsulation/BookConsulation";
-
 
 function App() {
   const [count, setCount] = useState(0);
@@ -76,7 +75,6 @@ function App() {
           <Route path="/control-freelancer" element={<ControlFreelancer />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/book-consultation" element={<BookConsulation />} />
-          
         </Routes>
       </BrowserRouter>
     </>

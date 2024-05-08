@@ -11,7 +11,7 @@ import SerRatesVideo from "../components/CustomVideo/SerRatesVideo";
 import ServicesBenefits from "../components/ServiceSolutionCards/ServiceBenefits";
 import ServiceRateSection from "../components/RateSection/ServiceRateSection";
 import Heading from "../components/Heading/Heading";
-import { Divider } from "@mui/material";
+import { Checkbox, Divider } from "@mui/material";
 import ServiceRateDesc from "../components/RateSection/ServiceRateDesc";
 import ServiceRatesCount from "../components/RateSection/RatesCount";
 import HowItWorks from "../components/ServiceComponents/HowItWorks";
@@ -22,7 +22,6 @@ import WorkHistory from "../components/WorkHistory/WorkHistory";
 import FaqSection from "../components/FAQ/FAQ";
 import FooterForm from "../components/Footer/Footer";
 import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVideo";
-
 const Services = () => {
   const descriptions = [
     [

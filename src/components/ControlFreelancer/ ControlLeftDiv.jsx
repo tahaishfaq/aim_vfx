@@ -57,19 +57,21 @@ export default function ControlLeftDiv() {
     <Popover className="relative">
       <Popover.Button
         onClick={() => setShow(!show)}
-        className="w-full border-t-[1px] bg-[#0B1A2880] py-4 mb-3 rounded-2xl px-2 flex items-center justify-between gap-x-1 text-sm font-semibold leading-6 "
+        className="w-full border-t-[1px] bg-[#0B1A2880] py-4 rounded-lg px-2 flex items-center justify-between gap-x-1 text-sm font-semibold leading-6 "
       >
         <div className="flex justify-between items-center  px-3">
-          <div className="flex gap-3 p  items-center">
+          <div className="flex gap-3 p-2  items-center">
             <span>
-              <button className="px-5 py-3 rounded-[50%] bg-[#2EABAF] font-bold">
+              <button className="px-5 py-3 rounded-full bg-[#2EABAF] font-bold">
                 A
               </button>
             </span>
 
             <div>
-              <h1 className="text-[25px]">AIM</h1>
-              <p>No Plan</p>
+              <h1 className="text-base text-left font-[Teko] font-bold uppercase">
+                AIM
+              </h1>
+              <p className="text-base font-light font-[Rubik]">No Plan</p>
             </div>
           </div>
         </div>
@@ -89,8 +91,8 @@ export default function ControlLeftDiv() {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-1"
       >
-        <Popover.Panel className="">
-          <div className=" bg-[#0B1A2880] px-6 border-t-[1px] rounded-3xl">
+        <Popover.Panel>
+          <div className=" bg-[#0B1A2880] px-6  rounded-b-xl">
             {solutions.map((item) => (
               <div
                 key={item.name}

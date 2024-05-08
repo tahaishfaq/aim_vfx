@@ -41,52 +41,65 @@ const HelpCatogry = () => {
       id: 9,
       text: "Lorem ipsum dolor sit amet consectetur ?",
     },
+    {
+      id: 10,
+      text: "Lorem ipsum dolor sit amet consectetur ?",
+    },
+    {
+      id: 11,
+      text: "Lorem ipsum dolor sit amet consectetur ?",
+    },
   ];
   return (
-    <div className="solution-page pt-28">
+    <div className="solution-page">
       <div>
-        <div className=" px-5 sm:px-10 md:px-20 lg:px-40 xl:px-40 2xl:px-96 py-24">
-          <h1 className="text-[#fff] text-[35px] py-4 font-[500] ">
+        <div className=" max-w-4xl mx-auto px-6  py-28 text-white">
+          <h1 className="text-5xl font-medium font-[Teko] py-8  ">
             Advice and answers from the AIM-FX Team
           </h1>
           <div className="flex justify-between p-2 px-4 bg-[#fff] rounded-full">
             <input
-              className="w-full  outline-0"
+              className="w-full  outline-0 placeholder:text-[#1666B0] font-[Inter]"
               type="text"
               placeholder="Search for articles"
             />
             <img src={Search} alt="" />
           </div>
         </div>
-        <div className="promotional-section px-5 py-36 sm:px-10 md:px-20 lg:px-40 xl:px-40 2xl:px-96">
-          <div className="text-[#fff] ">
-            <div className="flex">
+        <div className="promotional-section text-white py-14 pb-36">
+          <div className=" sm:28 md:px-36 px-6 lg:px-0  max-w-4xl mx-auto ">
+            <div className="flex px-6 font-[Rubik] text-lg font-normal">
               <span>All Collections</span>
               <img src={chevron} alt="" />
               <span className="text-[#00FFFF] font-[400]">
                 AIM-FX Tutorials and FAQ
               </span>
             </div>
-            <h1 className="text-[70px] py-6 uppercase">
-              aim-fx tutorials and faq
-            </h1>
-            <p className="pb-3">Workflow, processes and AIM-FX tutorials.</p>
-          </div>
-
-          <div className="grid  lg:grid-cols-1 gap-5">
-            {data.map((value) => {
-              return (
-                <div
-                  key={value.id}
-                  className=" flex flex-1 items-center justify-between px-5 py-1.5 cursor-pointer  rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] hover:bg-gray-700"
-                >
-                  <p>{value.text}</p>
-                  <span>
-                    <img src={Arrow} alt="" />
-                  </span>
-                </div>
-              );
-            })}
+            <div className="pb-6 px-6">
+              <h1 className="text-8xl font-[Teko] font-normal py-6 uppercase">
+                aim-fx tutorials and faq
+              </h1>
+              <p className=" text-lg font-normal">
+                Workflow, processes and AIM-FX tutorials.
+              </p>
+            </div>
+            <div className="grid gap-3">
+              {data.map((value) => {
+                return (
+                  <div
+                    key={value.id}
+                    className=" flex flex-1 items-center justify-between px-5 py-1.5 cursor-pointer  rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] hover:bg-gray-700"
+                  >
+                    <p className="font-semibold font-[Rubik] text-base">
+                      {value.text}
+                    </p>
+                    <span>
+                      <img src={Arrow} alt="" className="w-6 h-6" />
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ import { PlayCircleIcon } from "@heroicons/react/24/outline";
 const Production = () => {
   return (
     <div>
-      <div className="bg-[#0B1A2880] px-5 py-6 mt-6 rounded-lg ring-1 ring-gray-400">
+      <div className="bg-[#0B1A2880] px-5 py-3 my-3 rounded-lg ring-1 ring-gray-400">
         <div className=" flex gap-6 lg:flex-row flex-col justify-between items-center">
           <div className="box-border">
             <h1 className="text-[25px] sm:text-[35px] font-tek">

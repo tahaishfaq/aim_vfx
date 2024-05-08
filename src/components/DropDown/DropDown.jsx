@@ -80,17 +80,19 @@ const DropDown = () => {
   ];
 
   return (
-    <div className="solution-page text-white">
-      <div className="max-w-6xl mx-auto grid grid-cols-2 bg-[#0B1A28CC] p-5 gap-3 rounded-3xl">
+    <div className="solution-page text-white py-28">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 bg-[#0B1A28CC] p-5 gap-3 rounded-3xl">
         <div className="grid grid-cols-2 gap-3">
           {product.slice(0, 6).map((item, ind) => {
             return (
               <div
                 key={ind}
-                className="border-2  border-[#00ffff] p-3 rounded-3xl"
+                className="border-2  border-[#00ffff] p-2 px-3 rounded-2xl"
               >
-                <div className="flex gap-1 py-3">
-                  <span className="text-[#00FFFF] ">{item.heading}</span>
+                <div className="flex gap-1 py-2 ">
+                  <span className="text-[#00FFFF] font-[Rubik] text-base font-bold ">
+                    {item.heading}
+                  </span>
                   <img src={chevron} alt="" className="" />
                 </div>
                 <p>{item.p1}</p>
@@ -104,15 +106,17 @@ const DropDown = () => {
             );
           })}
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid sm:grid-cols-2 gap-3">
           {product.slice(6, 10).map((item, ind) => {
             return (
               <div
                 key={ind}
-                className="border-2 border-[#00ffff] p-3 rounded-3xl"
+                className="border-2 border-[#00ffff] py-2 px-3 rounded-2xl"
               >
-                <div className="flex gap-1 py-3">
-                  <span className="text-[#00FFFF] ">{item.heading}</span>
+                <div className="flex gap-1 py-2">
+                  <span className="text-[#00FFFF] font-[Rubik] text-base font-bold">
+                    {item.heading}
+                  </span>
                   <img src={chevron} alt="" className="" />
                 </div>
                 <p>{item.p1}</p>

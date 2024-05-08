@@ -21,18 +21,20 @@ const solutions = [
 export default function PanelRight() {
   return (
     <Popover className="relative">
-      <Popover.Button className="w-full border-t-[1px] bg-[#0B1A2880] py-4 mb-3 rounded-2xl flex items-center justify-between gap-x-1 text-sm font-semibold leading-6 ">
+      <Popover.Button className="w-full border-t-[1px] bg-[#0B1A2880] py-5 mb-3 rounded-lg flex items-center justify-between gap-x-1 text-sm font-semibold leading-6 ">
         <div className="flex justify-between items-center  px-3">
           <div className="flex gap-3">
             <span>
-              <button className="px-4 py-3 rounded-[50%] bg-[#00ffff]">
+              <button className="px-4 py-3 rounded-[50%] bg-[#2EABAF]">
                 TJ
               </button>
             </span>
 
             <div>
-              <h1 className="text-[25px]">Terrence Jeffords</h1>
-              <p>AIM FX member</p>
+              <h1 className="text-base text-left font-[Teko] font-bold uppercase">
+                Terrence Jeffords
+              </h1>
+              <p className="text-base font-light font-[Rubik]">AIM FX member</p>
             </div>
           </div>
         </div>
@@ -49,7 +51,7 @@ export default function PanelRight() {
         leaveTo="opacity-0 translate-y-1"
       >
         <Popover.Panel className="">
-          <div className=" bg-[#0B1A2880] py-5 px-6 border-t-[1px] rounded-3xl">
+          <div className=" bg-[#0B1A2880] py-5 px-6 border-t-[1px] rounded-lg">
             {solutions.map((item) => (
               <div
                 key={item.name}

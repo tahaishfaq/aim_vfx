@@ -3,12 +3,12 @@ import Rectangle from "../../assets/images/Rectangle 131.png";
 import Button from "../Button/Button";
 const ReviewsVideos = () => {
   return (
-    <div className="max-w-7xl rounded-2xl border-4 border-[#15B8C7] p-6 mx-auto grid lg:grid-cols-2">
-      <div>
-        <h1 className="py-6 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl uppercase">
+    <div className=" rounded-2xl border-4 border-[#15B8C7] p-6 mx-auto grid 2xl:grid-cols-5">
+      <div className="col-span-2 xl:pt-10 xl:pb-10 xl:pl-20  ">
+        <h1 className="py-6  text-5xl lg:text-6xl xl:text-8xl font-[Teko] uppercase">
           Top Results for real brands
         </h1>
-        <p className="text-[20px]">
+        <p className="text-xl font-light font-[Teko]">
           Lorem ipsum dolor sit amet consectetur. Velit neque consequat id
           malesuada aenean eu fringilla varius. Risus quam enim quisque in
           turpis arcu non posuere.
@@ -20,7 +20,7 @@ const ReviewsVideos = () => {
         </div>
       </div>
 
-      <div>
+      <div className="col-span-3">
         <div className="relative overflow-hidden">
           <video controls poster={Rectangle}>
             <source src="your-video-file.mp4" type="video/mp4" />
