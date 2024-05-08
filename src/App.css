@@ -163,6 +163,8 @@
 .show-reels {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #00ffff;
+  opacity: 0.5;
+
 }
 
 .homeVideo {
@@ -247,6 +249,7 @@ video::-webkit-media-controls-play-button {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #00ffff;
   font-family: "Teko";
+  opacity: 0.5;
   /* letter-spacing: 4.5rem; */
 }
 .spectularImage {
@@ -256,8 +259,8 @@ video::-webkit-media-controls-play-button {
 
 .image-container {
   border-radius: 40px;
-  border: 15px solid #0513375a; /* Border color */
-  backdrop-filter: blur(20px); /* Apply blur effect to content behind */
+  border: 15px solid #0513375a; 
+  backdrop-filter: blur(20px); 
   background: rgba(5, 19, 55, 0.4);
 }
 
@@ -964,3 +967,49 @@ video::-webkit-media-controls-play-button {
 .navlinks:hover .dropdown {
   display: block;
 }
+
+
+
+.contact-us-from {
+  /* From https://css.glass */
+background: rgba(11, 26, 40, 0.5019607843137255);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(40px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid #ffff;
+
+
+  /* background: 
+    linear-gradient(to top, rgba(17, 33, 64, 0.9), rgba(17, 33, 64)) padding-box,
+    linear-gradient(to bottom, #ffffff, rgba(21, 184, 199, 0)) border-box;
+  border-radius: 30px;
+  border: 1px solid transparent; */
+}
+
+
+.contact-us-page{
+  background: linear-gradient(
+    30deg,
+    #05161e,
+    #0c2c3c,
+    #143e4d,
+    #201a38,
+    #05161e
+  );
+    backdrop-filter: blur(10px);
+}
+
+
+
+.contact-us-text{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #00ffff;
+  opacity: 0.5;
+  letter-spacing: 2.5rem;
+}
+
+
+
+
+
