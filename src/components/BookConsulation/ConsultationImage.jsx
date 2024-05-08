@@ -55,11 +55,11 @@ const ConsultationImage = () => {
   ];
   return (
     <div className="promotional-section py-32 text-white ">
-      <div className="max-w-5xl mx-auto">
-        <h1 className="py-10 text-8xl uppercase text-center font-[Teko] ">
+      <div className=" px-6 lg:px-0 max-w-4xl mx-auto">
+        <h1 className="py-10 lg:text-8xl text-5xl uppercase text-center font-[Teko] ">
           how we edit your videos step by step
         </h1>
-        <div className="px-7 gap-y-10">
+        <div className="px-7 gap-28">
           {data.map((item, ind) => {
             return (
               <div
@@ -70,10 +70,10 @@ const ConsultationImage = () => {
                 }
               >
                 <div className="flex-1 py-5">
-                  <h1 className="lg:text-3xl text-2xl text-[#00ffff] uppercase py-4">
+                  <h1 className="lg:text-3xl text-5xl font-[Teko] text-[#00ffff] uppercase pb-2">
                     {item.head}
                   </h1>
-                  <p>{item.des}</p>
+                  <p className="font-[Rubik] text-lg font-light">{item.des}</p>
                 </div>
                 <div
                   className={
@@ -82,7 +82,7 @@ const ConsultationImage = () => {
                       : "flex-1 py-6 "
                   }
                 >
-                  <div className="py-5 w-60 h-48 bg-[#EFFCFA1F] flex items-center justify-center  rounded-3xl ">
+                  <div className="py-5 lg:w-80 lg:h-60 w-60 h-60 bg-[#EFFCFA1F] flex items-center justify-center  rounded-3xl ">
                     <img src={item.src} alt="" className="object-cover" />
                   </div>
                 </div>

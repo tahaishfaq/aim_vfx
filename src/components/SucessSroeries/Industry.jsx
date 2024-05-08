@@ -76,20 +76,20 @@ const Industry = () => {
   ];
 
   return (
-    <div className="lg:px-28">
-      <h1 className="text-center text-4xl uppercase py-12 font-[400]">
+    <div className="lg:px-28 pt-28">
+      <h1 className="text-center text-5xl font-[Teko] uppercase py-12 font-[400]">
         We work with your industry
       </h1>
-      <div className="grid xl:grid-cols-8 lg:grid-cols-4 sm:grid-cols-2 px-4 pt-12 pb-10 gap-4">
+      <div className="px-28 grid 2xl:grid-cols-8 xl:grid-cols-4 sm:grid-cols-2 sm:px-28 md:px-40 xl:px-0 pt-12 pb-10 gap-4">
         {logo.slice(0, 8).map((item, ind) => {
           return (
             <div
-              className="flex flex-col px-4 py-10 items-center rounded-3xl border-[3px] border-[#fff]  justify-center"
+              className="flex flex-col p-7  rounded-3xl border-[3px] border-[#fff]"
               key={ind}
             >
-              <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center justify-start ">
                 <img className="w-12 h-12 object-cover" src={item.img} alt="" />
-                <h2 className=" leading-6 uppercase text-xl text-[#fff] text-center">
+                <h2 className=" uppercase text-3xl font-[Teko] font-normal text-center pt-3">
                   {item.name}
                 </h2>
               </div>{" "}
@@ -105,8 +105,8 @@ const Industry = () => {
               <button
                 className={
                   ind === 0
-                    ? "py-3 px-8 text-[400] uppercase rounded-full border-4 border-white bg-white text-black"
-                    : "py-3 px-8 text-[400] uppercase rounded-full border-4  border-white"
+                    ? "py-3 px-8 text-base uppercase rounded-full border-4 border-white bg-white text-black font-[Rubik]"
+                    : "py-3 px-8 text-base uppercase rounded-full border-4  border-white font-[Rubik]"
                 }
               >
                 {item.btn}
