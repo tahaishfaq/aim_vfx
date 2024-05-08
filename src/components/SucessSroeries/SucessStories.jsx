@@ -1,6 +1,5 @@
 import React from "react";
 import shape7 from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 1.png";
-import solution from "../../assets/Solution.png";
 import Button from "../Button/Button";
 import ServivePageVideo from "../CustomVideo/ServicePageVideo";
 import ServiceLogoBar from "../LogoBars/ServiceLogoBar";
@@ -37,6 +36,8 @@ const SucessStories = () => {
   return (
     <div className="solution-page text-white">
       <div className="lg:py-0 py-6">
+        {/*-----------------Hero  Section      ------------------*/}
+
         <div className="flex lg:flex-row  flex-col-reverse justify-between items-center">
           <div className="lg:px-40 px-5 lg:pt-0 pt-4">
             <span className="service-hero-heading">
@@ -89,16 +90,18 @@ const SucessStories = () => {
 
       {/*-----------------Required Videos Section      ------------------*/}
       <div className="relative ">
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-6xl sm:px-12 px-6">
           {product.map((item) => {
             return (
-              <div className="grid md:gap-6 rounded-3xl border-[#15B8C7]  mt-5 mx-5  border-4 md:grid-cols-3 ">
-                <div className="  flex md:flex-col justify-between py-12 px-3">
+              <div className="grid md:gap-6 rounded-3xl border-[#15B8C7]  mt-16   border-4 md:grid-cols-3 ">
+                <div className="   flex md:flex-col justify-between py-6 px-3 md:py-12 md:px-12">
                   <div>
-                    <h2 className="text-[25px] italic font-[400]">
+                    <h2 className="md:text-3xl text-2xl italic font-bold font-[Rubik]">
                       {item.name}
                     </h2>
-                    <p>{item.copmany}</p>
+                    <p className="md:text-2xl text-xl font-light font-[Rubik]">
+                      {item.copmany}
+                    </p>
                   </div>
                   <div>
                     <button className="py-3 px-7 uppercase  bg-white hover:bg-slate-200 text-black rounded-full font-bold">
@@ -140,10 +143,10 @@ const SucessStories = () => {
       {/*----------------- sucess   video production Section      ------------------*/}
       <div>
         <div className="text-center">
-          <h1 className="text-[99px] uppercase font-[400] font-[Teko]">
+          <h1 className="lg:text-8xl text-5xl uppercase font-normal font-[Teko]">
             video production
           </h1>
-          <p>
+          <p className="font-[Rubik] text-base  font-light">
             Take a look at all the countries that AIM FX team members are based
             in.
           </p>
@@ -153,7 +156,7 @@ const SucessStories = () => {
             see articles
           </Button>
         </div>
-        <div className="px-6 lg:px-28 pb-28 grid lg:gap-5 lg:grid-cols-3">
+        <div className="px-6 xl:px-20 md:px-44 sm:px-10 lg:px-10 pb-28 grid lg:gap-5 lg:grid-cols-3">
           {product.map((item) => {
             return (
               <div className=" rounded-3xl border-[#15B8C7]  mt-5 border-4  ">
@@ -167,10 +170,12 @@ const SucessStories = () => {
 
                 <div className=" flex-col gap-5 flex justify-between pb-5 px-3">
                   <div>
-                    <h2 className="text-[25px] italic font-[400]">
+                    <h2 className="md:text-3xl text-2xl italic font-bold font-[Rubik]">
                       {item.name}
                     </h2>
-                    <p>{item.copmany}</p>
+                    <p className="md:text-2xl text-xl font-light font-[Rubik]">
+                      {item.copmany}
+                    </p>
                   </div>
                   <div>
                     <button className="py-3 px-7 w-full uppercase  bg-white hover:bg-slate-200 text-black rounded-full font-bold">
@@ -196,28 +201,30 @@ const SucessStories = () => {
           <img src={LOGO} alt="" className=" w-32 h-32 " />
         </div>
 
-        <div className="grid lg:gap-6 rounded-3xl border-[#15B8C7]  lg:m-5  border-4 lg:grid-cols-3 ">
-          <div className="  flex flex-col justify-center py-12 px-3">
-            <h2 className="text-4xl xl:text-6xl  uppercase  font-[400]">
-              video AGENCY
-            </h2>
-            <p className="py-5">
-              Lorem ipsum dolor sit amet consectetur. Sollicitudin quis
-              facilisis elit enim nam nec magna. Dignissim turpis feugiat sed
-              nisi elementum nunc in aliquet.
-            </p>
-            <p className="py-5">
-              Lorem ipsum dolor sit amet consectetur. Sollicitudin quis
-              facilisis elit enim nam nec magna. Dignissim turpis feugiat sed
-              nisi elementum nunc in aliquet.
-            </p>
-          </div>
-          <div className="lg:col-span-2 col-span-full p-2 lg:py-10 lg:px-5 relative overflow-hidden ">
-            <video controls poster={Rectangle}>
-              <source src="your-video-file.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div className="play-button"></div>
+        <div className="px-6 lg:px-28 xl:px-0">
+          <div className="grid lg:gap-6 rounded-3xl border-[#15B8C7]  lg:m-5 border-4  xl:grid-cols-3 ">
+            <div className="  flex flex-col justify-center py-12 xl:pl-24">
+              <h2 className="text-4xl xl:text-6xl  uppercase  font-[400]">
+                video AGENCY
+              </h2>
+              <p className="py-5">
+                Lorem ipsum dolor sit amet consectetur. Sollicitudin quis
+                facilisis elit enim nam nec magna. Dignissim turpis feugiat sed
+                nisi elementum nunc in aliquet.
+              </p>
+              <p className="py-5">
+                Lorem ipsum dolor sit amet consectetur. Sollicitudin quis
+                facilisis elit enim nam nec magna. Dignissim turpis feugiat sed
+                nisi elementum nunc in aliquet.
+              </p>
+            </div>
+            <div className="lg:col-span-2 col-span-full p-2 lg:py-10 lg:px-5 relative overflow-hidden ">
+              <video controls poster={Rectangle}>
+                <source src="your-video-file.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="play-button"></div>
+            </div>
           </div>
         </div>
         <div className="lg:pt-20 py-6 flex flex-col items-center">

@@ -38,45 +38,53 @@ const StoryPage = () => {
   ];
 
   return (
-    <div className="solution-page pt-32">
-      <div className="lg:relative">
-        <h1 className="text-7xl font-[Teko] uppercase text-center py-10 font-normal">
+    <div className="solution-page text-white pt-28">
+      <div className="xl:relative">
+        <h1 className="lg:text-8xl text-6xl font-[Teko] uppercase text-center py-14 font-normal">
           suzuki video commercial
         </h1>
 
         <StoryVideo />
-        <div className="lg:block hidden lg:absolute bottom-[-120px] -z-10">
+        <div className="xl:block hidden xl:absolute bottom-[-120px] -z-10">
           <img src={suzuki} alt="" />
           <img
             src={holographic}
             alt=""
-            className="absolute rotate-90  -z-10 left-48 bottom-[-150px]"
+            className="absolute -rotate-180  -z-10 left-48 bottom-[-150px]"
           />
           <img src={suzuki2} alt="" />
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto pt-40">
+      <div className="px-6 max-w-6xl mx-auto py-20 pt-40">
         {product.map((item, ind) => {
           return (
             <div
               className={
                 ind % 2 == 0
-                  ? "md:flex gap-8 py-9 justify-between"
-                  : "py-9 md:flex flex-row-reverse gap-8 justify-between"
+                  ? "md:flex gap-12 justify-between"
+                  : " md:flex flex-row-reverse gap-9  justify-between"
               }
             >
               <div
                 className={
                   ind % 2 == 0
-                    ? " flex-1 flex flex-col justify-center"
-                    : " flex-1 text-right flex flex-col justify-center"
+                    ? " flex-1 flex flex-col py-9 justify-center"
+                    : " flex-1 text-right flex py-9  flex-col justify-center"
                 }
               >
-                <h2 className="text-4xl uppercase py-3">{item.heading}</h2>
-                <p>{item.description}</p>
+                <h2 className="text-5xl font-[Teko] font-normal uppercase py-3">
+                  {item.heading}
+                </h2>
+                <p className="text-lg font-[Rubik] font-light">
+                  {item.description}
+                </p>
               </div>
-              <div className="flex-1 py-5">
+              <div
+                className={
+                  ind % 2 == 0 ? "flex justify-end flex-1" : " flex-1  "
+                }
+              >
                 <img src={item.src} alt="" />
               </div>
             </div>
@@ -85,19 +93,21 @@ const StoryPage = () => {
       </div>
       {/*---------------------------------  Location Section   -------------------------------------------------*/}
 
-      <div className="promotional-section px-5 py-28">
-        <div className="max-w-6xl mx-auto md:gap-24 grid font-[Teko] md:grid-cols-2">
+      <div className="promotional-section px-5 lg:py-28 py-40">
+        <div className="xl:max-w-6xl mx-auto md:gap-24 grid font-[Teko] md:px-40 sm:px-12 lg:px-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center py-4">
-            <h1 className="text-8xl uppercase font-normal ">locations</h1>
-            <p className="py-3">
+            <h1 className="lg:text-8xl text-6xl uppercase font-normal ">
+              locations
+            </h1>
+            <p className="py-3 text-lg font-light font-[Rubik]">
               Lorem ipsum dolor sit amet consectetur. At quis nunc mus iaculis.
               Nunc id ut ipsum vel lectus maecenas. Sem in laoreet gravida etiam
               in amet sociis non at. Ut senectus nisl aliquet vivamus arcu
               pharetra at. Pharetra lacus nulla tellus mi lectus vitae nullam
               tellus.
             </p>
-            <div className="pt-6">
-              <Button className="uppercase text-white font-semibold border-white border-4 px-8 py-3 rounded-full">
+            <div className="pt-10 text-base font-medium font-[Rubik]">
+              <Button className="uppercase text-white font-semibold border-white border-4 px-10 py-2.5 rounded-full">
                 location shooting services
               </Button>
             </div>
@@ -132,10 +142,10 @@ const StoryPage = () => {
 
       <div className="pb-24">
         <div className="max-w-3xl mx-auto text-center py-10">
-          <h1 className="text-4xl font-normal uppercase py-4 font-[Teko] ">
+          <h1 className="text-5xl font-normal uppercase py-4 font-[Teko] ">
             final video
           </h1>
-          <p className="font-[Rubik]">
+          <p className="font-[Rubik] text-lg font-light max-w-3xl mx-auto">
             Lorem ipsum dolor sit amet consectetur. At quis nunc mus iaculis.
             Nunc id ut ipsum vel lectus maecenas. Sem in laoreet gravida etiam
             in amet sociis non at. Ut senectus nisl aliquet vivamus arcu

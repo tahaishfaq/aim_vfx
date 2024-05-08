@@ -6,7 +6,7 @@ const DateConsulation = () => {
     <div className=" py-20">
       <div className="px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-28">
         <div className="flex  flex-col justify-center">
-          <h1 className="text-3xl lg:text-8xl font-[Teko] uppercase">
+          <h1 className="text-5xl lg:text-8xl font-[Teko] uppercase">
             book a free consulation
           </h1>
           <p className="font-[Rubik] text-xl">

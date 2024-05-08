@@ -8,7 +8,7 @@ import Heading from "../Heading/Heading";
 import FooterForm from "../Footer/Footer";
 const BookConsulation = () => {
   return (
-    <div className="solution-page pt-28">
+    <div className="solution-page pt-28 text-white">
       <div className="2xl:relative">
         <DateConsulation />
         <img
@@ -20,7 +20,7 @@ const BookConsulation = () => {
       <div>
         <ConsultationImage />
       </div>
-      <div className="2xl:max-w-7xl mx-auto flex flex-col gap-y-7 items-center justify-center py-20 ">
+      <div className="2xl:max-w-7xl mx-auto flex flex-col gap-y-32 items-center justify-center py-28 ">
         <div className="flex flex-col items-center justify-center">
           <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
             Testimonals
