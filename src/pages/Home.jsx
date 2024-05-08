@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar } from "../components/Navbar/Navbar";
+
 import shape1 from "../assets/127_arrow_icon_logo_with_3d_modern_style copy 2.png";
 import shape2 from "../assets/127_arrow_icon_logo_with_3d_modern_style copy 3.png";
 import shape3 from "../assets/1.png";
@@ -33,13 +33,16 @@ import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVi
 import HomeTestimoal from "../components/HomeTestimonals/HomeTestimonals";
 import { FaStar, FaTrophy, FaPercent } from "react-icons/fa";
 import WorkHistory from "../components/WorkHistory/WorkHistory";
-import FAQ from "../components/FAQ/FAQ";
+
 import FaqSection from "../components/FAQ/FAQ";
 
 import howitworks from "../assets/Rectangle 130 (1).png";
 import FooterForm from "../components/Footer/FooterForm";
 import Footer from "../components/Footer/Footer";
 import footerbg from "../assets/images/footer-bg.png";
+
+
+
 const Home = () => {
   const services = [
     {

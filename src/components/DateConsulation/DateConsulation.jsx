@@ -4,9 +4,9 @@ import arrow3 from "../../assets/images/arrow3.png";
 const DateConsulation = () => {
   return (
     <div className=" py-20">
-      <div className="px-8 max-w-7xl mx-auto grid md:grid-cols-2 gap-28">
-        <div className="flex  flex-col justify-center">
-          <h1 className="text-3xl lg:text-8xl font-[Teko] uppercase">
+      <div className="lg:px-10 px-4 max-w-7xl mx-auto grid md:grid-cols-2 gap-x-20">
+        <div className="flex flex-col justify-center gap-y-4">
+          <h2 className="lg:text-[80px] text-[60px]  uppercase py-5 font-tek leading-tight">
             book a free consulation
           </h2>
           <p className="font-light -mt-4">

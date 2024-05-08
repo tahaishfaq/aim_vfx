@@ -60,7 +60,7 @@ const Panel = () => {
           </div>
           <div className="py-2 lg:flex flex-wrap gap-4 justify-between items-center">
             <div className=" py-5 lg:py-2 grid grid-cols-2 lg:grid-cols-4  gap-5  xl:flex justify-between">
-              {data.map((item, ind) => {
+              {data?.map((item, ind) => {
                 return (
                   <span className=" py-2.5 rounded-md bg-[#0B1A2880]">
                     <span className="px-3 py-3 rounded-md bg-gradient-to-bl from-[#02363a] to-[#2cb2b6]">
