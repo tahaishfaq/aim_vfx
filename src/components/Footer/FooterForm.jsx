@@ -83,7 +83,7 @@ const FooterForm = () => {
             name="companySize"
             onChange={handleInputChange}
             value={formData.companySize}
-            className="px-4 py-3 rounded-full text-gray-700 bg-[#D4E7F5]"
+            className="px-4 py-3 rounded-full text-gray-500 bg-[#D4E7F5]"
           >
             <option value="">Company Size</option>
             <option value="small">1-10</option>

@@ -417,14 +417,16 @@ const Home = () => {
         <WorkHistory />
         <FaqSection />
         <div className="relative">
-          <div className="absolute bottom-0  flex items-center justify-center ">
+          <div className="absolute bottom-0 -z-50 flex items-center justify-center ">
             <img
               src={footerbg}
               alt="bg"
               className="object-cover object-center"
             />
           </div>
+          
           <FooterForm />
+          
           <Footer />
         </div>
       </div>
