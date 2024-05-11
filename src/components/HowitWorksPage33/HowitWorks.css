@@ -1,0 +1,6 @@
+.card-project-border {
+  background: linear-gradient(#525050, #403e3e) padding-box,
+    linear-gradient(to bottom, #ffffff, #403e3e) border-box;
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid transparent;
+}

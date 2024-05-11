@@ -1,6 +1,7 @@
 import React from "react";
 import Rectangle7538 from "../../assets/images/Rectangle 7538.png";
 import { CheckCircleIcon } from "@heroicons/react/24/outline";
+import "../Pricing/PricingCard.css";
 
 const PricingCard = () => {
   const data = [
@@ -52,11 +53,11 @@ const PricingCard = () => {
   ];
 
   return (
-    <div>
+    <div className="z-40">
       <div className="px-10 lg:px-10 xl:px-40 gap-5 grid lg:grid-cols-3">
         {data.map((item) => {
           return (
-            <div className="relative box-border bg-gradient-to-r from-[#fff] to-[#15B8C700]  rounded-2xl">
+            <div className=" box-border brief-project  ">
               <h1 className="p-8 py-14 font-[500] text-center sm:text-4xl md:text-5xl xl:text-6xl">
                 {item.head}
               </h1>

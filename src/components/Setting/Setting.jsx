@@ -9,14 +9,14 @@ import { CreditCardIcon } from "@heroicons/react/24/outline";
 const Setting = () => {
   return (
     <div className="solution-page py-24">
-      <div className="px-10 grid xl:grid-cols-8 text-white gap-4">
+      <div className="px-6 lg:px-10 grid xl:grid-cols-8 text-white gap-4">
         <div className="col-span-full  xl:col-span-2 ">
           <ControlLeftDiv />
         </div>
         {/* ------------ Center div  Section --------------- */}
 
         <div className=" xl:col-span-4 ">
-          <div className="w-full gap-y-4 bg-[#0B1A2880] flex flex-row   items-center justify-between px-3 py-5 rounded-lg ring-1 ring-gray-400">
+          <div className="w-full gap-y-4 flex flex-row   items-center justify-between px-3 py-5 border-setting ">
             <div className="flex  gap-x-2 ">
               <Cog8ToothIcon className="h-6 w-6 pt-1 text-gray-200" />
 
@@ -26,7 +26,7 @@ const Setting = () => {
               <span className="px-3 py-2 rounded-[50%] bg-[#2EABAF]">TJ</span>
             </div>
           </div>
-          <div className="w-full gap-y-4 bg-[#0B1A2880] rounded-xl mt-6">
+          <div className="w-full h-[576px] gap-y-4 bg-[#0B1A2880] rounded-xl mt-6">
             <form className="p-6 w-full">
               {/* ------------ input For City and Country  div  Section --------------- */}
 
@@ -151,8 +151,8 @@ const Setting = () => {
             </form>
           </div>
           {/* ------------ Payment Method   div  Section --------------- */}
-          <div className="w-full gap-y-4 bg-[#0B1A2880] rounded-xl my-5 p-6">
-            <div className="p border-b-[1px] border-gray-500">
+          <div className="w-full bg-[#0B1A2880] rounded-xl mt-5 p-6">
+            <div className="border-b-[1px] border-gray-500">
               <div className="flex items-center gap-x-2 pb-4">
                 <CreditCardIcon className="h-8 w-8 text-gray-200" />
 
@@ -170,18 +170,22 @@ const Setting = () => {
                   </p>
                 </div>
 
-                <div className="grid max-w-2xl grid-cols-1 gap-x-1 gap-y-3 sm:grid-cols-4 md:col-span-2">
+                <div className="grid max-w-2xl grid-cols-1 gap-x-1 gap-y-3 md:col-span-2">
                   <div className="sm:col-span-full">
                     <h2 className="text-base font-semibold leading-7 text-gray-100 uppercase">
                       add new card
                     </h2>
                   </div>
-                  <span className="text-lg font-[500]">Card number:</span>
-                  <span className="text-lg font-[500]">MM/YY</span>
-                  <span className="text-lg font-[500]">cvc</span>
-                  <button className="uppercase px-4 py-1 border-4 border-[#2EABAF] rounded-full hover:bg-[#3a9194]">
-                    Add Card
-                  </button>
+                  <div className=" flex justify-between gap-x-2 gap-y-2 flex-wrap items-center">
+                    <span className="text-lg font-medium uppercase">
+                      Card number:
+                    </span>
+                    <span className="text-lg font-medium uppercase">MM/YY</span>
+                    <span className="text-lg font-medium uppercase">cvc</span>
+                    <button className="uppercase px-4 py-1 border-4 border-[#2EABAF] rounded-full hover:bg-[#3a9194]">
+                      Add Card
+                    </button>
+                  </div>
                   <div className="col-span-full">
                     <p>
                       A temporary $0.5 charge that automatically refunds might
@@ -195,30 +199,28 @@ const Setting = () => {
             </div>
             {/* ------------ Bank  Account   div  Section --------------- */}
 
-            <div className=" border-gray-500">
-              <div className="grid grid-cols-1 gap-x-8 gap-y-10 border-b border-gray-900/10 pb-10 pt-12 md:grid-cols-3">
-                <div>
-                  <h2 className="uppercase text-base font-semibold leading-7 ">
-                    Bank accounts
-                  </h2>
-                  <p className="mt-1 text-sm leading-6 text-gray-300">
-                    Contact payment@aimfx.com if you want to disconnect a bank
-                    account
-                  </p>
-                </div>
+            <div className="grid grid-cols-1 gap-x-8 gap-y-10  pb-6 pt-6 md:grid-cols-3">
+              <div>
+                <h2 className="uppercase text-base font-semibold leading-7 ">
+                  Bank accounts
+                </h2>
+                <p className="mt-1 text-sm leading-6 text-gray-300">
+                  Contact payment@aimfx.com if you want to disconnect a bank
+                  account
+                </p>
+              </div>
 
-                <div className="grid max-w-2xl grid-cols-1 gap-x-1 gap-y-8 sm:grid-cols-4 md:col-span-2">
-                  <div className="col-span-full">
-                    <h1 className=" text-xl font-[Rubik] font-[700]">
-                      Connecting your bank accounts is easy <br /> and your the
-                      details stays secure
-                    </h1>
-                  </div>
-                  <div className="col-span-2">
-                    <button className="uppercase px-4 py-1 border-4 border-[#2EABAF] rounded-full hover:bg-[#3a9194]">
-                      Add account
-                    </button>
-                  </div>
+              <div className="grid max-w-2xl grid-cols-1 gap-x-1 gap-y-8 sm:grid-cols-4 md:col-span-2">
+                <div className="col-span-full">
+                  <h1 className=" text-xl font-[Rubik] font-[700]">
+                    Connecting your bank accounts is easy <br /> and your the
+                    details stays secure
+                  </h1>
+                </div>
+                <div className="col-span-2">
+                  <button className="uppercase px-4 py-1 border-4 border-[#2EABAF] rounded-full hover:bg-[#3a9194]">
+                    Add account
+                  </button>
                 </div>
               </div>
             </div>

@@ -1,0 +1,16 @@
+.pricing-background {
+  background: linear-gradient(#ffffff 100%, #15b8c7 0%, #00ffff);
+  backdrop-filter: blur(10px);
+}
+.brief-border-2 {
+  background: linear-gradient(196.98deg, #013b49 9.3%, #1bc2cb 84.62%);
+  height: 100vh;
+  /* backdrop-filter: blur(10px); */
+  border-radius: 0 0 0 275px;
+}
+.brief-project {
+  background: linear-gradient(#15b8c700, #15b8c700) padding-box,
+    linear-gradient(to bottom, #ffffff, #15b8c700) border-box;
+  border-radius: 30px 30px 30px 30px;
+  border: 1px solid transparent;
+}

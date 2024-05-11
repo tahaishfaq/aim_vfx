@@ -39,10 +39,10 @@ const WorkSolutionCard = () => {
   ];
   return (
     <>
-      <div className="py-10 max-w-7xl mx-auto grid lg:grid-cols-4 sm:grid-cols-2  lg:gap-8 gap-y-12">
+      <div className="pt-10 max-w-7xl lg:px-0 px-6 mx-auto grid lg:grid-cols-4 sm:grid-cols-2 gap-5 lg:gap-8 gap-y-16">
         {solutions.map((item) => {
           return (
-            <div className="bg-[#0513378C] relative px-4 py-10 rounded-3xl">
+            <div className="bg-[#0513378C] relative px-5 py-10 rounded-3xl">
               <img
                 src={item.icon}
                 alt=""

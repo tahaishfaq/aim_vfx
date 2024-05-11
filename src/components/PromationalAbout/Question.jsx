@@ -58,19 +58,19 @@ const Question = () => {
     },
   ];
   return (
-    <div className="promotional-section text-[#fff]">
-      <h1 className="font-tek font-[400] text-[100px] text-center">
+    <div className="promotional-section text-[#fff] py-28 ">
+      <h1 className="px-6 font-tek font-normal uppercase py-10 text-5xl lg:text-[100px] text-center">
         Freqfently Asked Questions
       </h1>
-      <div className="grid grid-cols-2  px-96 gap-3  ">
+      <div className="grid lg:grid-cols-2 max-w-6xl md:px-40 lg:px-6 mx-auto px-6 gap-3  ">
         {Que.map((q) => {
           const { id } = q;
           return <Answer key={id} {...q} />;
         })}
       </div>
 
-      <div className="hidden sm:flex sm:items-center  gap-x-16 justify-center pt-5">
-        <Button className="px-8 py-2.5 text-sm font-semibold text-[#000] bg-[#fff] rounded-full hover:bg-gray-200 hover:text-[#000]  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+      <div className="flex sm:items-center  gap-x-16 justify-center pt-5">
+        <Button className="px-8 py-2 text-sm font-semibold text-[#000] bg-[#fff] rounded-full hover:bg-gray-200 hover:text-[#000]  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
           CHOOSE A PLAN
         </Button>
         <Button className="px-4 py-2.5 text-sm font-semibold text-white bg-transparent  border-2 border-[#fff] rounded-full hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
