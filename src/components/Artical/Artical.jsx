@@ -8,6 +8,7 @@ import Rectangle7588 from "../../assets/images/Rectangle 7588.png";
 import Rectangle7589 from "../../assets/images/Rectangle 7589.png";
 import Rectangle7583 from "../../assets/images/Rectangle 7583.png";
 import Button from "../Button/Button";
+import blog from "../../assets/images/our blog (1).png";
 const Artical = () => {
   const products = [
     {
@@ -54,23 +55,26 @@ const Artical = () => {
     },
   ];
   return (
-    <div className="">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div className="flex items-center justify-center flex-col gap-y-4">
-          <span className="flex items-center justify-center">
+    <div className="relative">
+      <div>
+        <img src={blog} alt="" className="absolute -z-10 " />
+      </div>
+      <div className="mx-auto max-w-2xl px-4  py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-0">
+        <div className="flex items-center justify-between gap-y-4 pb-16">
+          <span className="flex items-center gap-x-3 justify-between">
             <img src={Article1} alt="" />
-            <h3 className="text-[50px] font-[300] font-tek leading-tight text-[#56BEC2]">
+            <h3 className="lg:text-5xl text-3xl font-medium uppercase font-tek leading-tight text-[#FFFFFf]">
               Latest articles
             </h3>
           </span>
-          <Button className="px-8 py-2 text-sm font-semibold border-2 border-[#fff] text-gray-200 bg-cyan-500 rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+          <Button className="px-8 py-2 text-sm font-semibold border-2 border-[#fff] text-white  rounded-full hover:text-gray-300 cursor-pointer hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
             SEE ALL
           </Button>
         </div>
 
-        <div className="mt-6 grid lg:grid-cols-2 grid-cols-1 gap-x-4 gap-y-14 sm:gap-x-6 md:grid-cols-3 md:gap-y-10 lg:gap-x-8">
+        <div className="mt-6 grid lg:grid-cols-3 grid-cols-1 gap-x-4 gap-y-14 sm:gap-x-6 md:grid-cols-2 md:gap-y-10 lg:gap-x-6">
           {products.map((product) => (
-            <div key={product.id} className="group relative">
+            <div key={product.id} className="">
               <div className=" w-full overflow-hidden   ">
                 <img
                   src={product.imageSrc}
@@ -78,23 +82,27 @@ const Artical = () => {
                   className="h-full w-full object-cover object-center "
                 />
               </div>
-              <div className="p-3  text-[#fff]">
-                <span className="font-[400] text-[#00FFFF] text-[18px]">
+              <div className="pt-6  p-3 text-[#fff]">
+                <span className="font-normal text-[#00FFFF] text-lg">
                   {product.cart}
                 </span>
-                <p className="font-[700] text-[22px]">{product.des}</p>
-                <p>
+                <h2 className="font-bold italic text-[22px] font-[Rubik]">
+                  {product.des}
+                </h2>
+                <p className="font-[Rubik] font-light text-xl ">
                   Lorem ipsum dolor sit amet consectetur. Velit sollicitudin
                   cras pretium tellus sed. Fringilla sit eleifend tellus aliquet
                   ac.
                 </p>
-                <div className="flex gap-2 pt-3">
+                <div className="flex gap-3 pt-4">
                   <span>
                     <img src={Rectangle7583} alt="" />
                   </span>
                   <span>
-                    <span className="italic font-[700]">Dean Collins</span>
-                    <p className="font-[300] text-[#00FFFF] text-[18px]">
+                    <span className="italic font-bold font-base">
+                      Dean Collins
+                    </span>
+                    <p className="font-light text-[#00FFFF] text-lg">
                       Director of Brand Design
                     </p>
                   </span>

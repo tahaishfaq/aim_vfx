@@ -14,9 +14,7 @@ const Careers = () => {
   return (
     <>
       <div className="solution-page text-white">
-        <StoryPage />
         <CareersHero />
-
         <Persntage />
         <CareersCards />
         <CareersCards2 />

@@ -22,7 +22,7 @@ import WorkHistory from "../components/WorkHistory/WorkHistory";
 import FaqSection from "../components/FAQ/FAQ";
 import FooterForm from "../components/Footer/Footer";
 import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVideo";
-
+import Blog from "../components/Blog/Blog";
 const Services = () => {
   const descriptions = [
     [
@@ -38,6 +38,7 @@ const Services = () => {
 
   return (
     <div className="service-page">
+      <Blog />
       <div className="lg:py-0 py-6">
         <div className="flex lg:flex-row  flex-col-reverse justify-between items-center relative">
           <img src={solution} alt="Image 7" class="absolute " />

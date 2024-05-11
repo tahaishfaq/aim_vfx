@@ -49,65 +49,89 @@ const Blog = () => {
   ];
   return (
     <div className="solution-page pt-36">
-      <div className="lg:px-48 px-3">
+      <div className="lg:px-48 2xl:px-48 xl:px-10 md:px-48  px-6">
         <div className="text-center text-[#fff] pb-5 ">
-          <h1 className="text-[60px] lg:text-[80px] font-tek uppercase leading-tight">creative performance</h1>
-          <p>
+          <h1 className="text-5xl lg:text-8xl font-normal font-tek uppercase leading-tight">
+            creative performance
+          </h1>
+          <p className="text-xl font-[Rubik] font-light max-w-xl mx-auto">
             Creative ides, practical tips and insider info...the AIM-FX blog
             helps your team get great design done at scale.
           </p>
         </div>
-        <div className="grid lg:grid-cols-7 grid-cols-2 pt-12 pb-10 gap-4 ">
+        <div className="grid xl:grid-cols-7 lg:grid-cols-3 grid-cols-2 pt-12 gap-4 ">
           {logo.map((item, ind) => {
             return (
-              <span
-                className="flex flex-col p-3 items-center rounded-lg border-[3px] border-[#fff]  justify-center"
+              <div
+                className="flex flex-col px-5 py-7 rounded-3xl border-4  border-[#fff] items-center"
                 key={ind}
               >
                 <img className="w-12 h-12 object-cover" src={item.img} alt="" />
-                <span className="font-[400] lg:text-[30px] text-base capitalize text-[#fff] text-center">
+                <h2 className="font-normal text-3xl uppercase text-[#fff] font-tek pt-3 text-center">
                   {item.name}
-                </span>
-              </span>
+                </h2>
+              </div>
             );
           })}
         </div>
-        <div className="flex justify-center pt-6">
-          <img className="z-10" src={Rectangle7535} alt="" />
-        </div>
       </div>
-      <div className="relative bottom-28 promotional-section grid lg:grid-cols-2 lg:p-40 py-40 px-4">
-        <div className="px-7">
-          <span className="text-[50px] lg:text-[80px] uppercase text-white font-tek">dont miss out</span>
-          <p className="font-[300] lg:text-[20px] text-sm text-[#FFF]">
-            Join our community of 30,000+ who receive the best in design and
-            video development content weekly.
-          </p>
+      <div className=" relative top-28 max-w-6xl mx-auto flex justify-center pt-6 px-4">
+        <div className="max-w-xl absolute top-[17%] text-white  left-[8%] z-20">
+          <div className="pb-4 text-3xl font-normal font-[Rubik]">
+            <span>Featured Article </span>
+            <span className="text-[#00ffff] ">Brand Design</span>
+          </div>
+          <h1 className=" lg:text-4xl text-2xl font-tek  font-medium uppercase">
+            5 modern rebranding examples with serious wow factor
+          </h1>
         </div>
-        <div className="flex lg:flex-row flex-col gap-y-6	lg:items-end	lg:justify-evenly items-center justify-center lg:mt-0 mt-6">
-          <span className="w-full px-6">
-            <input
-              type="email"
-              name="email"
-              placeholder="Your base Email"
-              className="px-4 py-2.5 text-sm  w-full rounded-full text-gray-700 bg-[#D4E7F5] "
-            />
-          </span>
-          <span onClick={() => setOpen(true)}>
-            <Button className="px-4 py-2.5 text-sm font-semibold text-[#100e0e] bg-[#fff] rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-              SEE OPENNINGS
-            </Button>
-          </span>
+        <img className="z-10" src={Rectangle7535} alt="" />
+      </div>
+
+      <div className=" promotional-section">
+        <div className="px-6 max-w-7xl mx-auto  grid lg:grid-cols-2 py-24 gap-12">
+          <div className="">
+            <h1 className="text-5xl lg:text-7xl uppercase text-white font-Teko">
+              subscribe now
+            </h1>
+            <p className="font-light text-xl  text-[#FFF]">
+              Join our community of 30,000+ who receive the best in design and
+              video development content weekly.
+            </p>
+          </div>
+          <div className="flex lg:flex-row flex-col gap-y-6 gap-x-4	lg:items-center	 items-center justify-center ">
+            <div className="w-full">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your base Email"
+                className="px-3 py-2.5 text-sm  w-full rounded-full text-gray-700 bg-[#D4E7F5] "
+              />
+            </div>
+            <div className="w-full">
+              <Button className="px-4 py-2.5 text-sm font-semibold text-[#100e0e] bg-[#fff] rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                SEE OPENNINGS
+              </Button>
+            </div>
+          </div>
         </div>
       </div>
       <Artical />
-      <Design3d />
+      <div className="pt-16">
+        <Design3d />
+      </div>
       <Future2 />
-      <Design3d />
-      <Design3d />
-      <Future />
+      <div className="pb-16">
+        <Design3d />
+      </div>
+      <div className="py-16">
+        <Design3d />
+      </div>
+      <div className="py-20">
+        <Future />
+      </div>
+
       <FooterForm />
-      <PopupForDate open={open} setOpen={setOpen} />
     </div>
   );
 };
