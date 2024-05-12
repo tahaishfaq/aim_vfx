@@ -4,7 +4,7 @@ import Rectangle130 from "../../assets/images/Rectangle 130.png";
 const GuaranteCard = () => {
   return (
     <div>
-      <div className=" md:max-w-5xl mx-auto py-28">
+      <div className=" md:max-w-6xl mx-auto py-20">
         <div className="grid lg:grid-cols-2 px-2  rounded-2xl ">
           <div className=" pt-5  pl-5 w-full">
             <h2 className="text-6xl font-[Rubik]">Title text block</h2>

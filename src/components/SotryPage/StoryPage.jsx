@@ -163,13 +163,13 @@ const StoryPage = () => {
           <div className="hidden col-span-2  lg:block lg:relative">
             <img src={hologrphic} alt="" className="absolute left-0 bottom-0" />
           </div>
-          <div className="lg:col-span-3 overflow-hidden lg:relative py-24 pr-44">
+          <div className=" lg:col-span-3 overflow-hidden lg:relative py-24 lg:pr-44 lg:px-0 px-2">
             <img
               src={holographic2}
               alt=""
               className="hidden lg:block lg:absolute top-[-6px] right-0 "
             />
-            <h1 className="text-7xl font-normal uppercase py-3 font-[Teko] ">
+            <h1 className="text-5xl lg:text-7xl font-normal uppercase py-3 font-[Teko] ">
               TV COMMERCIAL BY AIM-FX
             </h1>
             <p className="font-[Rubik]">
@@ -177,7 +177,7 @@ const StoryPage = () => {
               create a concept that aligned with the brand and target audience,
               resulting in effective and engaging video advertising content.
             </p>
-            <div className="flex gap-y-5 gap-x-5  mt-6">
+            <div className="flex gap-y-5 gap-x-3 lg:gap-x-5  mt-6">
               <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 book a call
               </Button>
@@ -191,7 +191,7 @@ const StoryPage = () => {
       {/*---------------------------------Clients  Section   -------------------------------------------------*/}
 
       <div className="py-10">
-        <h1 className="text-7xl font-normal uppercase py-3 font-[Teko] text-center">
+        <h1 className=" text-5xl lg:text-7xl font-normal uppercase py-3 font-[Teko] text-center">
           client response
         </h1>
         <Clients />

@@ -4,16 +4,16 @@ import Arrow from "../../assets/images/arrow logo.png";
 const Future = () => {
   return (
     <div className=" lg:px-64  px-3">
-      <div className="grid lg:grid-cols-2 grid-cols-1  py-10 rounded-3xl bg-[#2EABAF] px-3 ">
-        <div className="relative">
-          <div className=" absolute -inset-y-10  lg:block hidden">
-            <img src={Arrow} alt="" className="w-96 h-96" />
+      <div className="grid xl:grid-cols-2  py-10 rounded-3xl bg-[#2EABAF] px-3 ">
+        <div className="xl:block hidden relative">
+          <div className=" absolute -inset-y-10 -top-44 ">
+            <img src={Arrow} alt="" className="" />
           </div>
         </div>
-        <div className="flex flex-col items-start gap-y-3">
-          <span className="lg:text-[80px] text-[50px] text-white uppercase font-tek leading-tight">
+        <div className=" flex flex-col w-full items-start gap-y-3">
+          <h2 className="lg:text-[80px] text-[50px] text-white uppercase font-tek leading-tight">
             let’s create our future together
-          </span>
+          </h2>
           <p className="text-[#fff] lg:mt-0 -mt-3">
             Don't forget to check out our careers page to see available
             ositions.

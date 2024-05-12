@@ -164,7 +164,6 @@
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #00ffff;
   opacity: 0.5;
-
 }
 
 .homeVideo {
@@ -309,8 +308,8 @@ video::-webkit-media-controls-play-button {
 
 .image-container {
   border-radius: 40px;
-  border: 15px solid #0513375a; 
-  backdrop-filter: blur(20px); 
+  border: 15px solid #0513375a;
+  backdrop-filter: blur(20px);
   background: rgba(5, 19, 55, 0.4);
 }
 
@@ -1013,22 +1012,18 @@ video::-webkit-media-controls-play-button {
   border-radius: 0px 375px 0px 275px;
 }
 
-
 .navlinks:hover .dropdown {
   display: block;
 }
 
-
-
 .contact-us-from {
   /* From https://css.glass */
-background: rgba(11, 26, 40, 0.5019607843137255);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(40px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid #ffff;
-
+  background: rgba(11, 26, 40, 0.5019607843137255);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid #ffff;
 
   /* background: 
     linear-gradient(to top, rgba(17, 33, 64, 0.9), rgba(17, 33, 64)) padding-box,
@@ -1037,8 +1032,7 @@ border: 1px solid #ffff;
   border: 1px solid transparent; */
 }
 
-
-.contact-us-page{
+.contact-us-page {
   background: linear-gradient(
     30deg,
     #05161e,
@@ -1047,17 +1041,17 @@ border: 1px solid #ffff;
     #201a38,
     #05161e
   );
-    backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
-
-
-.contact-us-text{
+.contact-us-text {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #00ffff;
   opacity: 0.5;
   letter-spacing: 2.5rem;
 }
+
+
 
 
 .footer-text{
@@ -1096,4 +1090,15 @@ border: 1px solid #ffff;
 
 
 }
+
+
+.border-setting {
+  background: linear-gradient(#0b1a28, #0b1a28) padding-box,
+    linear-gradient(to bottom, #ffffff, #0b1a28) border-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+
+
 

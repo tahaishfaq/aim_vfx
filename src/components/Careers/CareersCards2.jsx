@@ -1,84 +1,55 @@
-import React, { useState } from "react";
+import React from "react";
 import Rectangle from "../../assets/images/Rectangle 7609.png";
 import holographic from "../../assets/images/holographic_fluid_drop_shapes_illustration_02 copy 4.png";
+import QN from "./QN";
 const CareersCards2 = () => {
-  const [show, setShow] = useState(false);
-  const answer =
-    "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad facilis repellendus.";
-  const question = "Lorem ipsum, dolor sit ?";
+  const value = [
+    {
+      answer:
+        "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad facilis repellendus.",
+      question: "Lorem ipsum, dolor sit ?",
+    },
+    {
+      answer:
+        "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad facilis repellendus.",
+      question: "Lorem ipsum, dolor sit ?",
+    },
+    {
+      answer:
+        "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad facilis repellendus.",
+      question: "Lorem ipsum, dolor sit ?",
+    },
+    {
+      answer:
+        "   Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ad facilis repellendus.",
+      question: "Lorem ipsum, dolor sit ?",
+    },
+  ];
   return (
-    <div className="py-10">
-      <div className="grid grid-cols-1 gap-4 xl:grid-cols-2 md:w-[90%] xl:w-[70%] mx-auto">
-        <div className="hidden opacity-50 xl:block">
+    <div className="py-10 ">
+      <div className="lg:px-0 px-6 grid grid-cols-1 gap-x-4 gap-y-10 xl:grid-cols-2 md:w-[90%] py-10 xl:w-[70%] mx-auto">
+        <div className="opacity-50 block">
           <img src={Rectangle} alt="" className="object-cover" />
         </div>
-        <div className="flex flex-col justify-center  px-7">
-          <h1 className="team-hero-heading">This is what we value</h1>
-          <div>
-            <div
-              onClick={() => setShow(!show)}
-              className=" flex flex-1  justify-between px-5 py-4 cursor-pointer  rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] hover:bg-gray-700"
-            >
-              <button>{question}</button>
-              <span>{show ? "-" : "+"}</span>
-            </div>
-            {show && (
-              <p className="p-2 border-t-2 rounded-3xl bg-slate-600">
-                {answer}
-              </p>
-            )}
-          </div>
-          <div className="py-4">
-            <div
-              onClick={() => setShow(!show)}
-              className=" flex flex-1  justify-between px-5 py-4 cursor-pointer  rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] hover:bg-gray-700"
-            >
-              <button>{question}</button>
-              <span>{show ? "-" : "+"}</span>
-            </div>
-            {show && (
-              <p className="p-2 border-t-2 rounded-3xl bg-slate-600">
-                {answer}
-              </p>
-            )}
-          </div>
-          <div className="py-4">
-            <div
-              onClick={() => setShow(!show)}
-              className=" flex flex-1  justify-between px-5 py-4 cursor-pointer  rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] hover:bg-gray-700"
-            >
-              <button>{question}</button>
-              <span>{show ? "-" : "+"}</span>
-            </div>
-            {show && (
-              <p className="p-2 border-t-2 rounded-3xl bg-slate-600">
-                {answer}
-              </p>
-            )}
-          </div>
-          <div>
-            <div
-              onClick={() => setShow(!show)}
-              className=" flex flex-1  justify-between px-5 py-4 cursor-pointer  rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] hover:bg-gray-700"
-            >
-              <button>{question}</button>
-              <span>{show ? "-" : "+"}</span>
-            </div>
-            {show && (
-              <p className="p-2 border-t-2 rounded-3xl bg-slate-600">
-                {answer}
-              </p>
-            )}
-          </div>
+        <div className="flex flex-col justify-center  px-0 lg:px-10">
+          <h1 className="lg:text-8xl text-5xl  font-tek font-normal">
+            This is what we value
+          </h1>
+
+          {value.map((item, ind) => {
+            return (
+              <QN key={ind} question={item.question} answer={item.answer} />
+            );
+          })}
         </div>
       </div>
-      <div className="md:relative md:py-28">
+      <div className="md:relative md:py-28 lg:px-0 px-6">
         <img
           src={holographic}
           alt=""
           className="hidden 2xl:block  2xl:absolute right-0 top-[-300px]"
         />
-        <div className="max-w-6xl mx-auto rounded-3xl bg-[#2EABAF] p-20 text-white">
+        <div className="max-w-6xl mx-auto rounded-3xl bg-[#2EABAF] p-5 lg:p-20 text-white">
           <h1 className="text-[30px] sm:text-[50px] pb-5 uppercase">
             our vision and mission
           </h1>
