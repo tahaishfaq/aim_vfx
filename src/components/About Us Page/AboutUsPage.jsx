@@ -1,127 +1,117 @@
 import React from "react";
 import ServivePageVideo from "../CustomVideo/ServicePageVideo";
 import Button from "../Button/Button";
-
+import "./AboutUs.css"
 import shape4 from "../../assets/holographic_fluid_drop_shapes_illustration_02 copy 4.png";
 import shape7 from "../../assets/video bubbles (1).png";
+import bg1 from "../../assets/11 copy 3.png";
 import OurStory from "./OurStory";
 import Heading from "../Heading/Heading";
 import LetsTalk from "../Team Page/LetsTalk";
 import GetToKnowUs from "../GetToKnowUs/GetToKnowUs";
 import Location from "../Location/Location";
-const features = [
-  {
-    name: "Dmitriy Gladenko ",
-    description: "Company VideoFx.",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-03.jpg",
-    imageAlt: "case study",
-  },
-  {
-    name: "Dmitriy Gladenko ",
-    description: "Company VideoFx",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-01.jpg",
-    imageAlt: "case study",
-  },
-  {
-    name: "Dmitriy Gladenko ",
-    description: "Company VideoFx",
-    imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-02.jpg",
-    imageAlt: "case study",
-  },
-];
+import Footer from "../Footer/Footer";
+import FooterWithLetsTalk from "../Footer/FooterWithLetsTalk";
+import LetsCreateFuture from "../Team Page/LetsCreateFuture";
+import CustomVideo2 from "../CustomVideo/Custom-Video2";
+import poster from "../../assets/Screenshot 2024-01-29 at 12.00 1 (1).png"
+import bg2 from "../../assets/about-us-page-bg.png"
 const AboutUsPage = () => {
+  const features = [
+    {
+      name: "Dmitriy Gladenko ",
+      description: "Company VideoFx.",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-03.jpg",
+      imageAlt: "case study",
+    },
+    {
+      name: "Dmitriy Gladenko ",
+      description: "Company VideoFx",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-01.jpg",
+      imageAlt: "case study",
+    },
+    {
+      name: "Dmitriy Gladenko ",
+      description: "Company VideoFx",
+      imageSrc:
+        "https://tailwindui.com/img/ecommerce-images/product-feature-04-detail-02.jpg",
+      imageAlt: "case study",
+    },
+  ];
+
+  const aboutus = [
+    {
+      name: "about our",
+      title: "VIDEO PRODUCTION AGENCY :",
+      description:
+        "Aim FX is a full-service video production agency in London, providing end-to-end solutions for all creative video campaigns, that provide an uplifting change of pace from the tired and overused methods seen elsewhere.",
+      button: "animated video services",
+    },
+    {
+      name: "video cost",
+      title: "VIDEO PRODUCTION COSTS :",
+      description:
+        "Explore our video production costs page to gain a clear understanding of investment options tailored to your creative vision and project needs.",
+      button: "animated production cost",
+    },
+    {
+      name: "Our capabilities",
+      title: "VIDEO PRODUCTION AGENCY :",
+      description:
+        "Specialising in bespoke, eye-catching video content that delivers more clicks, more sales, and more likes.",
+      button: " get a quote",
+    },
+  ];
   return (
     <>
-      <div className="solution-page">
-        <div className="flex flex-col items-center justify-center lg:gap-y-20 gap-y-6">
-        <div className="flex lg:flex-row justify-center flex-col gap-y-6 items-center lg:pt-60 pt-28 mx-auto max-w-7xl lg:px-32 px-3 pb-10 lg:pb-16">
-          <div className="flex flex-col gap-y-3">
-            <span className="team-hero-heading">about our</span>
-            <div className="lg:w-96 lg:mt-0 -mt-5">
-              <p className="text-white">
-                VIDEO PRODUCTION AGENCY :<br />
-                <span className="lg:text-base text-sm">
-                Aim FX is a full-service video production agency in London,
-                providing end-to-end solutions for all creative video campaigns,
-                that provide an uplifting change of pace from the tired and
-                overused methods seen elsewhere.{" "}</span>
-              </p>
-            </div>
-            <div className="flex gap-y-5 lg:mt-10 mt-4">
-              <Button className="px-8 py-2.5 text-sm font-semibold text-gray-900 bg-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                animated video services
-              </Button>
-            </div>
-          </div>
-          {/* ------------ Right Side Hero Section --------------- */}
-          <div className="lg:relative">
-            <ServivePageVideo />
-          </div>
+      <div className="solution-page relative lg:px-0 px-3">
+        <div className="lg:flex items-center justify-center hidden ">
+        <img
+          src={bg2}
+          alt="bg"
+          className="absolute inset-y-32 -z-50  max-w-5xl "
+        />
         </div>
-
-        <div className="flex  lg:flex-row justify-center flex-col-reverse gap-y-6 items-center  mx-auto max-w-7xl lg:px-32 px-3 pb-10 lg:pb-16">
-          {/* ------------ Right Side Hero Section --------------- */}
-          <div className="lg:relative">
-            <ServivePageVideo />
-          </div>
-          <div className="flex flex-col gap-y-3 px-3 lg:pl-6">
-            <span className="team-hero-heading">video cost</span>
-            <div className="lg:w-96 lg:mt-0 -mt-4">
-              <p className="text-white">
-                VIDEO PRODUCTION COSTS:
-                <br />
-                <span className="lg:text-base text-sm">
-                Explore our video production costs page to gain a clear
-                understanding of investment options tailored to your creative
-                vision and project needs.
+        <div className="flex flex-col items-center justify-center  lg:py-[300px] py-[100px]  gap-y-20 ">
+          {aboutus?.map((item, index) => (
+            <div
+              key={index}
+              className={`flex  justify-center items-start ${index == 1 ? "lg:flex-row-reverse" : "lg:flex-row"} flex-col gap-y-6 gap-x-20 `}
+            >
+              <div className="flex flex-col gap-y-3">
+                <span className="lg:text-[80px] text-[60px] text-white uppercase font-tek">
+                  {item.name}
                 </span>
-              </p>
+                <div className="lg:w-96 -mt-8">
+                  <span className="text-white font-semibold">
+                    {item?.title}
+                    <br />
+                  </span>
+                  <span className=" text-sm text-white font-extralight">
+                    {item?.description}
+                  </span>
+                </div>
+                <div className="mt-2">
+                  <Button className="px-8 py-2.5 text-sm font-semibold text-gray-900 bg-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                    {item?.button}
+                  </Button>
+                </div>
+              </div>
+              <div className="lg:relative">
+                <CustomVideo2 poster={poster} className="border-[9px] border-[#2EABAF]"/>
+              </div>
             </div>
-            <div className="flex gap-y-5 lg:mt-10 mt-4">
-              <Button className="px-8 py-2.5 text-sm font-semibold text-gray-900 bg-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                video production costs
-              </Button>
-            </div>
-          </div>
+          ))}
         </div>
 
-        <div className="flex items-center justify-center lg:flex-row flex-col gap-y-6 mx-auto max-w-7xl lg:px-32 px-3 pb-10 lg:pb-16 gap-x-3">
-          <div className="flex flex-col gap-y-3 ">
-            <span className="team-hero-heading">Our capabilities</span>
-            <div className="lg:w-96 lg:mt-0 -mt-4">
-              <p className="text-white">
-                VIDEO PRODUCTION AGENCY:
-                <br />
-                <span className="lg:text-base text-sm">
-                Specialising in bespoke, eye-catching video content that
-                delivers more clicks, more sales, and more likes.{" "}
-                </span>
-              </p>
-            </div>
-            <div className="flex gap-y-5 lg:mt-10 mt-4">
-              <Button className="px-8 py-2.5 text-sm font-semibold text-gray-900 bg-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                get a quote
-              </Button>
-            </div>
-          </div>
-          {/* ------------ Right Side Hero Section --------------- */}
-          <div className="lg:relative">
-            <ServivePageVideo />
-          </div>
-        </div>
-
-        </div>
-
-        
         <div className="mx-auto max-w-7xl  lg:py-32 lg:px-48 px-3 py-10">
           <div className="lg:space-y-16  flex flex-col gap-y-10">
             {features.map((feature) => (
               <div
                 key={feature.name}
-                className="flex flex-col-reverse lg:grid lg:grid-cols-12  lg:gap-x-8"
+                className="flex flex-col-reverse lg:grid lg:grid-cols-12  lg:gap-x-8 border-2 rounded-2xl border-[#15B8C7] p-4"
               >
                 <div className=" flex flex-col py-4 lg:gap-12 gap-6 justify-between lg:col-span-6 mt-0 xl:col-span-6">
                   <div className="">
@@ -146,43 +136,12 @@ const AboutUsPage = () => {
           </div>
         </div>
 
-
         <GetToKnowUs />
         <Location />
         <OurStory />
-        <div className=" lg:pb-16 pb-10 lg:pt-24 pt-10 lg:px-44 px-3">
-          <div className="bg-[#2EABAF] rounded-xl pb-10 lg:pb-14 px-0 ">
-            <div className="flex flex-col lg:flex-row lg:items-center items-start justify-center gap-x-40 gap-y-6">
-              <div className="w-1/2">
-                <img
-                  className="  w-auto  object-cover"
-                  src={shape4}
-                  alt=""
-                />
-              </div>
 
-              <div className="w-full px-3">
-                <figure className=" ">
-                  <blockquote className="text-white leading-tight">
-                    <Heading className="lg:text-[60px] text-[40px] uppercase font-tek">
-                      Let’s create our future together
-                    </Heading>
-                    <p className="lg:text-base text-sm pt-4">
-                      Don’t forget to check out our career page to see available
-                      positions
-                    </p>
-                  </blockquote>
-                  <figcaption className="mt-10 text-base">
-                    <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                      Available positions
-                    </Button>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <LetsTalk />
+        <LetsCreateFuture />
+        <FooterWithLetsTalk />
       </div>
     </>
   );

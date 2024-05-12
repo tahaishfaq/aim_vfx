@@ -1,9 +1,8 @@
-
 import ServivePageVideo from "../CustomVideo/ServicePageVideo";
 import Button from "../../components/Button/Button";
 import shape7 from "../../assets/video bubbles (1).png";
 import shape2 from "../../assets/127_arrow_icon_logo_with_3d_modern_style copy 1 (1).png";
-import shape4 from "../../assets/holographic_fluid_drop_shapes_illustration_02 copy 4.png";
+
 import "./team.css";
 import Heading from "../Heading/Heading";
 import LetsTalk from "./LetsTalk";
@@ -11,6 +10,8 @@ import FooterForm from "../Footer/Footer";
 import GetToKnowUs from "../GetToKnowUs/GetToKnowUs";
 import Location from "../Location/Location";
 import bg1 from "../../assets/11 copy 3.png";
+import LetsCreateFuture from "./LetsCreateFuture";
+import FooterWithLetsTalk from "../Footer/FooterWithLetsTalk";
 export const TeamPage = () => {
   const callouts = [
     {
@@ -107,41 +108,11 @@ export const TeamPage = () => {
       <GetToKnowUs />
       <Location />
 
-      <div className=" lg:pb-16 pb-10 lg:pt-24 pt-10 lg:px-44 px-3">
-          <div className="bg-[#2EABAF] rounded-xl pb-10 lg:pb-14 px-0 ">
-            <div className="flex flex-col lg:flex-row lg:items-center items-start justify-center gap-x-40 gap-y-6">
-              <div className="w-1/2">
-                <img
-                  className="  w-auto  object-cover"
-                  src={shape4}
-                  alt=""
-                />
-              </div>
+      
+        <LetsCreateFuture />
+      
 
-              <div className="w-full px-3">
-                <figure className=" ">
-                  <blockquote className="text-white leading-tight">
-                    <Heading className="lg:text-[60px] text-[40px] uppercase font-tek">
-                      Let’s create our future together
-                    </Heading>
-                    <p className="lg:text-base text-sm pt-4">
-                      Don’t forget to check out our career page to see available
-                      positions
-                    </p>
-                  </blockquote>
-                  <figcaption className="mt-10 text-base">
-                    <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                      Available positions
-                    </Button>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      <LetsTalk />
-      <FooterForm />
+      <FooterWithLetsTalk/>
     </div>
   );
 };

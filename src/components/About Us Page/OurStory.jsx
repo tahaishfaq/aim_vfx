@@ -26,7 +26,7 @@ const features = [
 ];
 const OurStory = () => {
   return (
-    <div>
+    <div className="flex items-center justify-center flex-col">
       <div className="mx-auto max-w-7xl  flex justify-center items-center flex-col py-10 ">
         <div className="max-w-xl  flex justify-center items-center flex-col lg:px-0 px-3">
           <p className="mt-2 font-tek text-[60px] uppercase text-white ">

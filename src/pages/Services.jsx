@@ -22,6 +22,8 @@ import WorkHistory from "../components/WorkHistory/WorkHistory";
 import FaqSection from "../components/FAQ/FAQ";
 import FooterForm from "../components/Footer/Footer";
 import HomePortfolioVideo from "../components/HomePortfolioVideo/HomePortfolioVideo";
+import FooterWithForm from "../components/Footer/FooterWithForm";
+import StillHaveDoubts from "../components/Still Have Doubts/StillHaveDoubts";
 
 const Services = () => {
   const descriptions = [
@@ -323,7 +325,8 @@ const Services = () => {
         </div>
       </div>
       <FaqSection />
-      <FooterForm />
+      <StillHaveDoubts/>
+      <FooterWithForm/>
     </div>
   );
 };

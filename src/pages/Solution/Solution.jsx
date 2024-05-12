@@ -26,6 +26,9 @@ import FaqSection from "../../components/FAQ/FAQ";
 import FooterForm from "../../components/Footer/Footer";
 import WorkHistory from "../../components/WorkHistory/WorkHistory";
 import ServiceBenefits from "../../components/ServiceSolutionCards/ServiceBenefits";
+import FooterWithForm from "../../components/Footer/FooterWithForm";
+import StillHaveDoubts from "../../components/Still Have Doubts/StillHaveDoubts";
+
 
 const Solution = () => {
   const descriptions = [
@@ -241,19 +244,7 @@ const Solution = () => {
           <Divider sx={{ backgroundColor: "#d9d9d9" }} />
         </div>
         {/* -------------- How it Works Section ---------- */}
-        <div className="py-10">
-          <Heading className="lg:text-[80px] text-[50px] uppercase text-white text-center font-tek">
-            how it works
-          </Heading>
-          <div className="lg:px-40 lg:pt-10">
-            <HowItWorks />
-            <div className="how-work-btn">
-              <Button className="how-work-btn-style px-8 py-2.5 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-                schedule a free consulation
-              </Button>
-            </div>
-          </div>
-        </div>
+        
         {/*   ---------- portFolio Section ----------- */}
 
         <div className="flex flex-col gap-y-7 items-center justify-center lg:py-10  py-6 ">
@@ -285,23 +276,21 @@ const Solution = () => {
           </Button>
         </div>
 
-        {/* ---------- Testimonals Section -----------*/}
-        <div className="flex flex-col gap-y-7 items-center justify-center py-20 ">
-          <div className="flex flex-col items-center justify-center">
-            <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
-              Testimonals
-            </Heading>
-            <p className="text-sm text-white  text-center">
-              A Collection of Client Testimonials That Speak Volumes.
-            </p>
+
+        <div className="py-10 flex items-center justify-center flex-col">
+          <Heading className="lg:text-[80px] text-[50px] uppercase text-white text-center font-tek">
+            how it works
+          </Heading>
+          <div className="lg:px-40 lg:pt-10">
+            <HowItWorks />
+            <div className="how-work-btn">
+              <Button className="how-work-btn-style px-8 py-2.5 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                schedule a free consulation
+              </Button>
+            </div>
           </div>
-          <div className="pt-8 pb-10 lg:px-0 px-3">
-            <HomeTestimoal />
-          </div>
-          <Button className="uppercase text-white border border-[#2EABAF] px-8 py-3 rounded-full">
-            Watch More
-          </Button>
         </div>
+        
 
         {/* ----------- Awards Section ---------- */}
         <div className="flex items-center justify-center ">
@@ -359,14 +348,57 @@ const Solution = () => {
             </div>
           </div>
         </div>
+        
 
         <div className="lg:pb-20 pb-40">
           <WorkHistory />
         </div>
+
+        <div className="mx-auto max-w-7xl py-10 lg:px-0 px-3">
+        <div className="flex lg:flex-row flex-col items-start gap-y-6 bg-[#15b8c7] rounded-3xl lg:py-10 py-6 lg:pl-20 lg:pr-10 px-6">
+          <div className="flex items-start flex-col gap-y-2 lg:pr-10">
+            <h2 className="text-white lg:text-[80px] text-[45px] uppercase font-tek">
+              book a call now
+            </h2>
+            <h4 className="lg:text-2xl text-xl text-white  tracking-wide">
+              To discuss details and take the next step
+            </h4>
+            <p className="text-white text-base ">
+              Lorem ipsum dolor sit amet consectetur. Mollis in vestibulum et
+              sit duis viverra. Purus lacus amet mollis aenean fringilla. Diam
+              ornare in purus viverra. Nullam amet neque in consectetur
+              suspendisse sem elit vel. Arcu lorem nulla risus dis. Eu euismod
+              hac amet enim aliquet tristique. Donec nunc id eget et sit. Purus
+              nam elementum nunc ipsum augue luctus amet risus massa.
+            </p>
+          </div>
+          <div className="">
+            <img src={calendar} alt="Calendar" className="lg:max-w-sm h-auto" />
+          </div>
+        </div>
+      </div>
+
+        <div className="flex flex-col gap-y-7 items-center justify-center py-20 ">
+          <div className="flex flex-col items-center justify-center">
+            <Heading className="text-[60px] font-tek text-white uppercase leading-tight">
+              Testimonals
+            </Heading>
+            <p className="text-sm text-white  text-center">
+              A Collection of Client Testimonials That Speak Volumes.
+            </p>
+          </div>
+          <div className="pt-8 pb-10 lg:px-0 px-3">
+            <HomeTestimoal />
+          </div>
+          <Button className="uppercase text-white border border-[#2EABAF] px-8 py-3 rounded-full">
+            Watch More
+          </Button>
+        </div>
       </div>
 
       <FaqSection />
-      <FooterForm />
+      <StillHaveDoubts/>
+      <FooterWithForm/>
     </div>
   );
 };

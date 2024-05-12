@@ -39,7 +39,8 @@ import FaqSection from "../components/FAQ/FAQ";
 import howitworks from "../assets/Rectangle 130 (1).png";
 import FooterForm from "../components/Footer/FooterForm";
 import Footer from "../components/Footer/Footer";
-import footerbg from "../assets/images/footer-bg.png";
+import FooterWithForm from "../components/Footer/FooterWithForm";
+
 
 
 
@@ -416,19 +417,9 @@ const Home = () => {
 
         <WorkHistory />
         <FaqSection />
-        <div className="relative">
-          <div className="absolute bottom-0 -z-50 flex items-center justify-center ">
-            <img
-              src={footerbg}
-              alt="bg"
-              className="object-cover object-center"
-            />
-          </div>
+        
           
-          <FooterForm />
-          
-          <Footer />
-        </div>
+         <FooterWithForm/>
       </div>
     </>
   );
