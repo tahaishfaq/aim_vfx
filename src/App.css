@@ -1051,7 +1051,7 @@ video::-webkit-media-controls-play-button {
   letter-spacing: 2.5rem;
 }
 
-<<<<<<< HEAD
+
 
 
 
@@ -1093,18 +1093,17 @@ video::-webkit-media-controls-play-button {
 }
 
 
-=======
->>>>>>> origin/Basit-Ali
 .border-setting {
   background: linear-gradient(#0b1a28, #0b1a28) padding-box,
     linear-gradient(to bottom, #ffffff, #0b1a28) border-box;
   border-radius: 10px;
   border: 1px solid transparent;
 }
-<<<<<<< HEAD
 
+.border-setting2 {
+  background: linear-gradient(#0b1a28, #0b1a28) padding-box,
+    linear-gradient(to bottom, #ffffff, #0b1a28) border-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
 
-
-
-=======
->>>>>>> origin/Basit-Ali
