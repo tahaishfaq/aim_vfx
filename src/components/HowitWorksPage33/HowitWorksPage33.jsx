@@ -293,6 +293,9 @@ const HowitWorksPage33 = () => {
 
       <CardWorks />
       <Question />
+      <div className="text-white">
+        <DateConsulation />
+      </div>
       <div className="relative">
         <img src={Questions} alt="" className="absolute top-8 -z-10" />
         <FooterForm />

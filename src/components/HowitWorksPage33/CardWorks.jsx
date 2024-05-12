@@ -10,8 +10,7 @@ import { PhotoIcon } from "@heroicons/react/24/outline";
 import { TagIcon } from "@heroicons/react/24/outline";
 import holographic4 from "../../assets/images/holographic4.png";
 import HomePortfolioVideo from "../HomePortfolioVideo/HomePortfolioVideo";
-import DateConsulation from "../DateConsulation/DateConsulation";
-import Things from "../../assets/images/Things Below Heading.png";
+import { CheckIcon } from "@heroicons/react/24/outline";
 
 const CardWorks = () => {
   const [value, setValue] = useState("");
@@ -69,24 +68,46 @@ const CardWorks = () => {
         <h2 className="text-5xl  font-[500] lg:text-8xl font-tek text-white uppercase">
           Manage All Your Social Media Profiles From One Place.
         </h2>
-        <div className="pt-8">
-          <img src={Things} alt="" />
+        <div className="py-8 flex justify-between items-center flex-wrap gap-y-6 px-6">
+          <div className="flex items-center gap-x-2">
+            <CheckIcon className="h-6 w-6 text-[#2EA89D] " />
+            <p className="text-lg font-semibold font-[Rubik]">
+              No contracts. No commitments
+            </p>
+          </div>
+          <div className="flex items-center gap-x-2">
+            <CheckIcon className="h-6 w-6 text-[#2EA89D] " />
+            <p className="text-lg font-semibold font-[Rubik]">
+              14-Day Money Back Guaarantee
+            </p>
+          </div>
+          <div className="flex items-center gap-x-2">
+            <CheckIcon className="h-6 w-6 font-extrabold text-[#2EA89D] " />
+            <p className="text-lg font-semibold font-[Rubik]">
+              Support of multiple brands
+            </p>
+          </div>
         </div>
-        <div className="flex gap-4 justify-center  text-slate-800 py-14">
-          <span className="flex items-center gap-x-4 font-[500] rounded-xl bg-white py-1 px-2 cursor-pointer">
-            <button className="pr-2 border-r-[.5px] ">Monthly plan</button>
-            <span className="flex gap-1">
-              <button>Quarterly </button>
-              <span className="pl-2 text-[#0E2140]">10% OFF</span>
-            </span>
-            <span className="font-[500] flex gap-4 bg-[#00ffff] py-4 rounded-xl ">
-              <button className="px-2 text-[#0E2140]">Yearly</button>
-              <button className="px-2 text-[#0E2140] flex">
-                <TagIcon className="h-6 w-6 text-[#0E2140]" />
-                Get 1 month free
+        <div className="flex  justify-center  text-slate-800">
+          <div className="flex items-center justify-between text-[13px] font-normal font-[Rubik] gap-x-4 gap-4 sm:flex-nowrap flex-wrap rounded-xl bg-white py-1 px-2 cursor-pointer">
+            <div className="flex justify-between items-center ">
+              <button className="text-nowrap  border-r-[.5px] px-1 ">
+                Monthly plan
               </button>
-            </span>
-          </span>
+              <div className="px-2 flex items-center text-nowrap w-full ">
+                Quarterly 10% OFF
+              </div>
+            </div>
+            <div className=" font-[500] px-2 flex gap-4 bg-[#00ffff] py-4 rounded-xl ">
+              <button className=" text-[#0E2140]">Yearly</button>
+              <span className="flex items-center w-full">
+                <TagIcon className="h-6 w-6 text-[#0E2140]" />
+                <button className=" text-[#0E2140] flex">
+                  Get 1 month free
+                </button>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
       <div className="max-w-7xl mx-auto grid xl:grid-cols-3 sm:px-10 md:grid-cols-2 md:px-10 lg:px-20 xl:px-0 px-6 gap-8">
@@ -163,7 +184,7 @@ const CardWorks = () => {
       {/* ---------------------------  form section    -------------------------------------*/}
 
       <div className="promotional-section ">
-        <h1 className="text-8xl font-tek uppercase font-normal text-center">
+        <h1 className="lg:text-8xl text-5xl font-tek uppercase font-normal text-center">
           ESTIMATE your project with us
         </h1>
         <div className="pt-4 max-w-4xl mx-auto">
@@ -373,9 +394,6 @@ const CardWorks = () => {
         </div>
       </div>
       {/* ------------------------- Date consulation --------------------------*/}
-      <div className="text-white">
-        <DateConsulation />
-      </div>
     </div>
   );
 };
