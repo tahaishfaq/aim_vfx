@@ -17,27 +17,27 @@ const Content = () => {
     {
       id: 2,
       head: "more engagement on your content",
-      src: Vector2,
+      src: Vector6,
     },
     {
       id: 3,
       head: "have time to work on your business",
-      src: Vector3,
+      src: Vector4,
     },
     {
       id: 4,
       head: "dedicated editors",
-      src: Vector4,
+      src: Vector3,
     },
     {
       id: 5,
       head: "content curation",
-      src: Vector5,
+      src: Vector2,
     },
     {
       id: 6,
       head: "flexibility",
-      src: Vector6,
+      src: Vector5,
     },
   ];
 
@@ -45,10 +45,12 @@ const Content = () => {
     <div>
       <div className="px-10 lg:px-80 pt-28 sm:px-32 sm:gap-9 sm:grid lg:grid-cols-2 text-[#fff] items-center">
         <div className="text-[#fff]">
-          <h2 className="text-[70px]">UPSCALE YOUR BUSINESS</h2>
+          <h2 className="lg:text-8xl text-5xl font-normal font-tek">
+            UPSCALE YOUR BUSINESS
+          </h2>
         </div>
         <div>
-          <p>
+          <p className="text-xl font-[Rubik] font-light">
             Lorem ipsum dolor sit amet consectetur. Sed enim tincidunt etiam
             quis nulla pellentesque. Facilisis orci rhoncus adipiscing donec.
             Pellentesque sed sit lorem orci rutrum. Mi ac morbi convallis massa
@@ -57,13 +59,15 @@ const Content = () => {
         </div>
       </div>
 
-      <div className="lg:py-28 lg:px-72 grid sm:grid-cols-2 sm:px-32 lg:grid-cols-3">
+      <div className="lg:py-28 2xl:px-72 xl:px-24 grid sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
         {product.map((item) => {
           return (
-            <div key={item.id} className="p-10">
-              <img src={item.src} alt="" />
-              <h2 className="text-[#56BEC2] text-[30px]">{item.head}</h2>
-              <p className="text-[#fff]">
+            <div key={item.id} className="flex flex-col gap-y-8 p-10">
+              <img src={item.src} alt="" className="w-14 h-14" />
+              <h2 className="text-[#56BEC2] text-[50px] font-normal leading-[40.9px] font-tek uppercase">
+                {item.head}
+              </h2>
+              <p className="text-xl font-light font-[Rubik] text-white">
                 Lorem ipsum dolor sit amet consectetur. Accumsan nisl vitae eget
                 tempus donec pellentesque vivamus felis.
               </p>

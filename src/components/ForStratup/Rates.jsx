@@ -7,17 +7,19 @@ import Rateimage from "./RateImages";
 
 const Rates = () => {
   return (
-    <div className="promotional-section">
-      <div className="sm:px-28 lg:px-80 lg:pt-28 grid lg:grid-cols-2 text-[#fff]  gap-5">
-        <div className="relative">
-          <img className="absolute" src="" alt="" />
-          <img src={Rectangle130} alt="" />
+    <div className="promotional-section py-40 sm:py-0">
+      <div className="sm:px-28 md:px-40 px-6 2xl:px-80 xl:px-40 lg:px-10 lg:pt-24  grid lg:grid-cols-2 gap-y-10 text-[#fff]  gap-x-14">
+        <div className="relative overflow-hidden">
+          <video controls poster={Rectangle130} className="object-cover">
+            <source src="video-file.mp4" type="video/mp4" />
+          </video>
+          <div className="play-icon"></div>
         </div>
         <div className="text-[#fff]">
-          <h2 className="text-[50px]">
+          <h2 className="lg:text-[50px] text-3xl font-tek font-medium">
             Hands down the best way to create consistent video content!
           </h2>
-          <p>
+          <p className="text-xl  font-normal font-[Rubik]">
             Lorem ipsum dolor sit amet consectetur. Lectus fusce sit amet cursus
             dignissim viverra aliquam orci. Elit viverra nunc ut mauris amet
             amet egestas tortor. Eros.
@@ -34,9 +36,11 @@ const Rates = () => {
             </span>
           </div>
         </div>
-        <div className="pt-32">
-          <h2 className="text-[50px]">EDITING SERVICES FOR BUSINESS OWNERS</h2>
-        </div>
+      </div>
+      <div className="sm:px-28 2xl:px-80 xl:px-40 lg:px-10 pt-28 px-6">
+        <h2 className=" max-w-2xl text-white text-5xl font-tek font-normal uppercase lg:text-8xl">
+          EDITING SERVICES FOR BUSINESS OWNERS
+        </h2>
       </div>
       <Rateimage />
     </div>

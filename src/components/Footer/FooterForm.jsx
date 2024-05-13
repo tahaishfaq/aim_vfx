@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import Questions from "../../assets/images/Questions .png";
 const FooterForm = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -24,7 +24,8 @@ const FooterForm = () => {
     alert("Form submitted. Check the console for form data.");
   };
   return (
-    <div className="pt-20">
+    <div className="pt-14 relative">
+      <img src={Questions} alt="" className=" absolute top-10 -z-10" />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center gap-x-24 lg:px-32 px-8">
         <div className="mb-6 flex flex-col items-center gap-y-1.5 text-white">
           <h2 className="text-[65px] font-tek font-normal leading-tight ">

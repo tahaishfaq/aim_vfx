@@ -32,7 +32,7 @@ const ForStartVideo = () => {
       <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-6">
         {videoData.map((video, index) => (
           <div key={index} className="flex flex-col gap-y-1">
-            <div className="video-container-portfolio">
+            <div className="video-container-portfolio w-[400px] lg:w-[450px]">
               <video controls poster={video?.videoPoster}>
                 <source src="your-video-file.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
