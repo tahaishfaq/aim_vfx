@@ -1007,3 +1007,10 @@ video::-webkit-media-controls-play-button {
   border-radius: 10px;
   border: 1px solid transparent;
 }
+.project a.active {
+  background: linear-gradient(to right, #00ffff, #2eabaf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
+  text-decoration-color: #2eabaf;
+}

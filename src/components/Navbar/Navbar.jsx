@@ -94,7 +94,7 @@ export const Navbar = () => {
                   </span>
                   <div className="dropdown absolute hidden mt-1.5 w-32 bg-white shadow-lg  z-80  top-10 inset-x-0">
                     <Link
-                      to="/solution1"
+                      to="/projectpage"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
                     >
                       Service 1

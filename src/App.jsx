@@ -30,6 +30,10 @@ import SucessStories from "./components/SucessSroeries/SucessStories";
 import ControlFreelancer from "./components/ControlFreelancer/ControlFreelancer";
 import Compare from "./components/Campare/Compare";
 import BookConsulation from "./components/BookConsulation/BookConsulation";
+import ProjectPage from "./components/ProjectPage/ProjectPage";
+import Messages from "./components/ProjectPage/Messages";
+import ProjectInfo from "./components/ProjectPage/ProjectInfo";
+import Designs from "./components/ProjectPage/Designs";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -52,6 +56,12 @@ function App() {
           <Route path="/team-page" element={<TeamPage />} />
           <Route path="/solutions" element={<Solution />} />
           <Route path="/about-us-page" element={<AboutUsPage />} />
+          <Route path="/projectpage" element={<ProjectPage />}>
+            <Route index element={<ProjectInfo />}></Route>
+            <Route path="messages" element={<Messages />} />
+            <Route path="projectinfo" element={<ProjectInfo />} />
+            <Route path="designs" element={<Designs />} />
+          </Route>
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signup-companyinfo" element={<SignUpCompanyInfo />} />
