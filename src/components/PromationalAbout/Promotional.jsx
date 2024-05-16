@@ -12,10 +12,11 @@ import Promotionalimage from "../PromotionalVideo/Promotionalimage";
 import Hero from "./Hero";
 import Frame from "../../assets/images/Frame 308.png";
 import Logos from "../../assets/images/LOGOS.png";
-import FooterForm from "../Footer/Footer";
+import FooterForm from "../Footer/FooterForm";
 import Question from "../PromationalAbout/Question";
 import Clients from "../Clients/Clients";
 import Promotionalvideo from "../PromotionalVideo/Promotionalvideo";
+import Footer from "../Footer/Footer";
 const Promotional = () => {
   return (
     <div className="solution-page">
@@ -75,6 +76,7 @@ const Promotional = () => {
       <Question />
       <Promotionalimage />
       <FooterForm />
+      <Footer />
     </div>
   );
 };

@@ -1,10 +1,11 @@
 import React from "react";
 import Search from "../../assets/images/search.png";
-import FooterForm from "../Footer/Footer";
+import Footer from "../Footer/Footer";
 import Screenshot from "../../assets/images/Screenshot 2025.png";
 import Rectangle7583 from "../../assets/images/Rectangle 7583.png";
 import TurnAround from "./TurnAround";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import FooterForm from "../Footer/FooterForm";
 
 const HelpTutorial = () => {
   return (
@@ -15,7 +16,7 @@ const HelpTutorial = () => {
         </h1>
         <div className="flex justify-between p-2 px-4 bg-[#fff] rounded-full">
           <input
-            className="w-full  outline-0 placeholder:text-[#1666B0] font-[Inter]"
+            className="w-full text-blue-700  outline-0 placeholder:text-[#1666B0] font-[Inter]"
             type="text"
             placeholder="Search for articles"
           />
@@ -93,6 +94,7 @@ const HelpTutorial = () => {
       </div>
       <TurnAround />
       <FooterForm />
+      <Footer />
     </div>
   );
 };

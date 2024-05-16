@@ -29,7 +29,7 @@ const PopUpVideo = () => {
   ];
 
   return (
-    <div className="flex gap-5">
+    <div className="flex flex-wrap lg:flex-nowrap gap-5">
       {videoData.map((video, index) => {
         return (
           <div key={index}>

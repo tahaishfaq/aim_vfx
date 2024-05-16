@@ -34,10 +34,19 @@ import ProjectPage from "./components/ProjectPage/ProjectPage";
 import Messages from "./components/ProjectPage/Messages";
 import ProjectInfo from "./components/ProjectPage/ProjectInfo";
 import Designs from "./components/ProjectPage/Designs";
-
+import OurWorks from "./components/OurWorks/OurWorks";
+import HowitWorksPage33 from "./components/HowitWorksPage33/HowitWorksPage33";
+import CheckOut from "./components/CheckOut/CheckOut";
+import Panel from "./components/Panel/Panel";
+import ProjectBrief from "./components/ProjectBrief/ProjectBrief";
+import DropDown from "./components/DropDown/DropDown";
+import Pricing from "./components/Pricing/Pricing";
+import Reviews from "./components/Reviews/Reviews";
+import Setting from "./components/Setting/Setting";
+import PopupForDate from "./components/PopUpForDate/PopupForDate";
+import ProjectTitle from "./components/ProjectTitle/ProjectTitle";
 function App() {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <BrowserRouter>
@@ -56,12 +65,6 @@ function App() {
           <Route path="/team-page" element={<TeamPage />} />
           <Route path="/solutions" element={<Solution />} />
           <Route path="/about-us-page" element={<AboutUsPage />} />
-          <Route path="/projectpage" element={<ProjectPage />}>
-            <Route index element={<ProjectInfo />}></Route>
-            <Route path="messages" element={<Messages />} />
-            <Route path="projectinfo" element={<ProjectInfo />} />
-            <Route path="designs" element={<Designs />} />
-          </Route>
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signup-companyinfo" element={<SignUpCompanyInfo />} />
@@ -71,7 +74,7 @@ function App() {
           <Route path="/brief-project" element={<BriefProject />} />
           <Route path="/brief-project2" element={<BriefProject2 />} />
           <Route path="/blogpost" element={<BlogPost />} />
-          <Route path="/promotional-page" element={<Promotional />} />
+          <Route path="/promotional" element={<Promotional />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/forstartup" element={<ForStartup />} />
           <Route path="/book-call" element={<BookCall />} />
@@ -85,6 +88,24 @@ function App() {
           <Route path="/control-freelancer" element={<ControlFreelancer />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/book-consultation" element={<BookConsulation />} />
+          <Route path="/ourworks" element={<OurWorks />} />
+          <Route path="/howitworks-page" element={<HowitWorksPage33 />} />
+          <Route path="/checkout" element={<CheckOut />} />
+          <Route path="/projectpage" element={<ProjectPage />}>
+            <Route index element={<ProjectInfo />}></Route>
+            <Route path="messages" element={<Messages />} />
+            <Route path="projectinfo" element={<ProjectInfo />} />
+            <Route path="designs" element={<Designs />} />
+          </Route>
+          <Route path="/panel" element={<Panel />} />
+          {/* -------------------------------------- ProjectBriet page 40-----------------  -----------*/}
+          <Route path="/project-brief" element={<ProjectBrief />} />
+          <Route path="/drop-down" element={<DropDown />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/setting" element={<Setting />} />
+          <Route path="/project-title" element={<ProjectTitle />} />
+          <Route path="/popupfor-date" element={<PopupForDate />} />
         </Routes>
       </BrowserRouter>
     </>

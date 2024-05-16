@@ -39,7 +39,7 @@ function FooterPricing() {
 
   return (
     <>
-      <footer className=" text-white pt-40 pb-10">
+      <footer className=" text-black pt-40 pb-10">
         <div className="promotional-section">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center gap-x-24 lg:px-32 px-8">
             <div className="mb-6 flex flex-col items-center gap-y-1.5">

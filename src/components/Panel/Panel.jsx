@@ -35,7 +35,7 @@ const Panel = () => {
 
   return (
     <div className="solution-page py-20">
-      <div className="px-9 grid xl:grid-cols-8 text-white gap-4">
+      <div className="px-2 grid xl:grid-cols-8 text-white gap-4">
         <div className=" xl:col-span-2 ">
           <PanelLeft />
         </div>

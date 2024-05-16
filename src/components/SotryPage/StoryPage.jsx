@@ -14,7 +14,8 @@ import Rectangle75 from "../../assets/images/Rectangle 75.png";
 import Button from "../Button/Button";
 import hologrphic from "../../assets/images/hologrphic.png";
 import Clients from "../Clients/Clients";
-import FooterForm from "../Footer/Footer";
+import Footer from "../Footer/Footer";
+import FooterForm from "../Footer/FooterForm";
 const StoryPage = () => {
   const product = [
     {
@@ -120,7 +121,7 @@ const StoryPage = () => {
       </div>
 
       {/*---------------------------------  selecting the scenes Section   -------------------------------------------------*/}
-      <div className="px-6 max-w-6xl py-20 mx-auto md:gap-24 grid  md:grid-cols-2">
+      <div className="px-2 max-w-6xl py-20 mx-auto md:gap-24 grid  md:grid-cols-2">
         <div className="flex flex-col justify-center py-4">
           <h1 className="text-5xl font-[Teko] uppercase font-normal ">
             selecting the scenes
@@ -197,6 +198,7 @@ const StoryPage = () => {
         <Clients />
       </div>
       <FooterForm />
+      <Footer />
     </div>
   );
 };

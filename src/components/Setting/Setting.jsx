@@ -26,7 +26,7 @@ const Setting = () => {
               <span className="px-3 py-2 rounded-[50%] bg-[#2EABAF]">TJ</span>
             </div>
           </div>
-          <div className="w-full h-[576px] gap-y-4 bg-[#0B1A2880] rounded-xl mt-6">
+          <div className="w-full gap-y-4 bg-[#0B1A2880] rounded-xl mt-6">
             <form className="p-6 w-full">
               {/* ------------ input For City and Country  div  Section --------------- */}
 

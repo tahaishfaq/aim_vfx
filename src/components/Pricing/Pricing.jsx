@@ -13,7 +13,7 @@ import PricingArrow from "../../assets/images/PricingArrow.png";
 import CardWorks from "../HowitWorksPage33/CardWorks";
 const Pricing = () => {
   return (
-    <div className="solution-page pt-28 text-white">
+    <div className="solution-page text-white">
       <div className=" lg:block hidden relative ">
         <img src={PricingArrow} alt="" className="absolute right-0 -z-50" />
         <div className="max-w-7xl mx-auto absolute top-64 left-72 -z-10  overflow-hidden">
@@ -21,8 +21,9 @@ const Pricing = () => {
         </div>
       </div>
       {/* ---------- Cards Works and Form   Section -----------*/}
-
-      <CardWorks />
+      <div className="py-20">
+        <CardWorks />
+      </div>
 
       {/* ---------- GuaranteCard  Section -----------*/}
 

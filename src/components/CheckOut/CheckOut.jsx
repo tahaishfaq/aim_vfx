@@ -61,7 +61,7 @@ const CheckOut = () => {
             choose your video editing plan
           </h1>
 
-          <div className="bg-[#15B8C7] px-4 border-[1px] rounded-full flex justify-between items-center py-3">
+          <div className="bg-[#15B8C7] px-4 rounded-full flex justify-between items-center py-3">
             <span className="flex gap-3 items-center">
               <span className="h-4 w-4 rounded-sm bg-white flex justify-center items-center">
                 <img src={Rectagle7605} alt="" />
@@ -129,7 +129,7 @@ const CheckOut = () => {
           </div>
         </div>
         <div className="col-span-3 py-6  ">
-          <div className=" ring-1 ring-slate-400 rounded-3xl p-6 lg:px-20 bg-[#0B1A28CC] text-white">
+          <div className=" checkout-border p-6 lg:px-20 text-white">
             <h1 className="text-[40px] uppercase pb-8 font-tek">
               payment method
             </h1>

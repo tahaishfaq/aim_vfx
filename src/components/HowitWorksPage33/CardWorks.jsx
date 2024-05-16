@@ -71,19 +71,19 @@ const CardWorks = () => {
         <div className="py-8 flex justify-between items-center flex-wrap gap-y-6 px-6">
           <div className="flex items-center gap-x-2">
             <CheckIcon className="h-6 w-6 text-[#2EA89D] " />
-            <p className="text-lg font-semibold font-[Rubik]">
+            <p className="text-lg text-white font-semibold font-[Rubik]">
               No contracts. No commitments
             </p>
           </div>
           <div className="flex items-center gap-x-2">
             <CheckIcon className="h-6 w-6 text-[#2EA89D] " />
-            <p className="text-lg font-semibold font-[Rubik]">
+            <p className="text-lg text-white font-semibold font-[Rubik]">
               14-Day Money Back Guaarantee
             </p>
           </div>
           <div className="flex items-center gap-x-2">
             <CheckIcon className="h-6 w-6 font-extrabold text-[#2EA89D] " />
-            <p className="text-lg font-semibold font-[Rubik]">
+            <p className="text-lg text-white font-semibold font-[Rubik]">
               Support of multiple brands
             </p>
           </div>

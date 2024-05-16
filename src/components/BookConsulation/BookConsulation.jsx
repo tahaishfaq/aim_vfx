@@ -5,7 +5,8 @@ import ConsultationImage from "./ConsultationImage";
 import HomeTestimoal from "../HomeTestimonals/HomeTestimonals";
 import Button from "../Button/Button";
 import Heading from "../Heading/Heading";
-import FooterForm from "../Footer/Footer";
+import Footer from "../Footer/Footer";
+import FooterForm from "../Footer/FooterForm";
 const BookConsulation = () => {
   return (
     <div className="solution-page pt-28 text-white">
@@ -37,6 +38,7 @@ const BookConsulation = () => {
         </Button>
       </div>
       <FooterForm />
+      <Footer />
     </div>
   );
 };

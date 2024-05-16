@@ -90,7 +90,7 @@ const SucessStories = () => {
 
       {/*-----------------Required Videos Section      ------------------*/}
       <div className="relative ">
-        <div className="mx-auto max-w-6xl sm:px-12 px-6">
+        <div className="mx-auto max-w-6xl sm:px-12 px-2">
           {product.map((item) => {
             return (
               <div className="grid md:gap-6 rounded-3xl border-[#15B8C7]  mt-16   border-4 md:grid-cols-3 ">
@@ -104,7 +104,7 @@ const SucessStories = () => {
                     </p>
                   </div>
                   <div>
-                    <button className="py-3 px-7 uppercase  bg-white hover:bg-slate-200 text-black rounded-full font-bold">
+                    <button className="py-3 px-7 text-nowrap uppercase  bg-white hover:bg-slate-200 text-black rounded-full font-bold">
                       case study
                     </button>
                   </div>
@@ -156,7 +156,7 @@ const SucessStories = () => {
             see articles
           </Button>
         </div>
-        <div className="px-6 xl:px-20 md:px-44 sm:px-10 lg:px-10 pb-28 grid lg:gap-5 lg:grid-cols-3">
+        <div className="px-2 xl:px-20 md:px-44 sm:px-10 lg:px-10 pb-28 grid lg:gap-5 lg:grid-cols-3">
           {product.map((item) => {
             return (
               <div className=" rounded-3xl border-[#15B8C7]  mt-5 border-4  ">
@@ -190,7 +190,7 @@ const SucessStories = () => {
       </div>
       {/*----------------- AIM VFX   video  Section      ------------------*/}
 
-      <div className="lg:px-28 py-10 px-5 lg:relative">
+      <div className="lg:px-28 py-10 px-2 lg:relative">
         <div className="flex justify-end px-6 py-4  ">
           <Button className="lg:px-8 px-6 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
             MEET OUR TEAM
@@ -201,7 +201,7 @@ const SucessStories = () => {
           <img src={LOGO} alt="" className=" w-32 h-32 " />
         </div>
 
-        <div className="px-6 lg:px-28 xl:px-0">
+        <div className=" lg:px-28 xl:px-0">
           <div className="grid lg:gap-6 rounded-3xl border-[#15B8C7]  lg:m-5 border-4  xl:grid-cols-3 ">
             <div className="  flex flex-col justify-center py-12 xl:pl-24">
               <h2 className="text-4xl xl:text-6xl  uppercase  font-[400]">

@@ -3,11 +3,11 @@ import Group469461 from "../../assets/images/Group 469461.png";
 import Arrow from "../../assets/images/Arrow.png";
 const Clients = () => {
   return (
-    <div className="xl:px-28 md:px-40 mx-auto px-6 grid lg:grid-cols-10 py-8 items-center">
+    <div className="xl:px-28 md:px-40 mx-auto px-2 grid lg:grid-cols-10 py-8 items-center">
       <div className="hidden xl:block  col-span-1">
         <img className="rotate-180" src={Arrow} alt="" />
       </div>
-      <div className="xl:col-span-8 col-span-full grid p-8  xl:grid-cols-2 gap-x-16  border-[2px] rounded-3xl border-[#15B8C7]">
+      <div className="xl:col-span-8 col-span-full grid p-4 lg:p-8  xl:grid-cols-2 gap-x-16  border-[2px] rounded-3xl border-[#15B8C7]">
         <div className="w-full relative overflow-hidden ">
           <video
             controls

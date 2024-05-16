@@ -43,8 +43,8 @@ const TurnAround = () => {
   ];
 
   return (
-    <div className="px-4 mx-auto sm:max-w-6xl lg:max-w-6xl text-white">
-      <h1 className=" lg:text-8xl sm:text-6xl  font-normal uppercase font-[Teko]  pb-10 pt-28">
+    <div className="px-2 mx-auto sm:max-w-6xl lg:max-w-6xl text-white">
+      <h1 className=" lg:text-8xl text-6xl  font-normal uppercase font-[Teko]  pb-10 pt-28">
         turnaround times
       </h1>
       <div>
