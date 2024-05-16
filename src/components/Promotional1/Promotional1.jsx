@@ -8,40 +8,46 @@ import Arrow from "../../assets/images/Arrow.png";
 const people = [
   {
     image: Camada,
+    btn: "Ad Design",
   },
   {
     image: Capa,
+    btn: "Display Ads",
   },
   {
     image: Capa1,
+    btn: "Native Ads",
   },
   {
     image: Layer,
+    btn: "Out of Home Ads",
   },
   {
     image: Layer,
+    btn: "Animated",
   },
   {
     image: Vector,
+    btn: "Social Media",
   },
 ];
 
 export default function Promotional1() {
   return (
-    <div className="promotional-section">
+    <div className="promotional-section py-40">
       <div className="text-center text-[#fff]">
-        <h className="font-tek font-[400] text-[111px]">
+        <h className="text-5xl font-tek font-normal text-white uppercase pb-20 lg:text-[111px]">
           PROMOTIONAL VIDEOS services
         </h>
       </div>
       <ul
         role="list"
-        className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 px-64  "
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 2xl:px-64 lg:px-10 px-4  "
       >
         {people.map((person, ind) => (
           <li key={ind} className="col-span-1 flex flex-col">
             <div className="	">
-              <div className="flex flex-1 flex-col p-8 bg-slate-800 rounded-[34px] border-[8px]	border-sky-700 	">
+              <div className="flex flex-1 flex-col p-8 bg-[#0B1A28] rounded-[34px] border-[8px]	border-[#2EABAF] 	">
                 <img
                   className="mx-auto h-32 w-32"
                   src={person.image}
@@ -49,8 +55,8 @@ export default function Promotional1() {
                 />
               </div>
               <div className="px-7 cursor-pointer">
-                <div className=" flex flex-1 justify-between px-5 py-4   rounded-full bg-slate-800  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] relative bottom-6 hover:bg-gray-700">
-                  <button>Ad design</button>
+                <div className=" flex flex-1 justify-between px-5 py-4   rounded-full bg-[#0B1A28]  border-[#15B8C7] border-[1px] font-bold  text-[#E4E4E4] relative bottom-6 hover:bg-gray-700">
+                  <button>{person.btn}</button>
                   <span>
                     <img src={Arrow} alt="" />
                   </span>

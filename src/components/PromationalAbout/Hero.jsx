@@ -12,16 +12,14 @@ import Arrow from "../../assets/images/arrow logo.png";
 const Hero = () => {
   return (
     <div className="relative">
-      <img className="" src={Holographic1} alt="" />
-      <div className=" grid grid-cols-5 absolute top-10 pt-12">
-        <div className="col-span-1">
+      <img className=" absolute -z-20" src={Holographic1} alt="" />
+      <div className="pt-28 grid grid-cols-5">
+        <div className="2xl:block hidden col-span-1">
           <img src={Bolb} alt="" />
         </div>
-        <div className="col-span-2 pt-11">
+        <div className="col-span-full 2xl:col-span-2 pt-11">
           <div className="px-14">
-            <span className="team-hero-heading text-{111px}">
-              promotional videos
-            </span>
+            <span className="team-hero-heading ">promotional videos</span>
             <p className="font-[300] text-[20px] text-[#FFF]">
               Get on-brand promotional videos designed to enhance your website,
               digital campaigns, presentation and ads. Plug a fully-stacked
@@ -29,29 +27,25 @@ const Hero = () => {
               yor efforts with next-gen videos.
             </p>
           </div>
-          <div className="flex py-7 px-14	items-end	justify-between ">
-            <span>
+          <div className="flex py-7 gap-x-6 px-14	items-end	justify-between ">
+            <div className="w-full">
               <input
                 type="email"
                 name="email"
                 placeholder="Your base Email"
-                className="px-4 py-2.5 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] "
+                className="w-full px-4 py-2.5 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] "
               />
-            </span>
+            </div>
             <span>
-              <Button className="px-4 py-2.5 text-sm font-semibold text-[#fff] bg-[#2EABAF] rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+              <Button className="px-4 text-nowrap py-2.5 text-sm font-semibold text-[#fff] bg-[#2EABAF] rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 SEE OPENNINGS
               </Button>
             </span>
           </div>
         </div>
-        <div className="col-span-2 relative">
+        <div className="2xl:block hidden col-span-2 relative">
           <img src={Rectangle7554} alt="" />
-          <img
-            src={Arrow}
-            alt=""
-            className="w-96 absolute top- left-[-150px]"
-          />
+          <img src={Arrow} alt="" className=" absolute -top-16 right-72" />
           <img
             src={Rectangle7549}
             alt=""

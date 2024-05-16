@@ -34,7 +34,7 @@ export default function Persntage() {
           {stats.map((stat) => (
             <div key={stat.id} className="flex justify-center  sm:px-6 lg:px-8">
               <div>
-                <div className="font-[Teko] font-light text-5xl text-[#FFFF]">
+                <div className="font-[Teko] font-light text-5xl text-[#FFFF] uppercase">
                   {stat.name}
                 </div>
                 <span className="font-[Teko] font-light text-8xl text-[#00FFFF] py-4">

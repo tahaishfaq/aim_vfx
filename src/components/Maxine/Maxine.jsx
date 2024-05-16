@@ -5,23 +5,23 @@ import Rectangle2 from "../../assets/images/Rectangle 7577.png";
 
 const Maxine = () => {
   return (
-    <div className=" ">
-      <div className="flex items-center p-32 mx-auto max-w-7xl">
+    <div className="px-4 py-10">
+      <div className="grid lg:grid-cols-2 gap-y-10  gap-x-12 items-center mx-auto max-w-7xl">
         <div className="relative">
-          <img src={Rectangle1} alt="img" className="" />
-          <div className="absolute top-10">
-            <img src={Rectangle2} alt="" />
+          <img src={Rectangle2} alt="" />
+          <div className="absolute -z-10 top-10">
+            <img src={Rectangle1} alt="img" className="-z-10" />
           </div>
         </div>
         <div className="flex flex-col gap-y-3 py-5">
-          <span className="text-[40px] text-[#56BEC2] font-[400] ">
+          <span className="lg:text-[50px] text-3xl font-tek text-[#56BEC2] font-normal ">
             Maxine Casper
           </span>
-          <span className="line font-Teko text-[#fff]">
+          <span className="line font-Teko text-xl text-[#fff] font-normal ">
             CREATIVE DIRECTOR OF PROMOTIONAL VIDEOS
           </span>
-          <div className="w-96 text-white">
-            <p className="-light">
+          <div className=" text-white">
+            <p className="font-light">
               Lorem ipsum dolor sit amet consectetur. Leo molestie velit turpis
               tellus maecenas vitae facilisis id dolor. Tellus ac nullam urna
               cursus euismod consequat. Ut ac nam morbi at sit maecenas habitant
