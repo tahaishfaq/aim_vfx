@@ -18,7 +18,7 @@ const Hero = () => {
           <img src={Bolb} alt="" />
         </div>
         <div className="col-span-full 2xl:col-span-2 pt-11">
-          <div className="px-14">
+          <div className="px-4 lg:px-14">
             <span className="team-hero-heading ">promotional videos</span>
             <p className="font-[300] text-[20px] text-[#FFF]">
               Get on-brand promotional videos designed to enhance your website,

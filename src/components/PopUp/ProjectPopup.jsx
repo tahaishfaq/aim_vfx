@@ -165,7 +165,7 @@ const ProjectPopup = () => {
         <div>
           <img src={Group469614} alt="" />
         </div>
-        <h1 className="font-[500] text-3xl py-14">
+        <h1 className="font-normal text-5xl font-tek py-14">
           DISCOVER MORE AMAZING PROJECTS
         </h1>
         <PopUpVideo />

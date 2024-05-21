@@ -11,10 +11,8 @@ import Artical from "../Artical/Artical";
 import Design3d from "../Design3d/Design3d";
 import Future from "../Future/Future";
 import Future2 from "../Future/Future2";
-import FooterForm from "../Footer/Footer";
-import PopUp from "../PopUp/PopUp";
-import PopupForDate from "../PopUpForDate/PopupForDate";
-
+import Footer from "../Footer/Footer";
+import FooterForm from "../Footer/FooterForm";
 const Blog = () => {
   const [open, setOpen] = useState(false);
   const logo = [
@@ -130,8 +128,10 @@ const Blog = () => {
       <div className="py-20">
         <Future />
       </div>
-
-      <FooterForm />
+      <div className="py-12">
+        <FooterForm />
+      </div>
+      <Footer />
     </div>
   );
 };

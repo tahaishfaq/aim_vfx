@@ -90,7 +90,7 @@ const SucessStories = () => {
 
       {/*-----------------Required Videos Section      ------------------*/}
       <div className="relative ">
-        <div className="mx-auto max-w-6xl sm:px-12 px-2">
+        <div className="mx-auto max-w-5xl sm:px-12 px-2">
           {product.map((item) => {
             return (
               <div className="grid md:gap-6 rounded-3xl border-[#15B8C7]  mt-16   border-4 md:grid-cols-3 ">
@@ -109,7 +109,7 @@ const SucessStories = () => {
                     </button>
                   </div>
                 </div>
-                <div className="md:col-span-2 col-span-full py-10 px-5 relative overflow-hidden ">
+                <div className="md:col-span-2 col-span-full py-4 sm:py-10 px-2 sm:px-5 relative overflow-hidden ">
                   <video controls poster={Rectangle}>
                     <source src="your-video-file.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
@@ -160,7 +160,7 @@ const SucessStories = () => {
           {product.map((item) => {
             return (
               <div className=" rounded-3xl border-[#15B8C7]  mt-5 border-4  ">
-                <div className="lg:col-span-2 col-span-full py-10 px-5 relative overflow-hidden ">
+                <div className="lg:col-span-2 col-span-full py-4 sm:py-10 sm:px-5 px-2 relative overflow-hidden ">
                   <video controls poster={ScreenShot}>
                     <source src="your-video-file.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

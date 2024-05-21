@@ -67,8 +67,8 @@ const ForStartup = () => {
   ];
   return (
     <div className="solution-page">
-      <div className="grid lg:grid-cols-2  gap-y-10 py-40 mx-auto 2xl:px-52">
-        <div className="flex flex-col justify-center gap-y-3 px-6">
+      <div className="grid lg:grid-cols-2 lg:px-0 px-6 gap-y-10 lg:py-40 py-20 mx-auto 2xl:px-52">
+        <div className="flex flex-col justify-center gap-y-3 ">
           <span className="lg:text-8xl text-5xl font-tek uppercase text-white">
             OUR TAILORED SOLUTIONS FOR STARTUPS
           </span>
@@ -110,7 +110,7 @@ const ForStartup = () => {
           </div>
         </div>
       </div>
-      <p className="text-center text-[#fff] uppercase">
+      <p className="text-center font-[Rubik] text-lg font-light py-6 text-[#fff]">
         80.082 design projects delivered to 450+ happy clients.
       </p>
       <div>
@@ -167,7 +167,7 @@ const ForStartup = () => {
       </div>
 
       {/*------------------  Social Media Plate Section  -----------------------------*/}
-      <div className=" max-w-7xl mx-auto grid lg:grid-cols-2 lg:px-0 px-6">
+      <div className=" max-w-7xl mx-auto grid gap-y-10 py-10 lg:grid-cols-2 lg:px-0 px-6">
         <div className="relative ">
           <img src={Socialmedia} alt="" />
 
