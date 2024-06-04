@@ -30,6 +30,12 @@ import SucessStories from "./components/SucessSroeries/SucessStories";
 import ControlFreelancer from "./components/ControlFreelancer/ControlFreelancer";
 import Compare from "./components/Campare/Compare";
 import BookConsulation from "./components/BookConsulation/BookConsulation";
+import OurWorks from "./components/OurWorks/OurWorks";
+import Pricing from "./components/Pricing/Pricing";
+import Setting from "./components/Setting/Setting";
+import Reviews from "./components/Reviews/Reviews";
+import Panel from "./components/Panel/Panel";
+import HowitWorksPage33 from "./components/HowitWorksPage33/HowitWorksPage33";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -52,6 +58,7 @@ function App() {
           <Route path="/team-page" element={<TeamPage />} />
           <Route path="/solutions" element={<Solution />} />
           <Route path="/about-us-page" element={<AboutUsPage />} />
+          <Route path="/our-works" element={<OurWorks />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/signup-companyinfo" element={<SignUpCompanyInfo />} />
@@ -75,6 +82,16 @@ function App() {
           <Route path="/control-freelancer" element={<ControlFreelancer />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/book-consultation" element={<BookConsulation />} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/setting" element={<Setting />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/panel" element={<Panel />} />
+          <Route path="/howitworks" element={<HowitWorksPage33 />} />
+          
+          
+          
+
+          
         </Routes>
       </BrowserRouter>
     </>

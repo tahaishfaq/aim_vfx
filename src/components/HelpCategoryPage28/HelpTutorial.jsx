@@ -5,6 +5,7 @@ import Screenshot from "../../assets/images/Screenshot 2025.png";
 import Rectangle7583 from "../../assets/images/Rectangle 7583.png";
 import TurnAround from "./TurnAround";
 import { ChevronRightIcon } from "@heroicons/react/24/outline";
+import FooterWithForm from "../Footer/FooterWithForm";
 
 const HelpTutorial = () => {
   return (
@@ -92,7 +93,7 @@ const HelpTutorial = () => {
         </div>
       </div>
       <TurnAround />
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

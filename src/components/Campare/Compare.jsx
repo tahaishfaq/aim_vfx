@@ -8,6 +8,7 @@ import Creative from "./Creative";
 import CreativeaAds from "./CreativeaAds";
 import FooterForm from "../Footer/Footer";
 import Clients from "../Clients/Clients";
+import FooterWithLetsTalk from "../Footer/FooterWithLetsTalk";
 const Compare = () => {
   const Rectangle = [
     {
@@ -113,7 +114,7 @@ const Compare = () => {
       <Creative />
       <CreativeaAds />
       <Clients />
-      <FooterForm />
+      <FooterWithLetsTalk/>
     </div>
   );
 };

@@ -12,6 +12,7 @@ import Button from "../Button/Button";
 import holographic from "../../assets/images/holographic_fluid.png";
 import Promotionalimage from "../PromotionalVideo/Promotionalimage";
 import FooterForm from "../Footer/Footer";
+import FooterWithForm from "../Footer/FooterWithForm";
 const BlogPost = () => {
   const data = Array(5).fill({
     btn: `Oyster's Rerband`,
@@ -423,7 +424,7 @@ const BlogPost = () => {
         </div>
       </div>
       <Promotionalimage />
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

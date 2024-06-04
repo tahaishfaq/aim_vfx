@@ -6,6 +6,7 @@ import HomeTestimoal from "../HomeTestimonals/HomeTestimonals";
 import Button from "../Button/Button";
 import Heading from "../Heading/Heading";
 import FooterForm from "../Footer/Footer";
+import FooterWithForm from "../Footer/FooterWithForm";
 const BookConsulation = () => {
   return (
     <div className="solution-page pt-28 text-white">
@@ -36,7 +37,7 @@ const BookConsulation = () => {
           Watch More
         </Button>
       </div>
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

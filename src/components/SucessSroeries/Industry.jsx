@@ -14,7 +14,7 @@ const Industry = () => {
     {
       img: bitcoin1,
       name: "Business & marketing",
-      filter: "All Filter:",
+      filter: "All Filter :",
       btn: "all",
     },
     {
@@ -84,12 +84,12 @@ const Industry = () => {
         {logo.slice(0, 8).map((item, ind) => {
           return (
             <div
-              className="flex flex-col p-7  rounded-3xl border-[3px] border-[#fff]"
+              className="flex flex-col  items-center justify-center py-7 px-5 rounded-3xl border-[3px] border-[#fff]"
               key={ind}
             >
-              <div className="flex flex-col items-center justify-start ">
-                <img className="w-12 h-12 object-cover" src={item.img} alt="" />
-                <h2 className=" uppercase text-3xl font-[Teko] font-normal text-center pt-3">
+              <div className="flex flex-col items-center gap-y-3 ">
+                <img className="w-12 h-10 object-cover" src={item.img} alt="" />
+                <h2 className="uppercase text-3xl font-tek font-normal text-center pt-3">
                   {item.name}
                 </h2>
               </div>{" "}
@@ -100,13 +100,13 @@ const Industry = () => {
       <div className="flex justify-center items-center flex-wrap gap-y-8 gap-x-1 py-16">
         {logo.map((item, ind) => {
           return (
-            <div className="flex items-center gap-4">
-              <span>{item.filter}</span>
+            <div className="flex items-center gap-x-2">
+              <span className="text-[20px] text-white font-light">{item.filter}</span>
               <button
                 className={
                   ind === 0
-                    ? "py-3 px-8 text-base uppercase rounded-full border-4 border-white bg-white text-black font-[Rubik]"
-                    : "py-3 px-8 text-base uppercase rounded-full border-4  border-white font-[Rubik]"
+                    ? "py-3 px-7 text-[16px] uppercase rounded-full border-4 border-white bg-white text-black "
+                    : "py-3 px-7 text-[16px] uppercase rounded-full border-4  border-white "
                 }
               >
                 {item.btn}

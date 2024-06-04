@@ -14,6 +14,7 @@ import HomePortfolioVideo from "../HomePortfolioVideo/HomePortfolioVideo";
 import LOGO from "../../assets/images/LOGO ORIGINAL GREEN.png";
 import arrow from "../../assets/images/127_arrow_icon_logo_with_3d_modern_style copy 1.png";
 import FooterPricing from "../Pricing/FooterPricing";
+import FooterWithLetsTalk from "../Footer/FooterWithLetsTalk";
 const SucessStories = () => {
   const product = [
     {
@@ -250,7 +251,7 @@ const SucessStories = () => {
           Watch More
         </Button>
       </div>
-      <FooterPricing />
+      <FooterWithLetsTalk/>
     </div>
   );
 };

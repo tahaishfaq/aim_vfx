@@ -15,6 +15,7 @@ import Button from "../Button/Button";
 import hologrphic from "../../assets/images/hologrphic.png";
 import Clients from "../Clients/Clients";
 import FooterForm from "../Footer/Footer";
+import FooterWithForm from "../Footer/FooterWithForm";
 const StoryPage = () => {
   const product = [
     {
@@ -196,7 +197,7 @@ const StoryPage = () => {
         </h1>
         <Clients />
       </div>
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

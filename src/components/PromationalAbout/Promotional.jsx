@@ -16,6 +16,7 @@ import FooterForm from "../Footer/Footer";
 import Question from "../PromationalAbout/Question";
 import Clients from "../Clients/Clients";
 import Promotionalvideo from "../PromotionalVideo/Promotionalvideo";
+import FooterWithForm from "../Footer/FooterWithForm";
 const Promotional = () => {
   return (
     <div className="solution-page">
@@ -74,7 +75,7 @@ const Promotional = () => {
       </div>
       <Question />
       <Promotionalimage />
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

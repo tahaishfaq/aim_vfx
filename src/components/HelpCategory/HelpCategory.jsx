@@ -3,6 +3,7 @@ import Search from "../../assets/images/search.png";
 import FooterForm from "../Footer/Footer";
 import Arrow from "../../assets/images/Arrow.png";
 import chevron from "../../assets/images/chevron-right (1).png";
+import FooterWithForm from "../Footer/FooterWithForm";
 const HelpCatogry = () => {
   const data = [
     {
@@ -103,7 +104,7 @@ const HelpCatogry = () => {
           </div>
         </div>
       </div>
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

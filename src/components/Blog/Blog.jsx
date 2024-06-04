@@ -14,6 +14,7 @@ import Future2 from "../Future/Future2";
 import FooterForm from "../Footer/Footer";
 import PopUp from "../PopUp/PopUp";
 import PopupForDate from "../PopUpForDate/PopupForDate";
+import FooterWithForm from "../Footer/FooterWithForm";
 
 const Blog = () => {
   const [open, setOpen] = useState(false);
@@ -131,7 +132,7 @@ const Blog = () => {
         <Future />
       </div>
 
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

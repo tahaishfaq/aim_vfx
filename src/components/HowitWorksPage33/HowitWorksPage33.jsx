@@ -18,6 +18,8 @@ import FooterForm from "../Footer/FooterForm";
 import Footer from "../Footer/Footer";
 import Question from "../PromationalAbout/Question";
 import Questions from "../../assets/images/Questions .png";
+import DateConsulation from "../DateConsulation/DateConsulation";
+import FooterWithForm from "../Footer/FooterWithForm";
 const HowitWorksPage33 = () => {
   const cards = [
     {
@@ -296,11 +298,7 @@ const HowitWorksPage33 = () => {
       <div className="text-white">
         <DateConsulation />
       </div>
-      <div className="relative">
-        <img src={Questions} alt="" className="absolute top-8 -z-10" />
-        <FooterForm />
-      </div>
-      <Footer />
+     <FooterWithForm/>
     </div>
   );
 };

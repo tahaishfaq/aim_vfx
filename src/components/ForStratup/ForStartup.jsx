@@ -20,6 +20,7 @@ import ForStartVideo from "./ForStartVideo";
 import Question from "../PromationalAbout/Question";
 import FooterForm from "../Footer/Footer";
 import Promotionalimage from "../PromotionalVideo/Promotionalimage";
+import FooterWithForm from "../Footer/FooterWithForm";
 const ForStartup = () => {
   const logo = [
     {
@@ -144,7 +145,7 @@ const ForStartup = () => {
       <div className="">
         <Promotionalimage />
       </div>
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };

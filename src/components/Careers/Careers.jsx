@@ -7,6 +7,7 @@ import FooterForm from "../Footer/Footer";
 import SucessStories from "../SucessSroeries/SucessStories";
 import PopupForDate from "../PopUpForDate/PopupForDate";
 import StoryPage from "../SotryPage/StoryPage";
+import FooterWithLetsTalk from "../Footer/FooterWithLetsTalk";
 
 const Careers = () => {
   //  'main div of Careers component all component rendered in '
@@ -18,7 +19,7 @@ const Careers = () => {
         <Persntage />
         <CareersCards />
         <CareersCards2 />
-        <FooterForm />
+        <FooterWithLetsTalk/>
       </div>
     </>
   );

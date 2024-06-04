@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import shape1 from "../assets/127_arrow_icon_logo_with_3d_modern_style copy 2.png";
 import shape2 from "../assets/127_arrow_icon_logo_with_3d_modern_style copy 3.png";
@@ -40,11 +40,14 @@ import howitworks from "../assets/Rectangle 130 (1).png";
 import FooterForm from "../components/Footer/FooterForm";
 import Footer from "../components/Footer/Footer";
 import FooterWithForm from "../components/Footer/FooterWithForm";
+import PopupForDate from "../components/PopUpForDate/PopupForDate";
 
 
 
 
 const Home = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
   const services = [
     {
       id: 1,
@@ -117,13 +120,14 @@ const Home = () => {
             subscription model, powered by AIM VFX a video production agency
             proficient in video editing, motion graphics, branding, and VFX.
           </p>
-          <div className="hero-section-buttons flex flex-col gap-y-5 b">
+          <div className="hero-section-buttons flex flex-col gap-y-5 z-[1000]">
             <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-cyan-500 hover:bg-cyan-400 border-2 border-cyan-500 rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Pricing
             </Button>
-            <Button className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+            <Button onClick={() => setIsOpen(true)} className="px-8 py-2.5 text-sm font-semibold text-white bg-transparent hover:border-cyan-500 border-2 border-white rounded-full focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               book a call
             </Button>
+            <PopupForDate open={isOpen} setOpen={setIsOpen} />
             <div className="lg:hidden sm:block pt-6">
               <LogoBars />
             </div>

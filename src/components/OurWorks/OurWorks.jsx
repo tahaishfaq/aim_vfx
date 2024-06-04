@@ -6,7 +6,8 @@ import HomePortfolioVideo from "../HomePortfolioVideo/HomePortfolioVideo";
 import Button from "../Button/Button";
 import HomeTestimoal from "../HomeTestimonals/HomeTestimonals";
 import Heading from "../Heading/Heading";
-import FooterPricing from "../Pricing/FooterPricing";
+import FooterWithLetsTalk from "../Footer/FooterWithLetsTalk";
+
 function OurWorks() {
   return (
     <div className="solution-page text-white pt-28">
@@ -52,7 +53,7 @@ function OurWorks() {
         </Button>
       </div>
 
-      <FooterPricing />
+      <FooterWithLetsTalk/>
     </div>
   );
 }

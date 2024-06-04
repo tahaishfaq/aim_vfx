@@ -27,16 +27,16 @@ const LetsTalk = () => {
     <div className="letstalk">
     <div className="max-w-7xl pt-4 mx-auto flex flex-col lg:flex-row justify-center gap-x-24 gap-y-10 lg:px-32 px-3 ">
       <div className="lg:mt-10 mt-0 flex flex-col  gap-y-1.5">
-        <h2 className="lg:text-[80px] text-[60px] font-tek font-normal leading-tight">
+        <h2 className="lg:text-[80px] text-[60px] font-tek font-normal leading-tight text-black">
           Let’s Talk
         </h2>
-        <p className="lg:w-96 text-md mb-2">
+        <p className="lg:w-96 text-md mb-2 text-black">
           Have some big idea or brand to develop and need help? Then reach out
           we'd love to hear about your project and provide help. Have some big
           idea or brand to develop and need help? Then reach out we'd love to
           hear about your project and provide help
         </p>
-        <p className="lg:w-96 text-md">
+        <p className="lg:w-96 text-md text-black">
           Have some big idea or brand to develop and need help? Then reach out
           we'd love to hear about your project and provide helpHave some big
           idea or brand to develop and need help? Then reach out we'd love to

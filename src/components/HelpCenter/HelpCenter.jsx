@@ -2,6 +2,7 @@ import React from "react";
 import Search from "../../assets/images/search.png";
 import Arrow from "../../assets/images/Arrow.png";
 import FooterForm from "../Footer/Footer";
+import FooterWithForm from "../Footer/FooterWithForm";
 const HelpCenter = () => {
   const Data = [
     {
@@ -70,7 +71,7 @@ const HelpCenter = () => {
           </div>
         </div>
       </div>
-      <FooterForm />
+      <FooterWithForm/>
     </div>
   );
 };
