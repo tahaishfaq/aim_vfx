@@ -7,14 +7,16 @@ const GuaranteCard = () => {
       <div className=" md:max-w-6xl mx-auto py-20">
         <div className="grid lg:grid-cols-2 px-2  rounded-2xl ">
           <div className=" pt-5  pl-5 w-full">
-            <h2 className="text-6xl font-[Rubik]">Title text block</h2>
-            <h2 className="text-3xl font-[Rubik] py-4 ">
-              JUST THE SUBHEAD HERE:
+            <h2 className="md:text-8xl text-5xl font-tek font-normal uppercase">
+              Title text block
             </h2>
-            <p className="text-xl font-[Rubik] pb-4">
-              Freezing 2 times for two weeks a year If one video editor is not
-              enough, then you need to buy another package. You need to pay
-              monthly. You need to pay with monthly, quarterly and annual
+            <h3 className="text-3xl font-[Rubik] py-4 ">
+              JUST THE SUBHEAD HERE:
+            </h3>
+            <p className="text-xl font-medium font-[Rubik] pb-4">
+              Freezing 2 times for two weeks a year <br /> If one video editor
+              is not enough, then you need to buy another package. You need to
+              pay monthly. You need to pay with monthly, quarterly and annual
               discounts.
             </p>
             <button className="px-8 py-2.5  text-sm font-semibold text-[#000]  bg-[#fff]  rounded-full  hover:text-[#000] hover:bg-cyan-600  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
@@ -38,8 +40,8 @@ const GuaranteCard = () => {
           <div className="flex justify-center">
             <img src={elementor} alt="" className="w-full" />
           </div>
-          <div className="sm:col-span-3 pt-5  pl-5 w-full">
-            <h2 className="text-3xl font-[Rubik] py-4 ">
+          <div className="sm:col-span-3 flex flex-col justify-center  pl-5 w-full">
+            <h2 className="text-4xl font-[Rubik] font-semibold ">
               14-Day Money Back Guaarantee
             </h2>
 
@@ -47,9 +49,11 @@ const GuaranteCard = () => {
               No contracts. No commitments. Try it for 14 days and if it appears
               we’re not a match (doubt it), we’ll give your money back.
             </p>
-            <button className="px-8 py-2.5 mb-5 text-sm font-semibold text-[#000]  bg-[#fff]  rounded-full  hover:text-[#000] hover:bg-cyan-600  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
-              Try Our Platform Risk-Free
-            </button>
+            <div className="pt-4">
+              <button className="px-8 py-2.5 mb-5 text-sm font-semibold text-[#000]  bg-[#fff]  rounded-full  hover:text-[#000] hover:bg-cyan-600 font-[Inter]  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+                Try Our Platform Risk-Free
+              </button>
+            </div>
           </div>
         </div>
       </div>

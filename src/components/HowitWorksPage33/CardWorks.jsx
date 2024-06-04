@@ -89,8 +89,8 @@ const CardWorks = () => {
           </div>
         </div>
         <div className="flex  justify-center  text-slate-800">
-          <div className="flex items-center justify-between text-[13px] font-normal font-[Rubik] gap-x-4 gap-4 sm:flex-nowrap flex-wrap rounded-xl bg-white py-1 px-2 cursor-pointer">
-            <div className="flex justify-between items-center ">
+          <div className="grid sm:grid-cols-2 items-center justify-between text-[13px] font-normal font-[Rubik] gap-x-4 gap-4  sm:flex-nowrap flex-wrap rounded-xl bg-white py-1 px-2 cursor-pointer">
+            <div className="grid grid-cols-2 pt-2 sm:pt-0 justify-between items-center ">
               <button className="text-nowrap  border-r-[.5px] px-1 ">
                 Monthly plan
               </button>
@@ -98,19 +98,19 @@ const CardWorks = () => {
                 Quarterly 10% OFF
               </div>
             </div>
-            <div className=" font-[500] px-2 flex gap-4 bg-[#00ffff] py-4 rounded-xl ">
-              <button className=" text-[#0E2140]">Yearly</button>
-              <span className="flex items-center w-full">
+            <div className="px-2 font-[500] grid grid-cols-2 w-full justify-between gap-4 bg-[#00ffff] py-4 rounded-xl ">
+              <button className=" text-[rgb(14,33,64)]">Yearly</button>
+              <div className="flex items-center w-full">
                 <TagIcon className="h-6 w-6 text-[#0E2140]" />
                 <button className=" text-[#0E2140] flex">
                   Get 1 month free
                 </button>
-              </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto grid xl:grid-cols-3 sm:px-10 md:grid-cols-2 md:px-10 lg:px-20 xl:px-0 px-6 gap-8">
+      <div className="max-w-7xl mx-auto grid xl:grid-cols-3 sm:px-6 md:grid-cols-2 md:px-10 lg:px-20 xl:px-0 px-2 gap-8">
         {data.map((item) => {
           return (
             <div className=" box-border  card-project-border">

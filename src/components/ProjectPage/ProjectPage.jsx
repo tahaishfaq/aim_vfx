@@ -8,16 +8,16 @@ const ProjectPage = () => {
     <div className=" solution-page">
       <div className="max-w-6xl px-4 mx-auto text-white py-24 ">
         {/*----------------------------Top bar of Project Section --------------------------*/}
-        <div className="px-4 py-3 flex flex-wrap gap-y-5  border-setting items-center justify-between bg-[#0B1A2880] rounded-lg">
-          <div className="flex items-center gap-x-4">
+        <div className="px-4 py-3 flex flex-wrap sm:flex-nowrap gap-y-5  border-setting items-center justify-between bg-[#0B1A2880] rounded-lg">
+          <div className="flex items-center gap-x-4 ">
             <ChevronLeftIcon className="h-4 w-4 text-white" />
 
-            <div>
-              <div className="flex items-center gap-5">
-                <h1 className="font-tek text-[50px] leading-10 font-normal uppercase ">
+            <div className="">
+              <div className="flex items-center justify-between gap-5">
+                <h1 className="font-tek md:text-[50px] text-3xl leading-10 font-normal uppercase ">
                   lorem ipsum
                 </h1>
-                <button className="px-2.5 py-1 rounded-[10px]  bg-[#9C9C9C] font-[Rubik] font-medium">
+                <button className="px-2.5 py-0.5 rounded-[10px]  bg-[#9C9C9C] font-[Rubik] font-medium">
                   Draft
                 </button>
               </div>
@@ -26,22 +26,26 @@ const ProjectPage = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-4">
-            <span className="py-1 px-2 font-medium rounded-full bg-[#15B8C7]">
-              TJ
-            </span>
-            <button className="py-1 px-5 rounded-full border-[3px] border-[#15B8C7] font-medium text-base font-[Rubik]">
-              INVITE
-            </button>
-            <button className="py-1.5 px-5 text-nowrap rounded-full bg-[#15B8C7] font-medium text-base font-[Rubik] uppercase">
-              SUBMIT project
-            </button>
-            <EllipsisHorizontalIcon className="h-8 w-8 text-white" />
+          <div className="flex items-center sm:flex-nowrap flex-wrap gap-4">
+            <div className="flex items-center gap-4 justify-between w-full">
+              <span className="py-1 px-2 font-medium rounded-full bg-[#15B8C7]">
+                TJ
+              </span>
+              <button className="py-1 px-5 rounded-full border-[3px] border-[#15B8C7] font-medium text-base font-[Rubik]">
+                INVITE
+              </button>
+            </div>
+            <div className="flex items-center gap-4 justify-between w-full">
+              <button className="py-1.5 px-5 text-nowrap rounded-full bg-[#15B8C7] font-medium text-base font-[Rubik] uppercase">
+                SUBMIT project
+              </button>
+              <EllipsisHorizontalIcon className="h-8 w-8 text-white" />
+            </div>
           </div>
         </div>
         {/*----------------------------links Project Section --------------------------*/}
         <div className="flex py-9 justify-center">
-          <div className="project flex gap-x-12 text-white text-base font-bold font-[Rubik] uppercase">
+          <div className="project flex gap-x-6 sm:gap-x-12 text-white text-base font-bold font-[Rubik] uppercase">
             <NavLink to="projectinfo">bRIEF & INFO</NavLink>
             <NavLink to="messages">MESSAGES</NavLink>
             <NavLink to="designs">DESIGNS</NavLink>

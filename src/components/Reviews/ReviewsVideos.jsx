@@ -3,10 +3,10 @@ import Rectangle from "../../assets/images/Rectangle 131.png";
 import Button from "../Button/Button";
 const ReviewsVideos = () => {
   return (
-    <div className=" rounded-2xl border-4 border-[#15B8C7] p-6 mx-auto grid 2xl:grid-cols-5">
+    <div className=" rounded-3xl border-4 border-[#15B8C7] p-2 sm:p-6 mx-auto grid 2xl:grid-cols-5">
       <div className="col-span-2 xl:pt-10 xl:pb-10 xl:pl-20  ">
-        <h1 className="py-6  text-5xl lg:text-6xl xl:text-8xl font-[Teko] uppercase">
-          Top Results for real brands
+        <h1 className="  text-5xl lg:text-6xl xl:text-8xl font-[Teko] uppercase">
+          FIT! BRAND VIDEO GOT +97% BRAND AWARENESS LIFT!
         </h1>
         <p className="text-xl font-light font-[Teko]">
           Lorem ipsum dolor sit amet consectetur. Velit neque consequat id

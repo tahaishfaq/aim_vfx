@@ -5,12 +5,12 @@ const Messages = () => {
   const [value, setValue] = useState("");
   return (
     <div className=" max-w-6xl mx-auto text-white">
-      <div className="px-9 py-9 h-[351px] flex-wrap gap-y-5  border-setting bg-[#0B1A2880] rounded-lg">
+      <div className="sm:px-9 px-4 py-9 h-[351px] flex-wrap gap-y-5  border-setting bg-[#0B1A2880] rounded-lg">
         <div className="pb-6 border-b-[1px] border-gray-500 flex justify-center">
           <h2 className="text-base font-[Rubik] font-bold">Today</h2>
         </div>
         <div className="max-w-3xl mx-auto py-8 border-b-[1px] flex justify-between items-center border-gray-500">
-          <div className="flex items-center gap-x-2">
+          <div className="flex items-center flex-wrap gap-x-2">
             <span className="py-1 px-2 font-medium rounded-full bg-[#15B8C7]">
               TJ
             </span>

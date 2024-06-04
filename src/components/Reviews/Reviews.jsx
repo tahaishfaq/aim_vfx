@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../Button/Button";
 import Screenshot from "../../assets/images/Screenshot2024.png";
 import ReviewsVideos from "./ReviewsVideos";
@@ -9,6 +9,7 @@ import Rectangle160 from "../../assets/images/Rectangle 160.png";
 import FooterPricing from "../Pricing/FooterPricing";
 import DateConsulation from "../DateConsulation/DateConsulation";
 import REVIEWS from "../../assets/images/REVIEWS.png";
+import ProjectTitle from "../ProjectTitle/ProjectTitle";
 const Reviews = () => {
   const data = [
     {
@@ -25,7 +26,7 @@ const Reviews = () => {
     },
   ];
   return (
-    <div className="solution-page pt-28 text-white">
+    <div className="solution-page  md:pt-28 text-white">
       {/*------------ Reviews  Hero Section     ------------*/}
 
       <div className="px-5 sm:px-10 lg:px-20 xl:px-44 mx-auto pt-24">
@@ -61,8 +62,8 @@ const Reviews = () => {
         </div>
       </div>
 
-      <div className=" px-9 max-w-5xl mx-auto lg:py-32">
-        <div className="text-center grid gap-7 sm:grid-cols-2 md:grid-cols-4">
+      <div className=" px-9 max-w-5xl mx-auto py-32">
+        <div className="text-center grid gap-7 gap-y-16 sm:grid-cols-2 md:grid-cols-4">
           <div className="text-center">
             <h1 className=" text-8xl font-light font-[Teko] text-[#00ffff]">
               200M+
@@ -95,20 +96,20 @@ const Reviews = () => {
       </div>
       {/*------------ Reviews Video Section     ------------*/}
 
-      <div className="py-10  md:px-40 px-6">
+      <div className="py-10  md:px-40 xl:px-72 2xl:px-40 px-4">
         <ReviewsVideos />
       </div>
       {/* ---------- Testimonals Section -----------*/}
       <div className="2xl:max-w-7xl mx-auto flex flex-col gap-y-7 items-center justify-center py-16 ">
         <div className="relative flex flex-col items-center justify-center">
-          <Heading className="text-8xl font-[Teko] text-white uppercase leading-tight">
+          <Heading className="lg:text-8xl text-5xl font-[Teko] text-white uppercase leading-tight">
             Testimonals
           </Heading>
-          <p className="text-sm text-white pb-6  text-center">
+          <p className="text-sm text-white pb-10 text-center">
             A Collection of Client Testimonials That Speak Volumes.
           </p>
           <div className=" p-4 sm:px-20 ">
-            <div className="relative overflow-hidden p-5 lg:p-5 border-4 border-[#15B8C7] rounded-3xl">
+            <div className="relative overflow-hidden p-2 lg:p-5 border-4 border-[#15B8C7] rounded-[40px]">
               <video controls poster={Rectangle160}>
                 <source src="your-video-file.mp4" type="video/mp4" />
                 Your browser does not support the video tag.

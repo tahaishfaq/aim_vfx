@@ -1,17 +1,17 @@
 import React from "react";
 import PanelLeft from "../Panel/PanelLeft";
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import ControlLeftDiv from "../ControlFreelancer/ ControlLeftDiv";
 import { Cog8ToothIcon } from "@heroicons/react/24/outline";
 import { CurrencyDollarIcon } from "@heroicons/react/24/outline";
 import { CreditCardIcon } from "@heroicons/react/24/outline";
+import SettingLeftdiv from "./SettingLeftdiv";
 
 const Setting = () => {
   return (
     <div className="solution-page py-24">
       <div className="px-6 lg:px-10 grid xl:grid-cols-8 text-white gap-4">
         <div className="col-span-full  xl:col-span-2 ">
-          <ControlLeftDiv />
+          <SettingLeftdiv />
         </div>
         {/* ------------ Center div  Section --------------- */}
 
@@ -26,7 +26,7 @@ const Setting = () => {
               <span className="px-3 py-2 rounded-[50%] bg-[#2EABAF]">TJ</span>
             </div>
           </div>
-          <div className="w-full gap-y-4 bg-[#0B1A2880] rounded-xl mt-6">
+          <div className="w-full gap-y-4 border-setting  rounded-xl mt-6">
             <form className="p-6 w-full">
               {/* ------------ input For City and Country  div  Section --------------- */}
 
@@ -151,7 +151,7 @@ const Setting = () => {
             </form>
           </div>
           {/* ------------ Payment Method   div  Section --------------- */}
-          <div className="w-full bg-[#0B1A2880] rounded-xl mt-5 p-6">
+          <div className="w-full border-setting  rounded-xl mt-5 p-6">
             <div className="border-b-[1px] border-gray-500">
               <div className="flex items-center gap-x-2 pb-4">
                 <CreditCardIcon className="h-8 w-8 text-gray-200" />

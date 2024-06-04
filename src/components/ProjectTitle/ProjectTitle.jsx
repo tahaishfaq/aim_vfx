@@ -37,34 +37,35 @@ const ProjectTitle = ({ open, setOpen }) => {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-3xl ring-1 ring-gray-300 bg-[#0B1A28CC]  px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-32 sm:w-full sm:max-w-6xl sm:p-6">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-3xl border-setting   text-left shadow-xl transition-all my-28 p-2 sm:w-full sm:max-w-6xl sm:p-6">
                 <div className="absolute right-0 top-0 hidden pr-4 pt-4 sm:block">
                   <button
                     type="button"
-                    className="rounded-md bg-white text-gray-400  hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                    className="rounded-md  text-white  hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                     onClick={() => setOpen(false)}
                   >
                     <span className="sr-only">Close</span>
-                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                    <XMarkIcon className="h-8 w-8" aria-hidden="true" />
                   </button>
                 </div>
-                <div className="">
-                  <div className="  text-[#fff] flex justify-between  gap-3">
-                    <span className="text-[50px] font-[400]">
+                <div className="max-w-4xl mx-auto pt-10">
+                  <div className="text-white flex justify-between">
+                    <h1 className="lg:text-[111px] max-lg: text-5xl  font-normal font-tek uppercase">
                       Project Title
-                    </span>
-                  </div>
-                  <div className="flex justify-end items-center gap-x-2 font-semibold">
-                    <p className="py-2 px-4 rounded-xl bg-gradient-to-bl from-[#15B8C7] to-[#0B1A28CC]">
-                      <ShareIcon className="h-6 w-6  text-white" />
-                    </p>
-                    <p className="py-2 px-4 rounded-xl bg-gradient-to-bl from-[#15B8C7] to-[#0B1A28CC]">
-                      <ArrowDownTrayIcon className="h-6 w-6 text-white" />
-                    </p>
+                    </h1>
+
+                    <div className="flex items-end gap-x-2 font-semibold">
+                      <p className="py-2 px-4 rounded-xl bg-gradient-to-bl from-[#15B8C7] to-[#0B1A28CC]">
+                        <ShareIcon className="h-6 w-6  text-white" />
+                      </p>
+                      <p className="py-2 px-4 rounded-xl bg-gradient-to-bl from-[#15B8C7] to-[#0B1A28CC]">
+                        <ArrowDownTrayIcon className="h-6 w-6 text-white" />
+                      </p>
+                    </div>
                   </div>
                   <div>
                     <div className=" py-10 border-b-[1px] border-gray-500">
-                      <div className="p-10 xl:w-[1100px] xl:h-[500] object-cover">
+                      <div className="relative  object-cover">
                         <video controls poster={Rectangle}>
                           <source src="your-video-file.mp4" type="video/mp4" />
                           Your browser does not support the video tag.
