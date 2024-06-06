@@ -36,6 +36,13 @@ import Setting from "./components/Setting/Setting";
 import Reviews from "./components/Reviews/Reviews";
 import Panel from "./components/Panel/Panel";
 import HowitWorksPage33 from "./components/HowitWorksPage33/HowitWorksPage33";
+import CheckOut from "./components/CheckOut/CheckOut";
+import ProjectPage from "./components/ProjectPage/ProjectPage";
+import ProjectInfo from "./components/ProjectPage/ProjectInfo";
+import Messages from "./components/ProjectPage/Message";
+import Designs from "./components/ProjectPage/Designs";
+import ProjectBrief from "./components/ProjectBrief/ProjectBrief";
+import DropDown from "./components/DropDown/DropDown";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -87,6 +94,17 @@ function App() {
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/panel" element={<Panel />} />
           <Route path="/howitworks" element={<HowitWorksPage33 />} />
+          <Route path="/checkout" element={<CheckOut />} />
+          <Route path="/projectpage" element={<ProjectPage />}>
+            <Route index element={<ProjectInfo />}></Route>
+            <Route path="messages" element={<Messages />} />
+            <Route path="projectinfo" element={<ProjectInfo />} />
+            <Route path="designs" element={<Designs />} />
+          </Route>
+          <Route path="/project-brief" element={<ProjectBrief />} />
+          <Route path="/drop-down" element={<DropDown />} />
+          
+          
           
           
           

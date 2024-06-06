@@ -9,6 +9,7 @@ import {
 import { ShareIcon } from "@heroicons/react/24/outline";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Rectangle from "../../assets/images/Rectangle 7530.png";
+
 const ProjectTitle = ({ open, setOpen }) => {
   const [value, setValue] = useState("");
   return (
