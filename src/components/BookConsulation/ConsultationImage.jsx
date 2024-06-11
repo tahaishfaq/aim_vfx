@@ -70,7 +70,7 @@ const ConsultationImage = () => {
                 }
               >
                 <div className="flex-1 py-5">
-                  <h1 className="lg:text-3xl text-5xl font-[Teko] text-[#00ffff] uppercase pb-2">
+                  <h1 className="text-3xl lg:text-5xl font-tek text-[#00ffff] uppercase pb-2">
                     {item.head}
                   </h1>
                   <p className="font-[Rubik] text-lg font-light">{item.des}</p>

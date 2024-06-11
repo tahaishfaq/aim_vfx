@@ -62,9 +62,12 @@ const Content = () => {
       <div className="lg:py-28 2xl:px-72 xl:px-24 grid sm:grid-cols-2 sm:px-6 lg:grid-cols-3">
         {product.map((item) => {
           return (
-            <div key={item.id} className="flex flex-col gap-y-8 p-10">
+            <div
+              key={item.id}
+              className="flex flex-col md:gap-y-8 gap-y-4 p-10"
+            >
               <img src={item.src} alt="" className="w-14 h-14" />
-              <h2 className="text-[#56BEC2] text-[50px] font-normal leading-[40.9px] font-tek uppercase">
+              <h2 className="text-[#56BEC2] md:text-[50px] text-3xl font-normal md:leading-[40.9px] font-tek uppercase">
                 {item.head}
               </h2>
               <p className="text-xl font-light font-[Rubik] text-white">
@@ -76,7 +79,7 @@ const Content = () => {
         })}
       </div>
 
-      <div className="hidden sm:flex sm:items-center justify-center gap-x-16  pb-28">
+      <div className="flex items-center justify-center gap-x-16  pb-28">
         <Button className="px-8 py-2.5 text-sm font-semibold text-[#000]  bg-gradient-to-r from-[#15B8C7] to-[#8CE1EC] rounded-full  hover:text-[#000] hover:bg-cyan-600  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
           Book A Call
         </Button>

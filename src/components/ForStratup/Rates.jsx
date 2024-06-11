@@ -7,7 +7,7 @@ import Rateimage from "./RateImages";
 
 const Rates = () => {
   return (
-    <div className="promotional-section py-40 sm:py-0">
+    <div className="promotional-section py-40 sm:20">
       <div className="sm:px-28 md:px-40 px-6 2xl:px-80 xl:px-40 lg:px-10 lg:pt-24  grid lg:grid-cols-2 gap-y-10 text-[#fff]  gap-x-14">
         <div className="relative overflow-hidden">
           <video controls poster={Rectangle130} className="object-cover">

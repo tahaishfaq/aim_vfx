@@ -90,7 +90,7 @@ const CheckOut = () => {
           {/*---------------------------------  Creative Direction button section  ----------------------------*/}
 
           <div className="lg:relative">
-            <div className="mb-3 rounded-3xl flex justify-between bg-[#0513378C] py-7 px-8  text-xl font-light font-[Rubik]">
+            <div className="mb-3 rounded-3xl flex justify-between bg-[#0513378C] py-6 px-8  text-xl font-light font-[Rubik]">
               <div className="  ">
                 <div className="flex items-center pb-5 gap-x-2">
                   <PhoneIcon className="h-6 w-6 text-white " />
@@ -105,7 +105,7 @@ const CheckOut = () => {
                 </button>
               </div>
             </div>
-            <div className="rounded-3xl flex justify-between bg-[#0513378C] py-7 px-8 text-xl font-light font-[Rubik]">
+            <div className="rounded-3xl flex justify-between bg-[#0513378C] py-6 px-8 text-xl font-light font-[Rubik]">
               <div className="  ">
                 <div className="flex items-center pb-5 gap-x-2">
                   <PhoneIcon className="h-6 w-6 text-white " />

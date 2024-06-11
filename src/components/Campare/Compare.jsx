@@ -44,20 +44,20 @@ const Compare = () => {
             semper in tortor integer. Quis nulla consequat ac ut consequat.
             Lorem sem lectus eu eros varius. Quis urna fringilla sed.
           </p>
-          <div className="flex py-4	items-end gap-1 sm:gap-x-4 ">
-            <span>
+          <div className="flex flex-wrap sm:flex-nowrap py-4	items-end gap-y-4 sm:gap-x-4 ">
+            <div className="w-full">
               <input
                 type="email"
                 name="email"
                 placeholder="Your base Email"
-                className="md:px-6 px-3 outline-none py-2.5 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] "
+                className="md:px-6 w-full px-3 outline-none py-2.5 text-sm  rounded-full text-gray-700 bg-[#D4E7F5] "
               />
-            </span>
-            <span>
-              <Button className=" px-4 py-2.5 text-sm font-medium font-[Rubik] text-[#fff]  bg-[#2EABAF] rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+            </div>
+            <div className="w-full flex justify-center">
+              <Button className="text-nowrap px-4 py-2.5 text-sm font-medium font-[Rubik] text-[#fff]  bg-[#2EABAF] rounded-full hover:text-white hover:bg-cyan-600 focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
                 SEE OPENNINGS
               </Button>
-            </span>
+            </div>
           </div>
         </div>
         <div className="xl:block hidden">

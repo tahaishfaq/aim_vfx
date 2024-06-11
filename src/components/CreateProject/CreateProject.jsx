@@ -31,7 +31,7 @@ const CreateProject = () => {
     },
   ];
   return (
-    <div className=" solution-page">
+    <div className=" solution-page pt-4">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-5xl px-4 mx-auto text-white pt-20 ">
           {/*----------------------------head Project Section --------------------------*/}

@@ -14,23 +14,49 @@ const DropDown = () => {
     },
     {
       heading: "Corporate Videos",
-      p1: " Interview video Testimonial video Summary video with stock 2D animation Animation Corporate videos 3D 3D Engineering video",
+      p1: "Corporate video with 2D animation ",
+      p2: "Interview video",
+      p3: "estimonial video ",
+      p4: "Summary video with stock 2D animation",
+      p5: "Animation Corporate videos 3D",
+      p6: "3D Engineering video",
     },
     {
       heading: "2D Animation",
-      p1: "Commercial video with 2D animation Corporate video with 2D animation Whiteboard Animation Summary video with stock 2D animation Documentaries 2D Brand template for a video Infographics",
+      p1: "Commercial video with 2D animation ",
+      p2: "Corporate video with 2D animation",
+      p3: "Whiteboard Animation",
+      p4: "Summary video with stock 2D animation ",
+      p5: "Documentaries 2D ",
+      p6: "Brand template for a video",
+      p7: "Infographics",
     },
     {
       heading: "Educational Videos",
-      p1: "Online courses ELearning 2D animation ELearning video with slides ELearning 3D 3D Engineering video 3D Medical video Explainer video UI video Tutorial video",
+      p1: "Online courses",
+      p2: "ELearning 2D animation",
+      p3: "ELearning video with slides ",
+      p4: "ELearning 3D ",
+      p5: "3D Engineering video ",
+      p6: "3D Medical video",
+      p7: "Explainer video",
+      p8: "UI video",
+      p9: "utorial video",
     },
     {
       heading: "Social Media Videos",
-      p1: "Vertical (Stories, Reels, Shorts) TikTok video YouTube video from your RAW footage YouTube video from stock footage Vlog video Resizing",
+      p1: "Vertical (Stories, Reels, Shorts)",
+      p2: "TikTok video ",
+      p3: "YouTube video from your RAW footage",
+      p4: "YouTube video from stock footage",
+      p5: "Vlog video",
+      p6: "Resizing",
     },
     {
       heading: "Software/App Videos",
-      p1: "Ad video Tutorial video UI video",
+      p1: "Ad video ",
+      p2: "Tutorial video",
+      p3: "UI video",
     },
     {
       heading: "Film & TV",
@@ -51,11 +77,30 @@ const DropDown = () => {
     },
     {
       heading: "3D Animation",
-      p1: "Animation 3D Animation Corporate video 3D ELearning video 3D Commercial video with 3D 3D Engineering video 3D Product video 3D Medical video Motion Design AI video Character Creation Character Animation 3D Modeling Logo motion",
+      p1: "Animation 3D    ",
+      p2: "Animation Corporate video 3D ",
+      p3: "ELearning video 3D",
+      p4: "Commercial video with 3D",
+      p5: " 3D Engineering video ",
+      p6: "3D Product video",
+      p7: "3D Medical video",
+      p8: "Motion Design ",
+      p9: " AI video",
+      p10: " Character Creation",
+      p11: "Character Animation",
+      p12: " 3D Modeling",
+      p13: " Logo motion",
     },
     {
       heading: "Video Production",
-      p1: "Film&TV Commercials Corporate video Music video Brand film Animation Educational video Production Service",
+      p1: "Film&TV ",
+      p2: "Commercials",
+      p3: " Corporate video",
+      p4: " Music video",
+      p5: " Brand film ",
+      p6: "Animation",
+      p7: " Educational video ",
+      p8: "Production Service",
     },
     {
       heading: "Extras",
@@ -72,16 +117,14 @@ const DropDown = () => {
       p12: " 3D Models",
       p13: " Illustrator",
       p14: "Animatic",
-
       p15: "Paid stock footages",
-
       P16: "        Multiple User Access",
     },
   ];
 
   return (
-    <div className="solution-page text-white py-28">
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 bg-[#0B1A28CC] p-5 gap-3 rounded-3xl">
+    <div className="solution-page text-white py-24">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 bg-[#0B1A28CC] p-5 gap-3 rounded-3xl">
         <div className="grid grid-cols-2 gap-3">
           {product.slice(0, 6).map((item, ind) => {
             return (
@@ -95,13 +138,15 @@ const DropDown = () => {
                   </span>
                   <img src={chevron} alt="" className="" />
                 </div>
-                <p>{item.p1}</p>
-                <p>{item.p2}</p>
-                <p>{item.p3}</p>
-                <p>{item.p4}</p>
-                <p>{item.p5}</p>
-                <p>{item.p6}</p>
-                <p>{item.p7}</p>
+                <ul className="cursor-pointer text-base font-normal font-[Rubik] leading-[17.5px]">
+                  <li>{item.p1}</li>
+                  <li>{item.p2}</li>
+                  <li>{item.p3}</li>
+                  <li>{item.p4}</li>
+                  <li>{item.p5}</li>
+                  <li>{item.p6}</li>
+                  <li>{item.p7}</li>
+                </ul>
               </div>
             );
           })}
@@ -119,22 +164,24 @@ const DropDown = () => {
                   </span>
                   <img src={chevron} alt="" className="" />
                 </div>
-                <p>{item.p1}</p>
-                <p>{item.p2}</p>
-                <p>{item.p3}</p>
-                <p>{item.p4}</p>
-                <p>{item.p5}</p>
-                <p>{item.p6}</p>
-                <p>{item.p7}</p>
-                <p>{item.p8}</p>
-                <p>{item.p9}</p>
-                <p>{item.p10}</p>
-                <p>{item.p11}</p>
-                <p>{item.p12}</p>
-                <p>{item.p13}</p>
-                <p>{item.p14}</p>
-                <p>{item.p15}</p>
-                <p>{item.p16}</p>
+                <ul className="cursor-pointer text-base font-normal font-[Rubik] leading-[17.5px]">
+                  <li>{item.p1}</li>
+                  <li>{item.p2}</li>
+                  <li>{item.p3}</li>
+                  <li>{item.p4}</li>
+                  <li>{item.p5}</li>
+                  <li>{item.p6}</li>
+                  <li>{item.p7}</li>
+                  <li>{item.p8}</li>
+                  <li>{item.p9}</li>
+                  <li>{item.p10}</li>
+                  <li>{item.p11}</li>
+                  <li>{item.p12}</li>
+                  <li>{item.p13}</li>
+                  <li>{item.p14}</li>
+                  <li>{item.p15}</li>
+                  <li>{item.p16}</li>
+                </ul>
               </div>
             );
           })}

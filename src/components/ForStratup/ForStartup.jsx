@@ -87,7 +87,7 @@ const ForStartup = () => {
             <img src={arrow3} alt="" />
             <span>Real time collaboration with your editor via Slack</span>
           </p>
-          <div className="flex sitems-center  gap-x-16  pt-5">
+          <div className="flex sitems-center gap-x-4 md:gap-x-16  pt-5">
             <Button className="px-8 py-2.5 text-sm font-semibold text-[#000]  bg-gradient-to-r from-[#15B8C7] to-[#8CE1EC] rounded-full  hover:text-[#000] hover:bg-cyan-600  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
               Book A Call
             </Button>
@@ -117,21 +117,38 @@ const ForStartup = () => {
         <img className="" src={Frame} alt="" />
         <img className="" src={Logos} alt="" />
       </div>
+      {/*----------------------------- UPSCALE YOUR BUSINESS AND Content SECtion------------------------------*/}
+
       <Content />
+
+      {/*-----------------------------  AND Content SECtion------------------------------*/}
+
       <Rates />
-      <div className="pt-32 text-center">
+
+      {/*-----------------------------   how it works Marketing SECtion------------------------------*/}
+
+      <div className="pt-28 text-center">
         <h2 className="font-tek lg:text-8xl text-5xl font-normal uppercase text-white ">
           how it works
         </h2>
       </div>
       <Marketing />
-      <div className="pt-32 text-center">
-        <h2 className="lg:text-8xl text-5xl font-tek  text-[#fff] uppercase">
-          real people, real businesses, real results
-        </h2>
+      <div className="flex sitems-center justify-center ">
+        <Button className="px-8 py-2.5 text-sm font-semibold text-[#273A5F]  bg-gradient-to-r from-[#15B8C7] to-[#8CE1EC] rounded-full  hover:text-[#000] hover:bg-cyan-600  focus:outline-none focus:border-gray-700 focus:shadow-outline-gray active:bg-gray-700 transition duration-150 ease-in-out uppercase">
+          schedule a free consulation
+        </Button>
       </div>
 
-      <div className="flex flex-col gap-y-7 items-center justify-center py-20 mt-20 pb-40">
+      {/*-----------------------------     real people, real businesses, real results SECtion------------------------------*/}
+
+      <div className="pt-32 text-center text-[#fff]">
+        <h2 className="lg:text-8xl text-5xl font-tek   uppercase">
+          real people, real businesses, real results
+        </h2>
+        <p>What our clients say?</p>
+      </div>
+
+      <div className="flex flex-col gap-y-7 items-center justify-center pt-10 pb-40">
         <div className="pt-8 pb-10">
           <PageTestimonals />
         </div>
@@ -171,19 +188,19 @@ const ForStartup = () => {
         <div className="relative ">
           <img src={Socialmedia} alt="" />
 
-          <div className="absolute top-[15%] left-[40%] w-28 flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] h-28 bg-[#0513378C]">
+          <div className="absolute top-[15%] left-[40%] w-24 md:w-28 flex justify-center items-center  rounded-[40px] border-[2px] border-[#00FFFF] md:h-28 h-24 bg-[#0513378C]">
             <img src={socialicon1} alt="" className="w-9 h-9" />
           </div>
-          <div className="absolute top-[30%] left-[70%] w-28 flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] h-28 bg-[#0513378C]">
+          <div className="absolute top-[30%] left-[70%] w-24 md:w-28  flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] md:h-28 h-24 bg-[#0513378C]">
             <img src={socialicon2} alt="" className="" />
           </div>
-          <div className="absolute top-[40%] left-[10%] w-28 flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] h-28 bg-[#0513378C]">
+          <div className="absolute top-[40%] left-[10%] w-24 md:w-28  flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] md:h-28 h-24 bg-[#0513378C]">
             <img src={socialicon3} alt="" className="" />
           </div>
-          <div className="absolute top-[70%] left-[30%] w-28 flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] h-28 bg-[#0513378C]">
+          <div className="absolute top-[70%] left-[30%] w-24 md:w-28  flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] md:h-28 h-24 bg-[#0513378C]">
             <img src={socialicon4} alt="" className=" " />
           </div>
-          <div className="absolute  top-[65%] left-[60%] w-28 flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] h-28 bg-[#0513378C]">
+          <div className="absolute  top-[65%] left-[60%] w-24 md:w-28 flex justify-center items-center rounded-[40px] border-[2px] border-[#00FFFF] md:h-28 h-24 bg-[#0513378C]">
             <img src={socialicon5} alt="" className="" />
           </div>
         </div>
